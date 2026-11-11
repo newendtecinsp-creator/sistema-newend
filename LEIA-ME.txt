@@ -1,0 +1,165 @@
+CONTROLE DE PATRIMONIO E OS - NEW END
+====================================
+
+REQUISITOS
+- Windows ou Linux.
+- Node.js 18 ou superior.
+- O sistema usa os arquivos locais do servidor; os computadores acessam pelo navegador.
+
+1) INSTALAR O NODE.JS
+Windows: baixe a versao LTS em https://nodejs.org e instale.
+Linux (Ubuntu/Debian): instale Node.js 18 ou superior.
+
+2) COPIAR A PASTA
+Copie a pasta inteira para o servidor. A estrutura deve ficar assim:
+  controle-os-servidor/
+    iniciar.bat
+    server.js
+    LEIA-ME.txt
+    public/index.html
+    public/logo.png
+    data/ (criada automaticamente)
+
+3) CONFIGURAR A SENHA DO ADMINISTRADOR (IMPORTANTE)
+Windows:
+- Abra iniciar.bat no Bloco de Notas.
+- Na linha set "ADMIN_SENHA=" coloque uma senha forte entre as aspas.
+  Exemplo: set "ADMIN_SENHA=UmaSenhaForte-EscolhidaPelaEmpresa"
+- Salve o arquivo. Nao compartilhe essa senha com usuarios comuns.
+
+Linux:
+- Inicie definindo a variavel de ambiente:
+  ADMIN_SENHA='UmaSenhaForte-EscolhidaPelaEmpresa' node server.js
+- Para manter a senha no PM2, configure a variavel no ambiente do servico.
+
+Sem ADMIN_SENHA configurada, o sistema continua funcionando, mas o login de administrador e as exclusoes ficam desabilitados.
+
+4) INICIAR
+Windows: de dois cliques em iniciar.bat e mantenha a janela aberta.
+Linux: entre na pasta e execute o comando acima.
+
+5) ACESSAR
+No servidor: http://localhost:3000
+Nos outros computadores: http://IP-DO-SERVIDOR:3000
+Para descobrir o IP no Windows use ipconfig; no Linux use hostname -I.
+
+6) FIREWALL
+Se os outros computadores nao conseguirem acessar, libere TCP 3000 no firewall do servidor.
+Windows (Prompt como administrador):
+  netsh advfirewall firewall add rule name="Controle OS" dir=in action=allow protocol=TCP localport=3000
+Linux (UFW):
+  sudo ufw allow 3000/tcp
+
+7) PERFIS E EXCLUSOES
+- Usuario comum: pode consultar, cadastrar e editar registros; nao pode excluir.
+- Administrador: entra pelo botao "Acesso administrador" e pode excluir equipamentos, OS e cadastros.
+- A sessao administrativa expira apos 12 horas ou quando o administrador sair.
+- As exclusoes e reativacoes de OS sao registradas em data/auditoria.json, incluindo os dados do registro.
+- A protecao e validada no servidor, nao apenas na tela.
+
+8) NUMERACAO E BUSCAS
+- O numero da OS pode ser informado ao criar e alterado posteriormente.
+- O identificador interno e a ordem de criacao da OS sao preservados quando o numero e alterado.
+- As abas Calibracoes e Ordens de Servico possuem campos de busca.
+
+9) BACKUP E RESTAURACAO
+- O sistema cria backup diario em data/backups.
+- A retencao automatica e de ate 365 dias.
+- Inclua toda a pasta data no backup corporativo, inclusive dados.json, backups e auditoria.json.
+- Para restaurar: pare o servidor, preserve uma copia da pasta data atual, substitua data/dados.json por uma copia valida e inicie novamente.
+
+10) ATUALIZAR O PROGRAMA
+Pare o servidor antes de substituir os arquivos. Atualize server.js, iniciar.bat, public/index.html e public/logo.png.
+NAO apague a pasta data: ela contem os dados, backups e auditoria da empresa.
+
+11) TIPOS DE ITEM
+- Aba Cadastros > Tipos de item: cadastre, renomeie ou exclua tipos (Aparelho, Cabeçote, Scanner, Bateria, Carregador, Fonte, Encoder, Sapata etc.).
+- Ao cadastrar um item, tambem e possivel criar um tipo novo na hora, pela opcao "Cadastrar novo tipo" da lista.
+- Ao renomear um tipo, todos os itens daquele tipo sao atualizados. Um tipo em uso nao pode ser excluido.
+- Na aba Equipamentos ha um filtro por tipo, que tambem vale para a exportacao "filtrados" para Excel.
+- Itens com dois numeros de serie: no cadastro do item marque "Possui segundo numero de serie (tela)". O primeiro campo passa a ser o serie do modulo.
+
+12) BUSCA DE CLIENTE POR CNPJ
+- Em Cadastros > Clientes, digite o CNPJ e clique em "Buscar". O sistema preenche razao social, cidade/UF e telefone (campos ja preenchidos sao mantidos).
+- A consulta e feita pelo SERVIDOR em servicos publicos gratuitos (BrasilAPI e, como reserva, ReceitaWS). Por isso o computador do servidor precisa de acesso a internet; os demais computadores nao precisam.
+- O sistema valida os digitos do CNPJ, avisa se a situacao cadastral nao for ATIVA e impede CNPJ duplicado.
+- Se o servidor ficar sem internet, o cadastro manual continua funcionando normalmente.
+
+13) IMPORTACAO DE EQUIPAMENTOS EM LOTE
+- Aba Equipamentos > "Importar planilha". Aceita Excel (.xlsx/.xls) e CSV (separado por ; , ou tabulacao).
+- A primeira linha da planilha deve ter os titulos das colunas. O sistema reconhece as colunas automaticamente e voce pode corrigir o mapeamento na tela.
+- Campos: Patrimonio e Descricao (obrigatorios), Tipo, Numero de serie (modulo), Numero de serie (tela), Ultima calibracao, Validade da calibracao e Observacoes.
+- Antes de cadastrar ha uma pre-visualizacao com a situacao de cada linha: Novo, Duplicado, Repetido na planilha ou Corrigir.
+- Patrimonios ja cadastrados sao ignorados (ou atualizados, se a opcao "Atualizar patrimonios ja cadastrados" for marcada). Nada e apagado.
+- Tipos novos da planilha podem ser cadastrados automaticamente. Linhas sem tipo recebem o tipo escolhido na tela.
+- Ao final e possivel baixar o relatorio em Excel (Importados, Corrigir e Duplicados). O botao "Baixar modelo de planilha" gera um arquivo pronto para preencher.
+- O arquivo de exportacao do proprio sistema pode ser reimportado.
+
+14) REATIVAR OS FINALIZADA (SOMENTE ADMINISTRADOR)
+- Em Ordens de Servico, abra a OS devolvida e clique em "Reativar OS (Administrador)". O sistema pede confirmacao.
+- A OS volta para "Em campo" e seus equipamentos voltam a ficar indisponiveis. Se algum equipamento ja estiver em outra OS em andamento, a reativacao e bloqueada ate a devolucao dessa outra OS.
+- A reativacao e registrada em data/auditoria.json (acao "reativacao", data/hora e dados da OS) e tambem aparece na tela da OS.
+- A regra e validada no servidor: usuarios comuns nao conseguem reativar nem pela tela nem por chamadas diretas.
+
+15) ABA BLOCOS E CALIBRACOES DE BLOCOS
+- Aba Blocos: cadastro com Tipo, Identificacao (unica), Espessura, Diametro externo (opcional), Material, Ultima calibracao e Validade (1 ano depois, editavel). Possui busca, edicao exportacao e importacao de planilha (Excel/CSV) somente com os dados dos blocos (botao "Baixar modelo de planilha" na tela de importacao); a exclusao e somente do administrador.
+- Aba Calibracoes: dividida em "Aparelhos" (calibracoes existentes) e "Blocos" (calibracoes dos blocos). Cada categoria tem seus proprios registros e historico.
+- Os blocos ficam em data/dados.json (colecao "blo"). Atualize server.js e public/index.html juntos; os dados existentes sao preservados.
+
+OBSERVACOES DE SEGURANCA
+- O acesso foi pensado para a rede interna da empresa.
+- A conexao padrao e HTTP, sem criptografia de transporte. Nao exponha diretamente a internet; para acesso externo use VPN e, preferencialmente, HTTPS via proxy reverso.
+- A senha administrativa deve ser forte e guardada pelo responsavel de TI.
+- Recomenda-se testar restauracao de backup periodicamente.
+
+
+ATUALIZAÇÃO — MÓDULO LOCAÇÃO DE EQUIPAMENTOS
+------------------------------------------------
+Esta versão acrescenta a aba "Locação" ao sistema existente.
+
+Recursos:
+- Cadastro de locação vinculado ao cadastro de clientes.
+- Seleção de equipamentos já cadastrados no patrimônio.
+- Registro de responsável, documento, local, saída e previsão de retorno.
+- Anotações de dimensões, peso e condição de saída por equipamento.
+- Anexação de várias fotos por equipamento (JPG, PNG ou WEBP, até 7 MB por foto).
+- Consulta de locações, sinalização de prazo atrasado e registro de devolução.
+- Impressão do termo de locação ou opção "Salvar como PDF" pelo navegador.
+
+INSTALAÇÃO DA ATUALIZAÇÃO
+1. Faça uma cópia de segurança da pasta atual do sistema.
+2. Substitua o server.js pelo arquivo atualizado.
+3. Substitua public/index.html pelo index.html atualizado (mantenha o nome index.html).
+4. Não apague nem substitua a pasta data. O sistema adiciona a coleção "loc" ao banco existente.
+5. Reinicie o servidor Node.js.
+6. Confira a aba Locação e faça um teste com um cadastro de cliente e um equipamento.
+
+As fotos ficam em data/locacao-fotos e os registros de locação ficam na coleção "loc" de data/dados.json.
+Mantenha a pasta data incluída na rotina de backup. Não compartilhe publicamente documentos ou fotos de clientes.
+
+
+12) BLOCOS NAS ORDENS DE SERVIÇO
+- Na criação da OS, o campo Material também pesquisa blocos pela identificação.
+- Um bloco vinculado a uma OS aberta fica indisponível para outra OS até o registro de devolução.
+- O servidor também valida conflitos, inclusive quando duas pessoas tentam incluir o mesmo bloco ao mesmo tempo.
+
+12) ABA LOCACAO - FLUXO SIMPLIFICADO
+- A janela de locacao foi ampliada para a mesma largura da tela de OS.
+- Cadastre os dados do cliente/responsavel e as datas no cabecalho.
+- Adicione equipamentos informando o patrimonio cadastrado.
+- Cada equipamento aceita varias fotos JPG, PNG ou WEBP (ate 7 MB por foto).
+- As fotos ficam armazenadas na pasta locacao-fotos, criada automaticamente pelo servidor.
+- Ao atualizar, mantenha a pasta data e a pasta locacao-fotos para preservar registros e imagens.
+
+
+16) LOCACAO - FORMULARIO F.13.001 E EXCLUSAO PELO ADMINISTRADOR
+- O botao "Imprimir / salvar PDF" da locacao gera o formulario F.13.001 Rev. 0 (Listagem de Equipamentos) igual ao modelo:
+  cabecalho com logo, titulo e "Pagina X de Y"; Cliente; "Eu ___, CPF ___"; declaracao; Local e Data;
+  Tabela 1 (Item, Quantidade, Descricao, Codigo Patrimonio, minimo de 11 linhas); Tabela 2 (Dimensoes e Peso); rodape com endereco.
+- A partir da pagina 2 ficam as fotos, na mesma ordem dos itens da Tabela 1, ate 2 fotos por linha e 2 linhas por pagina,
+  com legenda centralizada abaixo: "Fotos 1 a 2: descricao - Patrimonio (Item N)".
+- Na janela da locacao: quantidade por item, botoes para mudar a ordem dos itens, "Item sem patrimonio" (sai como ****)
+  e campos Dimensoes e Peso (Tabela 2).
+- Administrador: botao "Excluir" na locacao (toque duas vezes para confirmar), igual ao da OS.
+  Ao excluir, os equipamentos da locacao ficam disponiveis novamente. Usuarios comuns nao veem o botao.
+- Atualize somente public/index.html. Nao apague a pasta data nem a pasta locacao-fotos.

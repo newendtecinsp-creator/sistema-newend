@@ -1,0 +1,4155 @@
+{
+  "eq": {
+    "emw3i2mou5k2g": {
+      "id": "emw3i2mou5k2g",
+      "pat": "0018",
+      "desc": "EDDYFI M2M GEKKO  64:64",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "GEKKO-436",
+      "needsCal": true,
+      "calDate": "2025-10-20",
+      "calDue": "2026-10-20",
+      "obs": ""
+    },
+    "emw3i3ubi2wk9": {
+      "id": "emw3i3ubi2wk9",
+      "pat": "0019",
+      "desc": "EDDYFI M2M GEKKO  64:64",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "GEKKO-486",
+      "needsCal": true,
+      "calDate": "2025-10-29",
+      "calDue": "2026-10-29",
+      "obs": ""
+    },
+    "emw3i5bridass": {
+      "id": "emw3i5bridass",
+      "pat": "0169",
+      "desc": "OLYMPUS OMNISCAN MX2 32:128 PR",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI2-104109",
+      "needsCal": true,
+      "calDate": "2025-10-09",
+      "calDue": "2026-10-09",
+      "obs": ""
+    },
+    "emw3j5t7r22j4": {
+      "id": "emw3j5t7r22j4",
+      "pat": "0020",
+      "desc": "EDDYFI ECTANE 3 - I IRIS",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "2417304",
+      "needsCal": true,
+      "calDate": "2026-05-29",
+      "calDue": "2027-05-29",
+      "obs": "",
+      "hist": [
+        "2026-05-29"
+      ]
+    },
+    "emw3jej33y3yl": {
+      "id": "emw3jej33y3yl",
+      "pat": "0021",
+      "desc": "EDDYFI ECTANE 3 - I IRIS",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "2304510",
+      "needsCal": true,
+      "calDate": "2026-02-26",
+      "calDue": "2027-02-26",
+      "obs": ""
+    },
+    "emw3jo3fr2or5": {
+      "id": "emw3jo3fr2or5",
+      "pat": "0142",
+      "desc": "GE DM5E",
+      "tipo": "Aparelho",
+      "hasSerie": false,
+      "serie": "",
+      "needsCal": true,
+      "calDate": "2026-05-29",
+      "calDue": "2027-05-29",
+      "obs": ""
+    },
+    "emw3jpm3j3oa4": {
+      "id": "emw3jpm3j3oa4",
+      "pat": "0013",
+      "desc": "SIUI CTS-9006",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "540331110030",
+      "needsCal": true,
+      "calDate": "2026-05-29",
+      "calDue": "2027-05-29",
+      "obs": ""
+    },
+    "emw3ttoxg8vjz": {
+      "id": "emw3ttoxg8vjz",
+      "pat": "0008",
+      "desc": "OLYMPUS OMNISCAN MX1 16:128",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI-1984",
+      "needsCal": true,
+      "calDate": "2026-01-07",
+      "calDue": "2027-01-07",
+      "obs": ""
+    },
+    "emw3tuxa4vz5u": {
+      "id": "emw3tuxa4vz5u",
+      "pat": "0152",
+      "desc": "OLYMPUS OMNISCAN MX1 16:128",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI1-101479",
+      "needsCal": true,
+      "calDate": "2026-07-20",
+      "calDue": "2027-07-20",
+      "obs": ""
+    },
+    "emw3tvpu3qgdf": {
+      "id": "emw3tvpu3qgdf",
+      "pat": "0005",
+      "desc": "OLYMPUS OMNISCAN MX2  32:128",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI2-104470",
+      "needsCal": true,
+      "calDate": "2026-07-23",
+      "calDue": "2027-07-23",
+      "obs": ""
+    },
+    "emw3tx5gzy7t0": {
+      "id": "emw3tx5gzy7t0",
+      "pat": "0006",
+      "desc": "OLYMPUS OMNISCAN MX2  32:128",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI2-102198",
+      "needsCal": true,
+      "calDate": "2025-12-19",
+      "calDue": "2026-12-19",
+      "obs": ""
+    },
+    "emw3tya5f6cmd": {
+      "id": "emw3tya5f6cmd",
+      "pat": "0007",
+      "desc": "OLYMPUS OMNISCAN MX2 32:128",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI2-100153",
+      "needsCal": true,
+      "calDate": "2026-09-23",
+      "calDue": "2027-09-23",
+      "obs": ""
+    },
+    "emw3tz3l2nu7k": {
+      "id": "emw3tz3l2nu7k",
+      "pat": "0009",
+      "desc": "OLYMPUS OMNISCAN MX2 32:128 PR",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI2-100459",
+      "needsCal": true,
+      "calDate": "2026-05-29",
+      "calDue": "2027-05-29",
+      "obs": ""
+    },
+    "emw3u04w4uluj": {
+      "id": "emw3u04w4uluj",
+      "pat": "0162",
+      "desc": "OLYMPUS OMNISCAN MX2 32:128 PR",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI2-103705",
+      "needsCal": true,
+      "calDate": "2026-05-18",
+      "calDue": "2027-05-18",
+      "obs": ""
+    },
+    "emw3u1e57t017": {
+      "id": "emw3u1e57t017",
+      "pat": "0165",
+      "desc": "OLYMPUS OMNISCAN MX2 32:128",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI2-104923",
+      "needsCal": true,
+      "calDate": "2026-05-27",
+      "calDue": "2027-05-27",
+      "obs": ""
+    },
+    "emw3u2pib0rqc": {
+      "id": "emw3u2pib0rqc",
+      "pat": "0166",
+      "desc": "OLYMPUS OMNISCAN MX2 32:128 PR",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "OMNI2-104348",
+      "needsCal": true,
+      "calDate": "2026-06-30",
+      "calDue": "2027-06-30",
+      "obs": ""
+    },
+    "emw3u4x23a6vn": {
+      "id": "emw3u4x23a6vn",
+      "pat": "0012",
+      "desc": "OLYMPUS OMNISCAN SX 16:64",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "QC-014540",
+      "needsCal": true,
+      "calDate": "2025-12-19",
+      "calDue": "2026-12-19",
+      "obs": ""
+    },
+    "emw3u6bh1sgjj": {
+      "id": "emw3u6bh1sgjj",
+      "pat": "0016",
+      "desc": "OLYMPUS OMNISCAN SX 16:64",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "QC-014779",
+      "needsCal": true,
+      "calDate": "2025-12-19",
+      "calDue": "2026-12-19",
+      "obs": ""
+    },
+    "emw3u766r4kp9": {
+      "id": "emw3u766r4kp9",
+      "pat": "0173",
+      "desc": "OLYMPUS OMNISCAN SX 16:64",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "QC-007385",
+      "needsCal": true,
+      "calDate": "2026-06-30",
+      "calDue": "2027-06-30",
+      "obs": ""
+    },
+    "emw3u8jvv4tjv": {
+      "id": "emw3u8jvv4tjv",
+      "pat": "0174",
+      "desc": "OLYMPUS OMNISCAN SX 16:64",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "QC-OO7765",
+      "needsCal": true,
+      "calDate": "2026-06-30",
+      "calDue": "2027-06-30",
+      "obs": ""
+    },
+    "emw3uasxh1xwc": {
+      "id": "emw3uasxh1xwc",
+      "pat": "0000",
+      "desc": "OLYMPUS TOMOSCAN FOCUS LT 32:128",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "FLT-2078",
+      "needsCal": true,
+      "calDate": "2026-05-29",
+      "calDue": "2027-05-29",
+      "obs": "DANILO"
+    },
+    "emw4yysnbwxnw": {
+      "id": "emw4yysnbwxnw",
+      "pat": "0307",
+      "desc": "Splits P1-MALE-0.3-2P1-SPLIT 128",
+      "tipo": "Splits",
+      "hasSerie": true,
+      "serie": "FBA431",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4yysnb93ey": {
+      "id": "emw4yysnb93ey",
+      "pat": "0306",
+      "desc": "Splits  OMNI-A2-SPLIT64",
+      "tipo": "Splits",
+      "hasSerie": true,
+      "serie": "QC-003407",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4yysnbrifr": {
+      "id": "emw4yysnbrifr",
+      "pat": "0308",
+      "desc": "Splits  E128P0-0202-OM",
+      "tipo": "Splits",
+      "hasSerie": true,
+      "serie": "935565-01",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4yysnbzcyh": {
+      "id": "emw4yysnbzcyh",
+      "pat": "0309",
+      "desc": "Splits  E128P0-0202-EZ",
+      "tipo": "Splits",
+      "hasSerie": true,
+      "serie": "949546-01",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4yysnbvl6q": {
+      "id": "emw4yysnbvl6q",
+      "pat": "0310",
+      "desc": "Splits  P2 SPLIT 128",
+      "tipo": "Splits",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5onoon": {
+      "id": "emw4zuc5onoon",
+      "pat": "001",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5owpjv": {
+      "id": "emw4zuc5owpjv",
+      "pat": "002",
+      "desc": "ENCODER LEMO 3MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5ocx21": {
+      "id": "emw4zuc5ocx21",
+      "pat": "003",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5o1p4d": {
+      "id": "emw4zuc5o1p4d",
+      "pat": "004",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5oriyt": {
+      "id": "emw4zuc5oriyt",
+      "pat": "005",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5oni8i": {
+      "id": "emw4zuc5oni8i",
+      "pat": "006",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5o9nvn": {
+      "id": "emw4zuc5o9nvn",
+      "pat": "007",
+      "desc": "ENCODER LEMO 3MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5oxi9c": {
+      "id": "emw4zuc5oxi9c",
+      "pat": "008",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5opst8": {
+      "id": "emw4zuc5opst8",
+      "pat": "009",
+      "desc": "ENCODER LEMO 3MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5o6h1k": {
+      "id": "emw4zuc5o6h1k",
+      "pat": "010",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5o3q86": {
+      "id": "emw4zuc5o3q86",
+      "pat": "011",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5ois0p": {
+      "id": "emw4zuc5ois0p",
+      "pat": "012",
+      "desc": "ENCODER LEMO 5MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5o41j0": {
+      "id": "emw4zuc5o41j0",
+      "pat": "013",
+      "desc": "ENCODER LEMO 3MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5oq3cv": {
+      "id": "emw4zuc5oq3cv",
+      "pat": "014",
+      "desc": "ENCODER DB15 3MT",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5oxiwj": {
+      "id": "emw4zuc5oxiwj",
+      "pat": "015",
+      "desc": "ENCODER LEMO 3MTS",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5ow645": {
+      "id": "emw4zuc5ow645",
+      "pat": "16",
+      "desc": "ENCODER DB15 50CM",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw4zuc5ojyay": {
+      "id": "emw4zuc5ojyay",
+      "pat": "017",
+      "desc": "ENCODER DB15 50CM",
+      "tipo": "Encoder",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomok5p": {
+      "id": "emw51znomok5p",
+      "pat": "0214",
+      "desc": "10L32-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "M0996",
+      "serie2": "XAAB-0183",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 3"
+    },
+    "emw51znomazio": {
+      "id": "emw51znomazio",
+      "pat": "0239",
+      "desc": "2.25DM7X4-2.71X3.0-F66-U-50-5.0-P1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "1KA0322NIE055",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomendc": {
+      "id": "emw51znomendc",
+      "pat": "0222",
+      "desc": "2.25DM7X4-2.8X3-A17",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "BJAB08",
+      "serie2": "10038",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znom45es": {
+      "id": "emw51znom45es",
+      "pat": "0229",
+      "desc": "2.25L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "K3698",
+      "serie2": "XAAB-10189",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomt45g": {
+      "id": "emw51znomt45g",
+      "pat": "0236",
+      "desc": "2.25L16-A4",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "N4493",
+      "serie2": "XAAB-0028",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomirlj": {
+      "id": "emw51znomirlj",
+      "pat": "0208",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "FGC965",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 19"
+    },
+    "emw51znom2m5d": {
+      "id": "emw51znom2m5d",
+      "pat": "0230",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "FIB376",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 5- 16 - 63"
+    },
+    "emw51znomtdhb": {
+      "id": "emw51znomtdhb",
+      "pat": "0207",
+      "desc": "2.25L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "J3809",
+      "serie2": "XAAB-0005",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomq183": {
+      "id": "emw51znomq183",
+      "pat": "0218",
+      "desc": "3.5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "LEC397",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znom936u": {
+      "id": "emw51znom936u",
+      "pat": "0234",
+      "desc": "32L10-G1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "1014",
+      "serie2": "13054",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomuqg2": {
+      "id": "emw51znomuqg2",
+      "pat": "0237",
+      "desc": "4L16 8X9-DGS",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "H2663",
+      "serie2": "XAIW-0013",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomcmg0": {
+      "id": "emw51znomcmg0",
+      "pat": "0221",
+      "desc": "5DL16 12X5-A26",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "U4844",
+      "serie2": "XAAB-11140",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO BRACELETE - P 0300"
+    },
+    "emw51znom5fsw": {
+      "id": "emw51znom5fsw",
+      "pat": "0216",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "U4273",
+      "serie2": "XAAB-0184",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znom692b": {
+      "id": "emw51znom692b",
+      "pat": "0145",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "W0234",
+      "serie2": "XAAB-0184",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomw9kk": {
+      "id": "emw51znomw9kk",
+      "pat": "0228",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "R1164",
+      "serie2": "XAAB-10007",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomf1pg": {
+      "id": "emw51znomf1pg",
+      "pat": "0211",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "",
+      "serie2": "XAAB-0207",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znom6f7m": {
+      "id": "emw51znom6f7m",
+      "pat": "0224",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "N0878",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomewb1": {
+      "id": "emw51znomewb1",
+      "pat": "0235",
+      "desc": "5L32-A32",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "P3647",
+      "serie2": "XAAB-10952",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomrblm": {
+      "id": "emw51znomrblm",
+      "pat": "0151",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "K1304",
+      "serie2": "XAAB-0184",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 7"
+    },
+    "emw51znomfkiw": {
+      "id": "emw51znomfkiw",
+      "pat": "0225",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "N3048",
+      "serie2": "XAAB-0311",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomyxax": {
+      "id": "emw51znomyxax",
+      "pat": "0223",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "N2346",
+      "serie2": "XAAB-0311",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znom49lj": {
+      "id": "emw51znom49lj",
+      "pat": "0210",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "N0766",
+      "serie2": "XAAB-0213",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znommg3n": {
+      "id": "emw51znommg3n",
+      "pat": "0209",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "J0938",
+      "serie2": "XAAB-0311",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znom0gh9": {
+      "id": "emw51znom0gh9",
+      "pat": "0149",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "E14535",
+      "serie2": "XAAB-0004",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znom95wb": {
+      "id": "emw51znom95wb",
+      "pat": "0156",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "D0408",
+      "serie2": "XAAB-0004",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znommav0": {
+      "id": "emw51znommav0",
+      "pat": "0202",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "M1149",
+      "serie2": "XAAB-0040",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 1- 2 - 3 - 4 - 5"
+    },
+    "emw51znomjx12": {
+      "id": "emw51znomjx12",
+      "pat": "0206",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "M1177",
+      "serie2": "XAAB-0040",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomcpw6": {
+      "id": "emw51znomcpw6",
+      "pat": "0150",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "D0067",
+      "serie2": "XAAB-0004",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 12-17-19-34-46-52"
+    },
+    "emw51znomw7mj": {
+      "id": "emw51znomw7mj",
+      "pat": "0233",
+      "desc": "5L64-G3",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "N1010",
+      "serie2": "2059",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomdwv2": {
+      "id": "emw51znomdwv2",
+      "pat": "0219",
+      "desc": "5S16-0.5X10-D10 BRACELETE COBRA",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 10"
+    },
+    "emw51znomn6a9": {
+      "id": "emw51znomn6a9",
+      "pat": "0232",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "MHD948",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znom5vg5": {
+      "id": "emw51znom5vg5",
+      "pat": "0231",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "1KS1272MHD947",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw51znomlc47": {
+      "id": "emw51znomlc47",
+      "pat": "0213",
+      "desc": "7.5L60 PWZ1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "K2592",
+      "serie2": "XAAB-10207",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO SCANNER - P 0305"
+    },
+    "emw51znom5f18": {
+      "id": "emw51znom5f18",
+      "pat": "-",
+      "desc": "7.5S64-1.0X7-S27(SIDE)-U-110-10-P1-F.A",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "1KS1263MGE144",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB ANEXADO AO SCANNER - P.0311"
+    },
+    "emw523e2di2mg": {
+      "id": "emw523e2di2mg",
+      "pat": "*",
+      "desc": "MGE 7.5S64-1.0X7-S27(SIDE)-U-110-5.0-P1-F.A",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "1KS1458NID595",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "",
+      "tensao": ""
+    },
+    "emw52do5gqidj": {
+      "id": "emw52do5gqidj",
+      "pat": "0022",
+      "desc": "EDDYFI ECTANE 3 - I  IRIS",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5gmh48": {
+      "id": "emw52do5gmh48",
+      "pat": "0023",
+      "desc": "EDDYFI ECTANE 3 - I  IRIS",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5gc0az": {
+      "id": "emw52do5gc0az",
+      "pat": "0024",
+      "desc": "EDDYFI ECTANE 3 - I  IRIS",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5gzfoz": {
+      "id": "emw52do5gzfoz",
+      "pat": "0025",
+      "desc": "EDDYFI ECTANE 3 - I  IRIS",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5gaxtz": {
+      "id": "emw52do5gaxtz",
+      "pat": "0058",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5gjpwg": {
+      "id": "emw52do5gjpwg",
+      "pat": "0059",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5grpmj": {
+      "id": "emw52do5grpmj",
+      "pat": "0060",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5ho6x3": {
+      "id": "emw52do5ho6x3",
+      "pat": "0062",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hxl8a": {
+      "id": "emw52do5hxl8a",
+      "pat": "0064",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hs1s4": {
+      "id": "emw52do5hs1s4",
+      "pat": "0065",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h2puy": {
+      "id": "emw52do5h2puy",
+      "pat": "0066",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h9ywn": {
+      "id": "emw52do5h9ywn",
+      "pat": "0068",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hgqro": {
+      "id": "emw52do5hgqro",
+      "pat": "0069",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hkhyg": {
+      "id": "emw52do5hkhyg",
+      "pat": "0070",
+      "desc": "GEKKO",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h10lh": {
+      "id": "emw52do5h10lh",
+      "pat": "0072",
+      "desc": "OMNISCAN MX1",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hcfu3": {
+      "id": "emw52do5hcfu3",
+      "pat": "0073",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hujs5": {
+      "id": "emw52do5hujs5",
+      "pat": "0074",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h85ng": {
+      "id": "emw52do5h85ng",
+      "pat": "0075",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h8cud": {
+      "id": "emw52do5h8cud",
+      "pat": "0076",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h5uq3": {
+      "id": "emw52do5h5uq3",
+      "pat": "0077",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hgcyz": {
+      "id": "emw52do5hgcyz",
+      "pat": "0078",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hendb": {
+      "id": "emw52do5hendb",
+      "pat": "0079",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h6qy8": {
+      "id": "emw52do5h6qy8",
+      "pat": "0081",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5haplv": {
+      "id": "emw52do5haplv",
+      "pat": "0082",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h5miy": {
+      "id": "emw52do5h5miy",
+      "pat": "0083",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hz4xa": {
+      "id": "emw52do5hz4xa",
+      "pat": "0084",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hayj5": {
+      "id": "emw52do5hayj5",
+      "pat": "0085",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5h8mqh": {
+      "id": "emw52do5h8mqh",
+      "pat": "0086",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hcumd": {
+      "id": "emw52do5hcumd",
+      "pat": "0088",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hncbx": {
+      "id": "emw52do5hncbx",
+      "pat": "0089",
+      "desc": "OMNISCAN MX1",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hvhrf": {
+      "id": "emw52do5hvhrf",
+      "pat": "0095",
+      "desc": "OMNISCAN SX",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5ht4f5": {
+      "id": "emw52do5ht4f5",
+      "pat": "0147",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hvhpv": {
+      "id": "emw52do5hvhpv",
+      "pat": "0148",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hqoj9": {
+      "id": "emw52do5hqoj9",
+      "pat": "0154",
+      "desc": "OMNISCAN SX",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hj6cs": {
+      "id": "emw52do5hj6cs",
+      "pat": "0167",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw52do5hfqqz": {
+      "id": "emw52do5hfqqz",
+      "pat": "0170",
+      "desc": "OMNISCAN",
+      "tipo": "Bateria",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pddzv": {
+      "id": "emw53qb8pddzv",
+      "pat": "0035",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pqkas": {
+      "id": "emw53qb8pqkas",
+      "pat": "0036",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pqdp8": {
+      "id": "emw53qb8pqdp8",
+      "pat": "0172",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pqd2j": {
+      "id": "emw53qb8pqd2j",
+      "pat": "0028",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p9y78": {
+      "id": "emw53qb8p9y78",
+      "pat": "0129",
+      "desc": "FONTE - CARREGADOR NOTEBOOK COMPAQ",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "45V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8ptx6x": {
+      "id": "emw53qb8ptx6x",
+      "pat": "0131",
+      "desc": "FONTE - CARREGADOR NOTEBOOK COMPAQ",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "45V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pu3f7": {
+      "id": "emw53qb8pu3f7",
+      "pat": "0133",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "19.5V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pyxl1": {
+      "id": "emw53qb8pyxl1",
+      "pat": "0135",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "19.5V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p0lvl": {
+      "id": "emw53qb8p0lvl",
+      "pat": "0137",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "19.5V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p2ucs": {
+      "id": "emw53qb8p2ucs",
+      "pat": "0138",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "19.5V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pv4w0": {
+      "id": "emw53qb8pv4w0",
+      "pat": "0144",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "19.5V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pgkwt": {
+      "id": "emw53qb8pgkwt",
+      "pat": "0132",
+      "desc": "FONTE - CARREGADOR NOTEBOOK HP",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "45V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p11oh": {
+      "id": "emw53qb8p11oh",
+      "pat": "0026",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "65V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8ppctf": {
+      "id": "emw53qb8ppctf",
+      "pat": "0099",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "65V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pr48u": {
+      "id": "emw53qb8pr48u",
+      "pat": "0100",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "65V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pibej": {
+      "id": "emw53qb8pibej",
+      "pat": "0123",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "65V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pelr9": {
+      "id": "emw53qb8pelr9",
+      "pat": "0124",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "65V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pdkdp": {
+      "id": "emw53qb8pdkdp",
+      "pat": "0139",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "65V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pq4b4": {
+      "id": "emw53qb8pq4b4",
+      "pat": "0140",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "65V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p29j9": {
+      "id": "emw53qb8p29j9",
+      "pat": "0141",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "65V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p9vdv": {
+      "id": "emw53qb8p9vdv",
+      "pat": "0126",
+      "desc": "FONTE - CARREGADOR NOTEBOOK POSITIVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "45V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pvj22": {
+      "id": "emw53qb8pvj22",
+      "pat": "0127",
+      "desc": "FONTE - CARREGADOR NOTEBOOK POSITIVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "45V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pu40q": {
+      "id": "emw53qb8pu40q",
+      "pat": "0128",
+      "desc": "FONTE - CARREGADOR NOTEBOOK POSITIVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "45V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p0qjv": {
+      "id": "emw53qb8p0qjv",
+      "pat": "0136",
+      "desc": "FONTE - CARREGADOR NOTEBOOK POSITIVO",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "45V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pclin": {
+      "id": "emw53qb8pclin",
+      "pat": "0029",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p02ev": {
+      "id": "emw53qb8p02ev",
+      "pat": "0038",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p937k": {
+      "id": "emw53qb8p937k",
+      "pat": "0039",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p5rb9": {
+      "id": "emw53qb8p5rb9",
+      "pat": "0040",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pzjbk": {
+      "id": "emw53qb8pzjbk",
+      "pat": "0041",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p8a6k": {
+      "id": "emw53qb8p8a6k",
+      "pat": "0044",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8ps2wy": {
+      "id": "emw53qb8ps2wy",
+      "pat": "0046",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pf455": {
+      "id": "emw53qb8pf455",
+      "pat": "0168",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pohw6": {
+      "id": "emw53qb8pohw6",
+      "pat": "0037",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pqdng": {
+      "id": "emw53qb8pqdng",
+      "pat": "0042",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p3dow": {
+      "id": "emw53qb8p3dow",
+      "pat": "0158",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18v",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pstig": {
+      "id": "emw53qb8pstig",
+      "pat": "0163",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18v",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p3x6s": {
+      "id": "emw53qb8p3x6s",
+      "pat": "0175",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18v",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p78f8": {
+      "id": "emw53qb8p78f8",
+      "pat": "0171",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18v",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p3fkp": {
+      "id": "emw53qb8p3fkp",
+      "pat": "0048",
+      "desc": "FONTE CARREGADOR BATERIA",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "18V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8pp3ch": {
+      "id": "emw53qb8pp3ch",
+      "pat": "0097",
+      "desc": "FONTE CARREGADOR EDDYFI ECTANE 3 - I",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "15V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw53qb8p4c1q": {
+      "id": "emw53qb8p4c1q",
+      "pat": "0098",
+      "desc": "FONTE CARREGADOR EDDYFI ECTANE 3 - I",
+      "tipo": "Fonte",
+      "hasSerie": true,
+      "serie": "15V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pww79w5": {
+      "id": "emw546pww79w5",
+      "pat": "0051",
+      "desc": "CARREGADOR DE BATERIA EXTERNO DUPLO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pww6wlf": {
+      "id": "emw546pww6wlf",
+      "pat": "0056",
+      "desc": "CARREGADOR DE BATERIA EXTERNO ÚNICO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "15V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pwwvsnf": {
+      "id": "emw546pwwvsnf",
+      "pat": "0055",
+      "desc": "CARREGADOR DE BATERIA EXTERNO ÚNICO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "15V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pwwmnze": {
+      "id": "emw546pwwmnze",
+      "pat": "0053",
+      "desc": "CARREGADOR DE BATERIA EXTERNO DUPLO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pwwzzqc": {
+      "id": "emw546pwwzzqc",
+      "pat": "0054",
+      "desc": "CARREGADOR DE BATERIA EXTERNO DUPLO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pwwa45i": {
+      "id": "emw546pwwa45i",
+      "pat": "0027",
+      "desc": "CARREGADOR DE BATERIA EXTERNO ÚNICO GEKKO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pwwfm4n": {
+      "id": "emw546pwwfm4n",
+      "pat": "0030",
+      "desc": "CARREGADOR DE BATERIA EXTERNO ÚNICO GEKKO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pww6a8v": {
+      "id": "emw546pww6a8v",
+      "pat": "0049",
+      "desc": "CARREGADOR EDDYFI GEKKO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "15V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pwwo6mf": {
+      "id": "emw546pwwo6mf",
+      "pat": "0050",
+      "desc": "CARREGADOR EDDYFI GEKKO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "15V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw546pwwzxop": {
+      "id": "emw546pwwzxop",
+      "pat": "0057",
+      "desc": "CARREGADOR DE BATERIA EXTERNO DUPLO",
+      "tipo": "Carregador",
+      "hasSerie": true,
+      "serie": "24V",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw587u8q01sp": {
+      "id": "emw587u8q01sp",
+      "pat": "0157",
+      "desc": "ENDVALE  MOUSE",
+      "tipo": "Scanner",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "",
+      "tensao": ""
+    },
+    "emw587u8q5eg4": {
+      "id": "emw587u8q5eg4",
+      "pat": "0300",
+      "desc": "JIREH CIRC-IT",
+      "tipo": "Scanner",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "",
+      "tensao": ""
+    },
+    "emw587u8qto04": {
+      "id": "emw587u8qto04",
+      "pat": "0311",
+      "desc": "MGE FS04 SCANNER",
+      "tipo": "Scanner",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "",
+      "tensao": ""
+    },
+    "emw587u8qao1j": {
+      "id": "emw587u8qao1j",
+      "pat": "0312",
+      "desc": "MGE FS04 SCANNER",
+      "tipo": "Scanner",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "",
+      "tensao": ""
+    },
+    "emw587u8qqf6r": {
+      "id": "emw587u8qqf6r",
+      "pat": "0305",
+      "desc": "NEW END ROBO SCANNER ULTRASSOM",
+      "tipo": "Scanner",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "",
+      "tensao": ""
+    },
+    "emw58cb9l8n3q": {
+      "id": "emw58cb9l8n3q",
+      "pat": "0176",
+      "desc": "JIREH CIRC-IT",
+      "tipo": "Scanner",
+      "tensao": "",
+      "configuracao": "",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "hasSerie": true,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw58kqjls15j": {
+      "id": "emw58kqjls15j",
+      "pat": "0302",
+      "desc": "ENDVALE  MOUSE",
+      "tipo": "Scanner",
+      "tensao": "",
+      "configuracao": "",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    },
+    "emw58m28g1sg6": {
+      "id": "emw58m28g1sg6",
+      "pat": "0159",
+      "desc": "NEW END SCANNER MANUAL KIT COMPLETO",
+      "tipo": "Scanner",
+      "tensao": "",
+      "configuracao": "",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  "os": {},
+  "cli": {
+    "cmw4wtz9bnwnb": {
+      "id": "cmw4wtz9bnwnb",
+      "nome": "ASVOTEC TERMOINDUSTRIAL LTDA",
+      "cnpj": "56.995.681/0002-00",
+      "resp": "FLAVIO DOMENICO",
+      "contato": "(19) 97123-7820",
+      "local": "MONTE MOR-SP"
+    },
+    "cmw4x0id23jkw": {
+      "id": "cmw4x0id23jkw",
+      "nome": "NG METALURGICA S A",
+      "cnpj": "01.939.979/0003-92",
+      "resp": "FABIANO FERNANDES",
+      "contato": "(11) 94994-2711",
+      "local": "PIRACICABA-SP"
+    },
+    "cmw4x83lqldyg": {
+      "id": "cmw4x83lqldyg",
+      "nome": "HCI HIDRÁULICA CONEXÕES INDUSTRIAIS LTDA",
+      "cnpj": "62.312.426/0007-23",
+      "resp": "GLAUBER ALVES",
+      "contato": "(11) 2432-8024",
+      "local": "GUARULHOS-SP"
+    },
+    "cmw4xc6jrz4kz": {
+      "id": "cmw4xc6jrz4kz",
+      "nome": "OTTANI INDÚSTRIA E COMÉRCIO LTDA",
+      "cnpj": "00.988.704/0001-14",
+      "resp": "OSÉIAS MARTINS",
+      "contato": "(19) 98171-4787",
+      "local": "PIRACICABA-SP"
+    },
+    "cmw4xf80uirp5": {
+      "id": "cmw4xf80uirp5",
+      "nome": "ACTEMIUM (SISNERGY)",
+      "cnpj": "21.471.093/0014-27",
+      "resp": "",
+      "contato": "",
+      "local": "CUBATÃO-SP"
+    },
+    "cmw4xgah2irit": {
+      "id": "cmw4xgah2irit",
+      "nome": "ALLPHA DJ LTDA",
+      "cnpj": "39.894.941/0001-51",
+      "resp": "",
+      "contato": "",
+      "local": "RIBEIRÃO PRETO - SP"
+    },
+    "cmw4xh6jqrlaa": {
+      "id": "cmw4xh6jqrlaa",
+      "nome": "ALVARO AGUIAR ENGENHARIA",
+      "cnpj": "55.351.068/0001-07",
+      "resp": "",
+      "contato": "",
+      "local": "AMERICANA-SP"
+    },
+    "cmw4xhxamknsm": {
+      "id": "cmw4xhxamknsm",
+      "nome": "AVANTIS BRASIL LTDA",
+      "cnpj": "41.810.233/0001-37",
+      "resp": "",
+      "contato": "",
+      "local": "MACAÉ-RJ"
+    },
+    "cmw4xiwue1zq0": {
+      "id": "cmw4xiwue1zq0",
+      "nome": "BAKER HUGHES",
+      "cnpj": "05.635.291/0002-99",
+      "resp": "",
+      "contato": "",
+      "local": "MACAÉ-RJ"
+    },
+    "cmw4xk6d9qdjz": {
+      "id": "cmw4xk6d9qdjz",
+      "nome": "C3 ENGENHARIA (LV CASTRO)",
+      "cnpj": "07.959.171/0003-53",
+      "resp": "",
+      "contato": "",
+      "local": "CUBATÃO-SP"
+    },
+    "cmw4xky0d8187": {
+      "id": "cmw4xky0d8187",
+      "nome": "CBL - COMPANHIA BRASILEIRA DE LOGISTICA S/A",
+      "cnpj": "03.649.445/0004-38",
+      "resp": "",
+      "contato": "",
+      "local": "PARANAGUÁ-PR"
+    },
+    "cmw4xlpslmmwx": {
+      "id": "cmw4xlpslmmwx",
+      "nome": "COMBIO ENERGIA S.A.",
+      "cnpj": "10.376.555/0009-43",
+      "resp": "",
+      "contato": "",
+      "local": "ALUMINIO-SP"
+    },
+    "cmw4xnhwt1i1s": {
+      "id": "cmw4xnhwt1i1s",
+      "nome": "EMALTO INDUSTRIA MECANICA LTDA",
+      "cnpj": "21.025.986/0001-24",
+      "resp": "",
+      "contato": "",
+      "local": "TIMÓTEO-MG"
+    },
+    "cmw4xocmtcxpq": {
+      "id": "cmw4xocmtcxpq",
+      "nome": "ESTRUTURAL SERVIÇOS INDUSTRIAIS LTDA",
+      "cnpj": "94.480.480/0006-93",
+      "resp": "",
+      "contato": "",
+      "local": "PAULINIA-SP"
+    },
+    "cmw4xt7ulkov5": {
+      "id": "cmw4xt7ulkov5",
+      "nome": "HERGEN S A MAQUINAS E EQUIPAMENTOS",
+      "cnpj": "83.141.507/0002-73",
+      "resp": "",
+      "contato": "",
+      "local": "RIO DO SUL - SC"
+    },
+    "cmw4xuc11dnzs": {
+      "id": "cmw4xuc11dnzs",
+      "nome": "ISQ BRASIL",
+      "cnpj": "03.203.941/0001-10",
+      "resp": "",
+      "contato": "",
+      "local": "BELO HORIZONTE-MG"
+    },
+    "cmw4xv3kle31e": {
+      "id": "cmw4xv3kle31e",
+      "nome": "MOSAIC FERTILIZANTES",
+      "cnpj": "33.931.486/0014-55",
+      "resp": "",
+      "contato": "",
+      "local": "UBERABA-MG"
+    },
+    "cmw4xxt4lupev": {
+      "id": "cmw4xxt4lupev",
+      "nome": "PROGETTO",
+      "cnpj": "17.847.240/0001-29",
+      "resp": "",
+      "contato": "",
+      "local": "RIBEIRAO BRANCO - SP"
+    },
+    "cmw4xyoy5qv4w": {
+      "id": "cmw4xyoy5qv4w",
+      "nome": "SKE ENGENHARIA",
+      "cnpj": "33.765.881/0001-90",
+      "resp": "",
+      "contato": "",
+      "local": "RIO DE JANEIRO - RJ"
+    },
+    "cmw4xzg4loq2c": {
+      "id": "cmw4xzg4loq2c",
+      "nome": "RHODIA DO BRASIL",
+      "cnpj": "57.507.626/0004-59",
+      "resp": "",
+      "contato": "",
+      "local": "PAULINIA-SP"
+    },
+    "cmw4y0atxds5x": {
+      "id": "cmw4y0atxds5x",
+      "nome": "TND INSPECOES",
+      "cnpj": "11.607.230/0001-30",
+      "resp": "",
+      "contato": "",
+      "local": "BELO HORIZONTE - MG"
+    }
+  },
+  "pes": {
+    "pmw3ilvjqcxr6": {
+      "id": "pmw3ilvjqcxr6",
+      "nome": "DIEGO SANTOS DE ARAÚJO"
+    },
+    "pmw3vnymv46xi": {
+      "id": "pmw3vnymv46xi",
+      "nome": "LARISSA TAINÁ TOSO"
+    },
+    "pmw4wl6nc6jru": {
+      "id": "pmw4wl6nc6jru",
+      "nome": "ANDRE WILKER DE SOUSA BRAGA"
+    },
+    "pmw4wldhc50nf": {
+      "id": "pmw4wldhc50nf",
+      "nome": "BRUNO EIRAS CAPELLINI"
+    },
+    "pmw4wlkcgo4pl": {
+      "id": "pmw4wlkcgo4pl",
+      "nome": "CARLOS ALBERTO DE MATOS"
+    },
+    "pmw4wlqxkvxh8": {
+      "id": "pmw4wlqxkvxh8",
+      "nome": "DANIEL DRUMOND SANTOS"
+    },
+    "pmw4wm5wog5ny": {
+      "id": "pmw4wm5wog5ny",
+      "nome": "LUIS FILIPE ORRUTIA LUZ DOS SANTOS"
+    },
+    "pmw4wmc7c7z9w": {
+      "id": "pmw4wmc7c7z9w",
+      "nome": "MAIKON MORTEAN MENDES"
+    },
+    "pmw4wmids5ees": {
+      "id": "pmw4wmids5ees",
+      "nome": "RENATO FONSECA DA SILVA"
+    },
+    "pmw4wmod36d3b": {
+      "id": "pmw4wmod36d3b",
+      "nome": "SANDRO RAK"
+    },
+    "pmw4wmuonlbu2": {
+      "id": "pmw4wmuonlbu2",
+      "nome": "SILAS OTAVIO DA SILVA"
+    },
+    "pmw4wn0wfwm0w": {
+      "id": "pmw4wn0wfwm0w",
+      "nome": "DANIEL LUIZ DA SILVA"
+    },
+    "pmw4wn7gf84ul": {
+      "id": "pmw4wn7gf84ul",
+      "nome": "DANILO LUCAS DA SILVA"
+    },
+    "pmw4wngbcn0kk": {
+      "id": "pmw4wngbcn0kk",
+      "nome": "DIEGO LUCAS DA SILVA"
+    }
+  },
+  "vei": {
+    "vmw3illimgogq": {
+      "id": "vmw3illimgogq",
+      "placa": "FMC-6H61",
+      "modelo": "VOLKSWAGEM SAVEIRO"
+    },
+    "vmw3j37x383jo": {
+      "id": "vmw3j37x383jo",
+      "placa": "GFD-9F33",
+      "modelo": "VOLKSWAGEM GOL"
+    },
+    "vmw3j3o1ygled": {
+      "id": "vmw3j3o1ygled",
+      "placa": "END-0A72",
+      "modelo": "VOLKSWAGEM POLO"
+    }
+  },
+  "tip": {
+    "tip_aparelho": {
+      "id": "tip_aparelho",
+      "nome": "Aparelho"
+    },
+    "tip_cabecote": {
+      "id": "tip_cabecote",
+      "nome": "Cabeçote"
+    },
+    "tip_scanner": {
+      "id": "tip_scanner",
+      "nome": "Scanner"
+    },
+    "tip_bateria": {
+      "id": "tip_bateria",
+      "nome": "Bateria"
+    },
+    "tip_carregador": {
+      "id": "tip_carregador",
+      "nome": "Carregador"
+    },
+    "tip_fonte": {
+      "id": "tip_fonte",
+      "nome": "Fonte"
+    },
+    "tip_encoder": {
+      "id": "tip_encoder",
+      "nome": "Encoder"
+    },
+    "tip_sapata": {
+      "id": "tip_sapata",
+      "nome": "Sapata"
+    },
+    "tmw4yyg6w46yl": {
+      "id": "tmw4yyg6w46yl",
+      "nome": "Splits"
+    },
+    "tmw570istar7a": {
+      "id": "tmw570istar7a",
+      "nome": "Notebook"
+    },
+    "tmw5a9g56rfhq": {
+      "id": "tmw5a9g56rfhq",
+      "nome": "Adaptador"
+    }
+  },
+  "blo": {
+    "bmwapycly9yo4": {
+      "id": "bmwapycly9yo4",
+      "tipo": "BLOCO PADRÃO V3",
+      "ident": "103-13",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "INOX 304",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyqk1u": {
+      "id": "bmwapyclyqk1u",
+      "tipo": "BLOCO PADRÃO V1",
+      "ident": "1276/16V",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapycly3iim": {
+      "id": "bmwapycly3iim",
+      "tipo": "BLOCO PADRÃO V1",
+      "ident": "1277/16V",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-06-06",
+      "calDue": "2034-06-06",
+      "hist": [
+        "2024-06-06"
+      ]
+    },
+    "bmwapyclyypij": {
+      "id": "bmwapyclyypij",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BLO-01",
+      "espessura": "38.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2025-07-17",
+      "calDue": "2035-07-17",
+      "hist": [
+        "2025-07-17"
+      ]
+    },
+    "bmwapyclyw4o1": {
+      "id": "bmwapyclyw4o1",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-005",
+      "espessura": "75.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2019-02-28",
+      "calDue": "2029-02-28",
+      "hist": [
+        "2019-02-28"
+      ]
+    },
+    "bmwapyclyfcw0": {
+      "id": "bmwapyclyfcw0",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-006",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyw7ju": {
+      "id": "bmwapyclyw7ju",
+      "tipo": "BLOCO PADRÃO V1",
+      "ident": "BNE-007",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "ASTM-A36",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwapyclyi019": {
+      "id": "bmwapyclyi019",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-008",
+      "espessura": "19.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-01-16",
+      "calDue": "2034-01-16",
+      "hist": [
+        "2024-01-16"
+      ]
+    },
+    "bmwapyclysvy1": {
+      "id": "bmwapyclysvy1",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-009",
+      "espessura": "12.7mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyc46k": {
+      "id": "bmwapyclyc46k",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-010",
+      "espessura": "38.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2020-09-01",
+      "calDue": "2030-09-01",
+      "hist": [
+        "2020-09-01"
+      ]
+    },
+    "bmwapyclyw8va": {
+      "id": "bmwapyclyw8va",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-011",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyq5il": {
+      "id": "bmwapyclyq5il",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-012",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-05-03",
+      "calDue": "2034-05-03",
+      "hist": [
+        "2024-05-03"
+      ]
+    },
+    "bmwapyclyuq50": {
+      "id": "bmwapyclyuq50",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-013",
+      "espessura": "38.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-05-03",
+      "calDue": "2034-05-03",
+      "hist": [
+        "2024-05-03"
+      ]
+    },
+    "bmwapyclydvwd": {
+      "id": "bmwapyclydvwd",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-014",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclywwcq": {
+      "id": "bmwapyclywwcq",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-015",
+      "espessura": "12.7mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclybumd": {
+      "id": "bmwapyclybumd",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-016",
+      "espessura": "12.7mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyjcww": {
+      "id": "bmwapyclyjcww",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-017",
+      "espessura": "19.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2023-01-12",
+      "calDue": "2033-01-12",
+      "hist": [
+        "2023-01-12"
+      ]
+    },
+    "bmwapyclyiua8": {
+      "id": "bmwapyclyiua8",
+      "tipo": "BLOCO PADRÃO V1",
+      "ident": "BNE-018",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-08-20",
+      "calDue": "2034-08-20",
+      "hist": [
+        "2024-08-20"
+      ]
+    },
+    "bmwapyclyi66q": {
+      "id": "bmwapyclyi66q",
+      "tipo": "BLOCO PADRÃO V1",
+      "ident": "BNE-019",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-08-20",
+      "calDue": "2034-08-20",
+      "hist": [
+        "2024-08-20"
+      ]
+    },
+    "bmwapyclyokl4": {
+      "id": "bmwapyclyokl4",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-020",
+      "espessura": "12.5mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapycly28vk": {
+      "id": "bmwapycly28vk",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-021",
+      "espessura": "12.5mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclye8oj": {
+      "id": "bmwapyclye8oj",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-022",
+      "espessura": "19.7mm",
+      "diam": "",
+      "material": "INOX",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyt0lp": {
+      "id": "bmwapyclyt0lp",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-023",
+      "espessura": "10.0mm",
+      "diam": "",
+      "material": "INOX",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyp2vv": {
+      "id": "bmwapyclyp2vv",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-024",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyk71l": {
+      "id": "bmwapyclyk71l",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-025",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyr75j": {
+      "id": "bmwapyclyr75j",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-026",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapycly5jqb": {
+      "id": "bmwapycly5jqb",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-027",
+      "espessura": "25.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyets5": {
+      "id": "bmwapyclyets5",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-028",
+      "espessura": "19.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapycly6hd2": {
+      "id": "bmwapycly6hd2",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-029",
+      "espessura": "12.7mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapycly633j": {
+      "id": "bmwapycly633j",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-030",
+      "espessura": "12.7mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclygway": {
+      "id": "bmwapyclygway",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-031",
+      "espessura": "50.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapyclyd537": {
+      "id": "bmwapyclyd537",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "BNE-032",
+      "espessura": "45.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwapycly2lgu": {
+      "id": "bmwapycly2lgu",
+      "tipo": "BLOCO PADRÃO DE REFERÊNCIA",
+      "ident": "C3488",
+      "espessura": "46.0mm",
+      "diam": "",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-02-21",
+      "calDue": "2034-02-21",
+      "hist": [
+        "2024-02-21"
+      ]
+    },
+    "bmwaqu3rckg4u": {
+      "id": "bmwaqu3rckg4u",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BC-008",
+      "espessura": "19.0mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2017-08-04",
+      "calDue": "2027-08-04",
+      "hist": [
+        "2017-08-04"
+      ]
+    },
+    "bmwaqu3rcbguh": {
+      "id": "bmwaqu3rcbguh",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-001 / BLC-005-3",
+      "espessura": "5.54mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rcbb0l": {
+      "id": "bmwaqu3rcbb0l",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-002",
+      "espessura": "5.49mm",
+      "diam": "3\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rcx67b": {
+      "id": "bmwaqu3rcx67b",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-003",
+      "espessura": "12.7mm",
+      "diam": "12\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rc6vzs": {
+      "id": "bmwaqu3rc6vzs",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-004",
+      "espessura": "18.3mm",
+      "diam": "12\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rcnfvc": {
+      "id": "bmwaqu3rcnfvc",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-005",
+      "espessura": "11.13mm",
+      "diam": "4\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rcbler": {
+      "id": "bmwaqu3rcbler",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-006",
+      "espessura": "10.97mm",
+      "diam": "6\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rcan0j": {
+      "id": "bmwaqu3rcan0j",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-007",
+      "espessura": "8.18mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rc66cv": {
+      "id": "bmwaqu3rc66cv",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-008",
+      "espessura": "10.31mm",
+      "diam": "12\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rduf2r": {
+      "id": "bmwaqu3rduf2r",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-009",
+      "espessura": "15.09mm",
+      "diam": "10\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2022-10-25",
+      "calDue": "2032-10-25",
+      "hist": [
+        "2022-10-25"
+      ]
+    },
+    "bmwaqu3rdtp10": {
+      "id": "bmwaqu3rdtp10",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-015",
+      "espessura": "7.2mm",
+      "diam": "1.1/2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2019-12-12",
+      "calDue": "2029-12-12",
+      "hist": [
+        "2019-12-12"
+      ]
+    },
+    "bmwaqu3rdyabn": {
+      "id": "bmwaqu3rdyabn",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-016",
+      "espessura": "24.0mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO / ICONEL",
+      "needsCal": true,
+      "calDate": "2019-12-12",
+      "calDue": "2029-12-12",
+      "hist": [
+        "2019-12-12"
+      ]
+    },
+    "bmwaqu3rdo0fi": {
+      "id": "bmwaqu3rdo0fi",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-017",
+      "espessura": "5.1mm",
+      "diam": "1.1/2\"",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "2020-01-27",
+      "calDue": "2030-01-27",
+      "hist": [
+        "2020-01-27"
+      ]
+    },
+    "bmwaqu3rdozep": {
+      "id": "bmwaqu3rdozep",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-018",
+      "espessura": "32.61mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2020-01-27",
+      "calDue": "2030-01-27",
+      "hist": [
+        "2020-01-27"
+      ]
+    },
+    "bmwaqu3rdwfq5": {
+      "id": "bmwaqu3rdwfq5",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-019",
+      "espessura": "50.0mm",
+      "diam": "20\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2020-01-28",
+      "calDue": "2030-01-28",
+      "hist": [
+        "2020-01-28"
+      ]
+    },
+    "bmwaqu3rdnw08": {
+      "id": "bmwaqu3rdnw08",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-020",
+      "espessura": "10.7mm",
+      "diam": "12\"",
+      "material": "INOX DUPLEX",
+      "needsCal": true,
+      "calDate": "2020-02-28",
+      "calDue": "2030-02-28",
+      "hist": [
+        "2020-02-28"
+      ]
+    },
+    "bmwaqu3rd6e4e": {
+      "id": "bmwaqu3rd6e4e",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-021",
+      "espessura": "6.3mm",
+      "diam": "12\"",
+      "material": "INOX DUPLEX",
+      "needsCal": true,
+      "calDate": "2020-02-28",
+      "calDue": "2030-02-28",
+      "hist": [
+        "2020-02-28"
+      ]
+    },
+    "bmwaqu3rd4b0l": {
+      "id": "bmwaqu3rd4b0l",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-022",
+      "espessura": "6.36mm",
+      "diam": "1\"",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "2020-03-20",
+      "calDue": "2030-03-20",
+      "hist": [
+        "2020-03-20"
+      ]
+    },
+    "bmwaqu3rdezn7": {
+      "id": "bmwaqu3rdezn7",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-023",
+      "espessura": "2.77mm",
+      "diam": "2\"",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "2021-03-20",
+      "calDue": "2031-03-20",
+      "hist": [
+        "2021-03-20"
+      ]
+    },
+    "bmwaqu3rd64ey": {
+      "id": "bmwaqu3rd64ey",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-024",
+      "espessura": "8.0mm",
+      "diam": "1\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2020-04-29",
+      "calDue": "2030-04-29",
+      "hist": [
+        "2020-04-29"
+      ]
+    },
+    "bmwaqu3rdhlop": {
+      "id": "bmwaqu3rdhlop",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-025",
+      "espessura": "12.0mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2020-04-29",
+      "calDue": "2030-04-29",
+      "hist": [
+        "2020-04-29"
+      ]
+    },
+    "bmwaqu3rd3p1x": {
+      "id": "bmwaqu3rd3p1x",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-026",
+      "espessura": "16.0mm",
+      "diam": "4\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2020-04-29",
+      "calDue": "2030-04-29",
+      "hist": [
+        "2020-04-29"
+      ]
+    },
+    "bmwaqu3rdruce": {
+      "id": "bmwaqu3rdruce",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-027",
+      "espessura": "10.2mm",
+      "diam": "1.1/2\"",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "2020-04-29",
+      "calDue": "2030-04-29",
+      "hist": [
+        "2020-04-29"
+      ]
+    },
+    "bmwaqu3rd0isb": {
+      "id": "bmwaqu3rd0isb",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-028",
+      "espessura": "15.2mm",
+      "diam": "3\"",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "2020-05-12",
+      "calDue": "2030-05-12",
+      "hist": [
+        "2020-05-12"
+      ]
+    },
+    "bmwaqu3rd74yj": {
+      "id": "bmwaqu3rd74yj",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-029",
+      "espessura": "6.6mm",
+      "diam": "1.1/2\"",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd9ock": {
+      "id": "bmwaqu3rd9ock",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-030",
+      "espessura": "6.36mm",
+      "diam": "1\"",
+      "material": "TUBO API5L",
+      "needsCal": true,
+      "calDate": "2020-10-18",
+      "calDue": "2030-10-18",
+      "hist": [
+        "2020-10-18"
+      ]
+    },
+    "bmwaqu3rdb2b6": {
+      "id": "bmwaqu3rdb2b6",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-031",
+      "espessura": "8.74mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2021-10-18",
+      "calDue": "2031-10-18",
+      "hist": [
+        "2021-10-18"
+      ]
+    },
+    "bmwaqu3rdm268": {
+      "id": "bmwaqu3rdm268",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-032",
+      "espessura": "15.24mm",
+      "diam": "3\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2020-10-18",
+      "calDue": "2030-10-18",
+      "hist": [
+        "2020-10-18"
+      ]
+    },
+    "bmwaqu3rd5ja4": {
+      "id": "bmwaqu3rd5ja4",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-033",
+      "espessura": "17.12mm",
+      "diam": "4\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2020-10-18",
+      "calDue": "2030-10-18",
+      "hist": [
+        "2020-10-18"
+      ]
+    },
+    "bmwaqu3rdccrh": {
+      "id": "bmwaqu3rdccrh",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-034",
+      "espessura": "2.77mm",
+      "diam": "2\"",
+      "material": "INOX DUPLEX",
+      "needsCal": true,
+      "calDate": "2021-06-26",
+      "calDue": "2031-06-26",
+      "hist": [
+        "2021-06-26"
+      ]
+    },
+    "bmwaqu3rd9dhh": {
+      "id": "bmwaqu3rd9dhh",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-035",
+      "espessura": "3.05mm",
+      "diam": "4\"",
+      "material": "INOX DUPLEX",
+      "needsCal": true,
+      "calDate": "2021-06-25",
+      "calDue": "2031-06-25",
+      "hist": [
+        "2021-06-25"
+      ]
+    },
+    "bmwaqu3rd1b2o": {
+      "id": "bmwaqu3rd1b2o",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-036",
+      "espessura": "2.50mm",
+      "diam": "2\"",
+      "material": "COBRE NIQUEL",
+      "needsCal": true,
+      "calDate": "2022-01-17",
+      "calDue": "2032-01-17",
+      "hist": [
+        "2022-01-17"
+      ]
+    },
+    "bmwaqu3rdj1vo": {
+      "id": "bmwaqu3rdj1vo",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-037",
+      "espessura": "3.00mm",
+      "diam": "4\"",
+      "material": "COBRE NIQUEL",
+      "needsCal": true,
+      "calDate": "2022-01-17",
+      "calDue": "2032-01-17",
+      "hist": [
+        "2022-01-17"
+      ]
+    },
+    "bmwaqu3rdxtty": {
+      "id": "bmwaqu3rdxtty",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-038",
+      "espessura": "4.00mm",
+      "diam": "8\"",
+      "material": "COBRE NIQUEL",
+      "needsCal": true,
+      "calDate": "2022-01-17",
+      "calDue": "2032-01-17",
+      "hist": [
+        "2022-01-17"
+      ]
+    },
+    "bmwaqu3rd8w6i": {
+      "id": "bmwaqu3rd8w6i",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-039",
+      "espessura": "7.14mm",
+      "diam": "1.1/2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2026-01-26",
+      "calDue": "2036-01-26",
+      "hist": [
+        "2026-01-26"
+      ]
+    },
+    "bmwaqu3rd7ihd": {
+      "id": "bmwaqu3rd7ihd",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-040",
+      "espessura": "4.78mm",
+      "diam": "1/2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2026-01-26",
+      "calDue": "2036-01-26",
+      "hist": [
+        "2026-01-26"
+      ]
+    },
+    "bmwaqu3rd94zl": {
+      "id": "bmwaqu3rd94zl",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-041",
+      "espessura": "6.5mm",
+      "diam": "4\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rddof5": {
+      "id": "bmwaqu3rddof5",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-042",
+      "espessura": "9.5mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdn47r": {
+      "id": "bmwaqu3rdn47r",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-043",
+      "espessura": "12.5mm",
+      "diam": "12\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdu4za": {
+      "id": "bmwaqu3rdu4za",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-044",
+      "espessura": "34.7mm",
+      "diam": "14\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd9teq": {
+      "id": "bmwaqu3rd9teq",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-065",
+      "espessura": "9.5mm",
+      "diam": "4\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd5a5y": {
+      "id": "bmwaqu3rd5a5y",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-002",
+      "espessura": "28.0mm",
+      "diam": "10\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd4akj": {
+      "id": "bmwaqu3rd4akj",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-004",
+      "espessura": "31.7mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdax2k": {
+      "id": "bmwaqu3rdax2k",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-005-3",
+      "espessura": "5.50mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2014-10-10",
+      "calDue": "2024-10-10",
+      "hist": [
+        "2014-10-10"
+      ]
+    },
+    "bmwaqu3rdjp9u": {
+      "id": "bmwaqu3rdjp9u",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-012",
+      "espessura": "8.5mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd61q9": {
+      "id": "bmwaqu3rd61q9",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-014",
+      "espessura": "10.0mm",
+      "diam": "12\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2025-01-14",
+      "calDue": "2036-01-14",
+      "hist": [
+        "2025-01-14"
+      ]
+    },
+    "bmwaqu3rd52mo": {
+      "id": "bmwaqu3rd52mo",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-018",
+      "espessura": "21.0mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd79uu": {
+      "id": "bmwaqu3rd79uu",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-019",
+      "espessura": "15.3mm",
+      "diam": "8\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2025-12-15",
+      "calDue": "2035-12-15",
+      "hist": [
+        "2025-12-15"
+      ]
+    },
+    "bmwaqu3rdnhkd": {
+      "id": "bmwaqu3rdnhkd",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-021",
+      "espessura": "7.5mm",
+      "diam": "3\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdiq0j": {
+      "id": "bmwaqu3rdiq0j",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-022",
+      "espessura": "17.5mm",
+      "diam": "4\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdtuke": {
+      "id": "bmwaqu3rdtuke",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-025",
+      "espessura": "5.50mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdj0ff": {
+      "id": "bmwaqu3rdj0ff",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-026",
+      "espessura": "10,50mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdrj8z": {
+      "id": "bmwaqu3rdrj8z",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-010",
+      "espessura": "3,91mm",
+      "diam": "2\"",
+      "material": "INOX",
+      "needsCal": true,
+      "calDate": "2026-06-01",
+      "calDue": "2036-06-01",
+      "hist": [
+        "2026-06-01"
+      ]
+    },
+    "bmwaqu3rdr3zr": {
+      "id": "bmwaqu3rdr3zr",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-011",
+      "espessura": "5,49mm",
+      "diam": "3\"",
+      "material": "INOX",
+      "needsCal": true,
+      "calDate": "2026-06-01",
+      "calDue": "2036-06-01",
+      "hist": [
+        "2026-06-01"
+      ]
+    },
+    "bmwaqu3rdborf": {
+      "id": "bmwaqu3rdborf",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-012",
+      "espessura": "7,11mm",
+      "diam": "6\"",
+      "material": "INOX",
+      "needsCal": true,
+      "calDate": "2026-06-01",
+      "calDue": "2036-06-01",
+      "hist": [
+        "2026-06-01"
+      ]
+    },
+    "bmwaqu3rdwlrv": {
+      "id": "bmwaqu3rdwlrv",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-013",
+      "espessura": "6.02mm",
+      "diam": "4\"",
+      "material": "INOX",
+      "needsCal": true,
+      "calDate": "2026-06-01",
+      "calDue": "2036-06-01",
+      "hist": [
+        "2026-06-01"
+      ]
+    },
+    "bmwaqu3rdryqi": {
+      "id": "bmwaqu3rdryqi",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-027",
+      "espessura": "7.5mm",
+      "diam": "3\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdkp6x": {
+      "id": "bmwaqu3rdkp6x",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-028",
+      "espessura": "15.0mm",
+      "diam": "3\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdw4do": {
+      "id": "bmwaqu3rdw4do",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-032",
+      "espessura": "18.3mm",
+      "diam": "6\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdr908": {
+      "id": "bmwaqu3rdr908",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-035",
+      "espessura": "5.50mm",
+      "diam": "1.1/2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdj1np": {
+      "id": "bmwaqu3rdj1np",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-037",
+      "espessura": "10.0mm",
+      "diam": "1.1/2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdpfqz": {
+      "id": "bmwaqu3rdpfqz",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-039",
+      "espessura": "5.00mm",
+      "diam": "1\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdu7b5": {
+      "id": "bmwaqu3rdu7b5",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-041",
+      "espessura": "9.0mm",
+      "diam": "1\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdnh6n": {
+      "id": "bmwaqu3rdnh6n",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BLC-066",
+      "espessura": "10.7mm",
+      "diam": "2\"",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd3avi": {
+      "id": "bmwaqu3rd3avi",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "D-01913",
+      "espessura": "5.54mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2023-02-15",
+      "calDue": "2033-02-15",
+      "hist": [
+        "2023-02-15"
+      ]
+    },
+    "bmwaqu3rdfqp2": {
+      "id": "bmwaqu3rdfqp2",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-009",
+      "espessura": "21.9mm",
+      "diam": "6\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdgfmg": {
+      "id": "bmwaqu3rdgfmg",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-12",
+      "espessura": "14.27mm",
+      "diam": "6\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdxi5j": {
+      "id": "bmwaqu3rdxi5j",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-18",
+      "espessura": "6.35mm",
+      "diam": "10\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2026-01-14",
+      "calDue": "2036-01-14",
+      "hist": [
+        "2026-01-14"
+      ]
+    },
+    "bmwaqu3rdurqs": {
+      "id": "bmwaqu3rdurqs",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-20",
+      "espessura": "9.27mm",
+      "diam": "10\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdsaac": {
+      "id": "bmwaqu3rdsaac",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-21",
+      "espessura": "31.75mm",
+      "diam": "14\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdibdy": {
+      "id": "bmwaqu3rdibdy",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-22",
+      "espessura": "6.35mm",
+      "diam": "14\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd1v5l": {
+      "id": "bmwaqu3rd1v5l",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-32",
+      "espessura": "25.4mm",
+      "diam": "10\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rdula8": {
+      "id": "bmwaqu3rdula8",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-AC-03.01",
+      "espessura": "6.4mm",
+      "diam": "1\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwaqu3rd8otb": {
+      "id": "bmwaqu3rd8otb",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-AC-03.2",
+      "espessura": "9.1mm",
+      "diam": "1\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2019-11-21",
+      "calDue": "2029-11-21",
+      "hist": [
+        "2019-11-21"
+      ]
+    },
+    "bmwaqu3rdn8e4": {
+      "id": "bmwaqu3rdn8e4",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-AC-05.1",
+      "espessura": "5.5mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2016-11-08",
+      "calDue": "2026-11-08",
+      "hist": [
+        "2016-11-08"
+      ]
+    },
+    "bmwaqu3rdoq02": {
+      "id": "bmwaqu3rdoq02",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "UT-AC-05.2",
+      "espessura": "8.5mm",
+      "diam": "2\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "",
+      "calDue": "",
+      "hist": []
+    },
+    "bmwar2yt4dxlq": {
+      "id": "bmwar2yt4dxlq",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-001",
+      "espessura": "1.65mm",
+      "diam": "19.0mm",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwar2yt5bf97": {
+      "id": "bmwar2yt5bf97",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-002",
+      "espessura": "2.25mm",
+      "diam": "19.0mm",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwar2yt5qjec": {
+      "id": "bmwar2yt5qjec",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-003",
+      "espessura": "1.65mm",
+      "diam": "19.0mm",
+      "material": "LATÃO",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwar2yt5hm9t": {
+      "id": "bmwar2yt5hm9t",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-004",
+      "espessura": "2.25mm",
+      "diam": "25.4mm",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwar2yt52kfm": {
+      "id": "bmwar2yt52kfm",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-005",
+      "espessura": "2.30mm",
+      "diam": "25.4mm",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwar2yt5an3d": {
+      "id": "bmwar2yt5an3d",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-006",
+      "espessura": "2.25mm",
+      "diam": "25.4mm",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwar2yt58e1e": {
+      "id": "bmwar2yt58e1e",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-007",
+      "espessura": "1.25mm",
+      "diam": "19.0mm",
+      "material": "COBRE",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwar2yt53iju": {
+      "id": "bmwar2yt53iju",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-008",
+      "espessura": "2.65mm",
+      "diam": "19.0mm",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwar2yt5bvw6": {
+      "id": "bmwar2yt5bvw6",
+      "tipo": "TUBO PADRÃO IRIS",
+      "ident": "BND-009",
+      "espessura": "5.20mm",
+      "diam": "64.0mm",
+      "material": "INOX AUSTENÍTICO",
+      "needsCal": true,
+      "calDate": "2024-09-09",
+      "calDue": "2034-09-09",
+      "hist": [
+        "2024-09-09"
+      ]
+    },
+    "bmwaszm8607g7": {
+      "id": "bmwaszm8607g7",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-046",
+      "espessura": "6,35mm",
+      "diam": "10\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2026-08-11",
+      "calDue": "2027-08-11",
+      "hist": [
+        "2026-08-11"
+      ]
+    },
+    "bmwat1x0na8uf": {
+      "id": "bmwat1x0na8uf",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-047",
+      "espessura": "6,35mm",
+      "diam": "10\"",
+      "material": "AÇO CARBONO",
+      "needsCal": true,
+      "calDate": "2026-08-11",
+      "calDue": "2027-08-11",
+      "hist": [
+        "2026-08-11"
+      ]
+    },
+    "bmwat3k26cw3c": {
+      "id": "bmwat3k26cw3c",
+      "tipo": "BC PADRÃO PHASED ARRAY",
+      "ident": "BCU-045",
+      "espessura": "17,47mm",
+      "diam": "12\"",
+      "material": "INOX",
+      "needsCal": true,
+      "calDate": "2026-07-17",
+      "calDue": "2027-07-17",
+      "hist": [
+        "2026-07-17"
+      ]
+    }
+  },
+  "loc": {}
+}

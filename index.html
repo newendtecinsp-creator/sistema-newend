@@ -1,0 +1,1323 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Controle de Patrimônio e OS</title>
+<style>
+:root{--bg:#eef0ec;--sf:#fff;--tx:#1a2225;--mu:#5b676b;--bd:#d3d8d3;--ac:#0b5c8a;--on:#fff;--ok:#1d7647;--okb:#dff1e6;--wn:#8a5300;--wnb:#fbebcb;--er:#b3261e;--erb:#f9dedb;--mub:#e4e8e4;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14191b;--sf:#1e2528;--tx:#e8ecea;--mu:#9aa6a9;--bd:#334044;--ac:#5bb4e6;--on:#0a1a24;--ok:#6fd49a;--okb:#1c3a2a;--wn:#f0b95a;--wnb:#3d2f12;--er:#ff8f86;--erb:#472220;--mub:#2a3336;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14191b;--sf:#1e2528;--tx:#e8ecea;--mu:#9aa6a9;--bd:#334044;--ac:#5bb4e6;--on:#0a1a24;--ok:#6fd49a;--okb:#1c3a2a;--wn:#f0b95a;--wnb:#3d2f12;--er:#ff8f86;--erb:#472220;--mub:#2a3336;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.45 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+#app{max-width:860px;margin:0 auto;padding:14px 14px 40px}
+h1{font-size:1.25rem;margin:4px 0 12px}
+h2{font-size:1.1rem;margin:0 0 10px}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--bd);margin-bottom:14px;overflow-x:auto}
+.tabs button{border:0;background:none;color:var(--mu);padding:10px 14px;font:inherit;font-weight:600;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;cursor:pointer}
+.tabs button.on{color:var(--ac);border-color:var(--ac)}
+button{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--sf);color:var(--tx);border-radius:8px;padding:9px 14px}
+button.pri{background:var(--ac);color:var(--on);border-color:var(--ac);font-weight:600}
+button.dg{color:var(--er);border-color:var(--er)}
+button.sm{padding:6px 10px;font-size:.9rem}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--ac);outline-offset:1px}
+input,select{font:inherit;width:100%;padding:9px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--sf);color:var(--tx)}
+label{display:block;font-size:.9rem;color:var(--mu);margin-bottom:10px}
+label input,label select{margin-top:3px;color:var(--tx)}
+label.chk{display:flex;gap:8px;align-items:center;color:var(--tx)}
+label.chk input{width:auto;margin:0}
+.bar{display:flex;gap:8px;margin-bottom:12px}
+.bar input{flex:1}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.stat{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:8px 12px;font-size:.9rem;color:var(--mu)}
+.stat b{display:block;font-size:1.3rem;color:var(--tx)}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:12px;margin-bottom:8px;cursor:pointer}
+.card .top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.card .pat{font-weight:700;font-size:1.05rem}
+.mu{color:var(--mu);font-size:.9rem}
+.chip{display:inline-block;border-radius:999px;padding:2px 9px;font-size:.8rem;font-weight:600;background:var(--mub);color:var(--mu);margin:2px 4px 2px 0}
+.chip.ok{background:var(--okb);color:var(--ok)}.chip.wn{background:var(--wnb);color:var(--wn)}.chip.er{background:var(--erb);color:var(--er)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.empty{padding:30px 10px;text-align:center;color:var(--mu)}
+.pick{max-height:240px;overflow:auto;border:1px solid var(--bd);border-radius:8px;padding:4px 8px;margin-bottom:6px}
+.pick label{display:flex;gap:8px;align-items:center;color:var(--tx);margin:0;padding:7px 0;border-bottom:1px solid var(--bd)}
+.pick label:last-child{border:0}
+.pick input{width:auto;margin:0}
+dialog{border:1px solid var(--bd);border-radius:10px;background:var(--sf);color:var(--tx);width:min(560px,94vw);max-height:90vh;padding:16px;overflow:auto}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+
+/* Nova OS: janela ampliada para facilitar o preenchimento */
+dialog:has(#o_no){
+  width:min(1080px,96vw);
+  max-width:1080px;
+  max-height:94vh;
+  padding:24px;
+  border-radius:14px;
+}
+dialog:has(#o_no) h2{font-size:1.35rem;margin:0 0 16px}
+dialog:has(#o_no) label{font-size:1rem;margin-bottom:14px}
+dialog:has(#o_no) label input,
+dialog:has(#o_no) label select{min-height:48px;padding:11px 12px;font-size:1rem}
+dialog:has(#o_no) h3{font-size:1.05rem;margin:14px 0 8px}
+dialog:has(#o_no) .bar input{min-height:48px}
+dialog:has(#o_no) .bar button,
+dialog:has(#o_no) .row button{min-height:44px}
+/* Locação usa a mesma largura da tela de OS */
+dialog:has(#l_cliente){
+  width:min(1080px,96vw);
+  max-width:1080px;
+  max-height:94vh;
+  padding:24px;
+  border-radius:14px;
+}
+dialog:has(#l_cliente) h2{font-size:1.35rem;margin:0 0 16px}
+dialog:has(#l_cliente) label{font-size:1rem;margin-bottom:12px}
+dialog:has(#l_cliente) label input,
+dialog:has(#l_cliente) label select{min-height:46px;padding:10px 12px}
+dialog:has(#l_cliente) .bar input{min-height:48px}
+@media(max-width:700px){
+  dialog:has(#o_no),dialog:has(#l_cliente){
+    width:96vw;
+    max-width:96vw;
+    max-height:94dvh;
+    padding:16px;
+  }
+}
+@media(max-width:520px){
+  dialog:has(#o_no),dialog:has(#l_cliente){
+    width:100vw;
+    max-width:100vw;
+    max-height:96dvh;
+    margin:auto 0 0;
+    border-radius:14px 14px 0 0;
+    padding:14px;
+  }
+}
+
+.msg{background:var(--wnb);color:var(--wn);border-radius:8px;padding:8px 12px;margin-bottom:12px;font-size:.9rem}
+.warn{color:var(--er);font-size:.9rem;margin:6px 0}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+@media (max-width:520px){.g2{grid-template-columns:1fr}}
+.rw{display:flex;gap:6px;margin-bottom:6px}.rw input{padding:7px;min-width:0}.rw .q{width:54px;flex:none}.rw .c{width:92px;flex:none}.rw button{flex:none}
+.tm{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}
+h3{font-size:.95rem;margin:10px 0 6px}
+#print{display:none}
+.pr{font:11px/1.3 Arial,Helvetica,sans-serif;color:#000;background:#fff;width:194mm;text-transform:uppercase}
+.pr table{width:100%;border-collapse:collapse;table-layout:fixed}
+.pr td,.pr th{border:1px solid #000;padding:3px 5px;vertical-align:middle;word-wrap:break-word}
+.pr .h{font-weight:700;font-style:italic;font-size:10px;margin:9px 0 2px}
+.pr .c{text-align:center}
+.pr .tn{text-transform:none}
+@media print{@page{size:A4;margin:8mm}body{background:#fff}#app,dialog{display:none!important}#print{display:block!important}}
+
+.brand{display:flex;align-items:center;gap:16px;padding:12px 14px;margin:0 0 16px;background:var(--sf);border:1px solid var(--bd);border-radius:12px;box-shadow:0 3px 14px rgba(0,0,0,.05)}
+.brand-logo{width:142px;max-height:70px;object-fit:contain}.brand-title{flex:1;min-width:0}.brand-title h1{margin:0;font-size:1.22rem}.brand-title .mu{margin-top:3px}.brand-side{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:9px}.brand-version{font-size:.82rem;font-weight:800;letter-spacing:.07em;color:var(--tx);white-space:nowrap}#adminbox{flex:none}#adminbox .chip{white-space:nowrap}
+@media(max-width:520px){.brand{gap:9px;padding:9px}.brand-logo{width:90px;max-height:55px}.brand-title h1{font-size:1rem}.brand-title .mu{font-size:.82rem}.brand-side{gap:6px}.brand-version{font-size:.72rem}#adminbox button{font-size:.78rem;padding:6px}}
+
+/* Identidade visual New END — azul institucional e verde da marca */
+:root{
+  --bg:#f3f5f1;
+  --sf:#ffffff;
+  --tx:#202735;
+  --mu:#606b73;
+  --bd:#d8dfd7;
+  --ac:#3c4271;
+  --on:#ffffff;
+  --ok:#5e8d34;
+  --okb:#eaf2e2;
+  --wn:#8a5a13;
+  --wnb:#fbf1dc;
+  --er:#b3261e;
+  --erb:#f9e7e5;
+  --mub:#e9ede8;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#151a20;--sf:#202832;--tx:#edf1f3;--mu:#aab5bd;--bd:#394550;
+    --ac:#9298d0;--on:#171b2d;--ok:#a4cf79;--okb:#293a27;
+    --wn:#f0c36c;--wnb:#40351f;--er:#ff938a;--erb:#482a2a;--mub:#303b42;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#151a20;--sf:#202832;--tx:#edf1f3;--mu:#aab5bd;--bd:#394550;
+  --ac:#9298d0;--on:#171b2d;--ok:#a4cf79;--okb:#293a27;
+  --wn:#f0c36c;--wnb:#40351f;--er:#ff938a;--erb:#482a2a;--mub:#303b42;
+  color-scheme:dark;
+}
+body{font-size:16.5px;line-height:1.5}
+#app{max-width:1200px;padding:22px 22px 48px}
+.brand{
+  gap:24px;padding:20px 26px;margin-bottom:22px;
+  border:1px solid #dce4d8;border-top:5px solid #5e8d34;
+  border-radius:16px;
+  background:linear-gradient(112deg,#ffffff 0%,#fbfcfa 68%,#f1f5ed 100%);
+  box-shadow:0 8px 26px rgba(38,54,43,.08);
+  min-height:132px;
+}
+.brand-logo{width:174px;max-height:92px;object-fit:contain}
+.brand-title h1{font-size:1.65rem;line-height:1.2;letter-spacing:-.025em;color:#30365f}
+.brand-title .mu{font-size:1.02rem;margin-top:7px;color:#606b73}
+.brand-side{gap:11px}
+.brand-version{font-size:.9rem;letter-spacing:.1em;color:#3c4271}
+#adminbox button{padding:11px 17px;border-radius:10px;font-weight:600}
+.tabs{gap:8px;margin-bottom:20px;border-bottom:2px solid var(--bd)}
+.tabs button{padding:13px 18px;font-size:1.02rem}
+button{border-radius:10px;padding:10px 16px;transition:background .15s,border-color .15s,transform .15s}
+button.pri{background:#3c4271;border-color:#3c4271}
+button.pri:hover{background:#2f355f;border-color:#2f355f}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #7d83bd;outline-offset:2px}
+input,select{padding:10px 12px;border-radius:10px}
+.card{border-radius:12px;padding:15px 16px;box-shadow:0 2px 8px rgba(35,48,39,.035)}
+.stat{border-radius:11px;padding:11px 15px}
+.stat b{font-size:1.45rem}
+.chip{padding:4px 10px}
+dialog{border-radius:14px;box-shadow:0 18px 60px rgba(0,0,0,.22)}
+/* Ajustes responsivos para preservar a hierarquia da marca */
+@media(max-width:760px){
+  #app{padding:12px 12px 32px}
+  .brand{gap:14px;padding:14px;min-height:unset}
+  .brand-logo{width:118px;max-height:72px}
+  .brand-title h1{font-size:1.2rem}
+  .brand-title .mu{font-size:.88rem}
+}
+@media(max-width:520px){
+  .brand{gap:9px;padding:11px}
+  .brand-logo{width:82px;max-height:54px}
+  .brand-title h1{font-size:1rem}
+  .brand-title .mu{font-size:.76rem;margin-top:3px}
+  .brand-side{gap:5px}
+  .brand-version{font-size:.68rem}
+  #adminbox button{font-size:.72rem;padding:6px 8px}
+  .tabs button{padding:10px 12px;font-size:.9rem}
+}
+
+
+/* Calibrações: cartões Aparelhos / Blocos */
+.calcards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px}
+.calcard{display:flex;flex-direction:column;align-items:center;gap:6px;padding:18px 12px;border-radius:12px;border:2px solid transparent;text-align:center;font:inherit;cursor:pointer;color:var(--tx)}
+.calcard svg{width:22px;height:22px}
+.calcard b{font-size:1.1rem}
+.calcard span{font-size:.95rem}
+.calcard.ap{background:color-mix(in srgb,var(--ac) 12%,var(--sf));color:var(--ac)}
+.calcard.bl{background:color-mix(in srgb,var(--ok) 14%,var(--sf));color:var(--ok)}
+.calcard b{color:var(--tx)}
+.calcard.on.ap{border-color:var(--ac)}
+.calcard.on.bl{border-color:var(--ok)}
+.calnote{font-size:.85rem;color:var(--mu);margin:0 0 14px}
+@media(max-width:520px){.calcards{gap:8px}.calcard{padding:14px 8px}}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="brand"><img src="/logo.png" alt="New END" class="brand-logo"><div class="brand-title"><h1>Controle de Patrimônio e OS</h1><div class="mu">Gestão interna · New END</div></div><div class="brand-side"><div class="brand-version">VERSÃO 5</div><div id="adminbox"><button class="sm" data-a="adminLogin">Acesso administrador</button></div></div></header>
+  <div id="msg"></div>
+  <div class="tabs" id="tabs"></div>
+  <div id="view"><div class="empty">Carregando…</div></div>
+</div>
+<div id="print"></div>
+<dialog id="dlg"></dialog>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+function multiMatch(k,txt){const t=String(k||'').split(/[,;\n]+/).map(x=>x.trim().toLowerCase()).filter(Boolean);if(!t.length)return true;txt=String(txt).toLowerCase();return t.some(x=>txt.includes(x))}
+
+let EQ=[],OS=[],CL=[],PE=[],VE=[],TP=[],BL=[],LOC=[],LISTABL=[],SELB=new Set(),calSub='ap',ftipo='',flt='all',tab='eq',sub='cli',q='',cur=null,MT=[],TM=[],warned=false,db=null,DL=null,loaded=false,isAdmin=false,SEL=new Set(),LISTA=[];
+const LS='ctrl_patrimonio_v1';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const today=()=>{const d=new Date();return new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10)};
+const fmt=d=>d?d.split('-').reverse().join('/'):'—';
+const addYear=d=>{const x=new Date(d+'T12:00:00');x.setFullYear(x.getFullYear()+1);return x.toISOString().slice(0,10)};
+const daysTo=d=>Math.round((new Date(d+'T12:00:00')-new Date(today()+'T12:00:00'))/864e5);
+const uid=p=>p+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const num=n=>'OS-'+String(n).padStart(4,'0');
+const rows=s=>(s.docs||[]).map(d=>typeof d.data==='function'?d.data():d.data);
+
+/* ---------- armazenamento ---------- */
+const LOGO='/logo.png';
+const NOLOGIN='Entre na sua conta Claude para ver e salvar os dados do time.';
+const CAD={cli:{t:'Clientes',f:[['nome','Nome ou razão social'],['cnpj','CNPJ'],['resp','Responsável'],['contato','Contato'],['local','Local']]},pes:{t:'Equipe',f:[['nome','Nome completo']]},vei:{t:'Veículos',f:[['placa','Placa'],['modelo','Veículo (modelo)']]},tip:{t:'Tipos de item',f:[['nome','Nome do tipo']]}};
+const GET={eq:()=>EQ,os:()=>OS,cli:()=>CL,pes:()=>PE,vei:()=>VE,tip:()=>TP,blo:()=>BL,loc:()=>LOC},SET={eq:v=>EQ=v,os:v=>OS=v,cli:v=>CL=v,pes:v=>PE=v,vei:v=>VE=v,tip:v=>TP=v,blo:v=>BL=v,loc:v=>LOC=v};
+function localSave(){try{localStorage.setItem(LS,JSON.stringify({EQ,OS,CL,PE,VE,TP,BL}))}catch(e){}}
+function upsert(arr,o){const i=arr.findIndex(x=>x.id===o.id);i>=0?arr[i]=o:arr.push(o)}
+async function save(c,o){
+  if(db){try{await db.collection(c).doc(o.id).set(o)}catch(e){note('Não foi possível salvar. Verifique a conexão com o servidor ou peça apoio ao administrador de TI.')}}
+  else note(NOLOGIN)
+}
+async function del(c,id){
+  if(db){try{await db.collection(c).doc(id).delete()}catch(e){note('Não foi possível excluir.')}}
+  else note(NOLOGIN)
+}
+function makeDB(){
+  const subs={},last={};
+  const J=(u,o)=>fetch(u,o).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()});
+  const poll=c=>J('/api/'+c).then(a=>{const k=JSON.stringify(a);if(k===last[c])return;last[c]=k;subs[c]&&subs[c].n({docs:a.map(o=>({data:()=>o}))})}).catch(e=>{last[c]=null;subs[c]&&subs[c].e&&subs[c].e(e)});
+  setInterval(()=>Object.keys(subs).forEach(poll),5000);
+  const put=(c,id,m,b)=>J('/api/'+c+'/'+encodeURIComponent(id),{method:m,headers:{'Content-Type':'application/json'},body:b}).then(()=>poll(c));
+  return{collection:c=>({doc:id=>({set:o=>put(c,id,'PUT',JSON.stringify(o)),delete:()=>put(c,id,'DELETE')}),onSnapshot:(n,e)=>{subs[c]={n,e};poll(c);return()=>{delete subs[c]}}})};
+}
+function makeDL(){return{save:({filename,data})=>{const a=document.createElement('a');a.href=URL.createObjectURL(data);a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);return Promise.resolve()}}}
+async function adminStatus(){try{const r=await fetch('/api/admin/status');const j=await r.json();isAdmin=!!j.admin}catch(e){isAdmin=false}drawAdmin()}
+function drawAdmin(){const b=$('#adminbox');if(!b)return;b.innerHTML=isAdmin?'<span class="chip ok">Administrador</span> <button class="sm" data-a="adminLogout">Sair</button>':'<button class="sm" data-a="adminLogin">Acesso administrador</button>'}
+async function adminLogin(){dlg(`<h2>Acesso administrador</h2><label>Senha administrativa<input id="admin_pass" type="password" autocomplete="current-password"></label><div id="err" class="warn"></div><div class="row"><button class="pri" data-a="adminSubmit">Entrar</button><button data-a="close">Cancelar</button></div>`)}
+async function adminSubmit(){const password=$('#admin_pass').value;try{const r=await fetch('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password})});const j=await r.json();if(!r.ok)throw new Error(j.erro||'Senha inválida');isAdmin=true;$('#dlg').close();drawAdmin();render();note('Acesso de administrador ativado nesta sessão.')}catch(e){err(e.message||'Não foi possível entrar.')}}
+async function adminLogout(){await fetch('/api/admin/logout',{method:'POST'});isAdmin=false;drawAdmin();render();note('Sessão administrativa encerrada.')}
+function note(t){$('#msg').innerHTML=t?`<div class="msg">${esc(t)}</div>`:''}
+(async()=>{
+  await adminStatus();
+  if(window.claude){try{db=await claude.use('db')}catch(e){db=null}}else db=makeDB();
+  if(window.claude){try{DL=await claude.use('downloads')}catch(e){DL=null}}else DL=makeDL();
+  if(db){
+    const t=setTimeout(()=>note('Banco de dados sem resposta. Os dados podem estar desatualizados.'),10000);
+    Object.keys(SET).forEach(c=>db.collection(c).onSnapshot(s=>{clearTimeout(t);note('');SET[c](rows(s));loaded=true;render()},()=>{clearTimeout(t);note('Erro ao ler os dados.')}));
+  }else{
+    
+    loaded=true;render();
+  }
+  setTimeout(()=>{loaded=true;render()},3000);
+})();
+
+/* ---------- regras ---------- */
+function inOpenOS(){const m={};OS.filter(o=>o.status==='Aberta').forEach(o=>(o.items||[]).forEach(i=>m[i.id]=o));return m}
+function calSt(e){
+  if(!e.needsCal)return'na';
+  if(!e.calDue)return'sem';
+  const d=daysTo(e.calDue);return d<0?'venc':d<=30?'prox':'ok';
+}
+function calChip(e){
+  const s=calSt(e);
+  if(s==='na')return'';
+  if(s==='sem')return'<span class="chip wn">Sem calibração registrada</span>';
+  const d=daysTo(e.calDue);
+  if(s==='venc')return`<span class="chip er">Calibração vencida há ${-d} d</span>`;
+  if(s==='prox')return`<span class="chip wn">Vence em ${d} d (${fmt(e.calDue)})</span>`;
+  return`<span class="chip ok">Calibrado até ${fmt(e.calDue)}</span>`;
+}
+const TIPOS_PADRAO=['Aparelho','Cabeçote','Scanner','Bateria','Carregador','Fonte','Encoder','Sapata'];
+function tiposList(atual){
+  const n=TP.map(t=>t.nome).filter(Boolean);
+  const base=n.length?n:TIPOS_PADRAO;
+  const l=[...base];
+  if(atual&&!l.some(t=>t.toLowerCase()===String(atual).toLowerCase()))l.push(atual);
+  return l.sort((a,b)=>a.localeCompare(b,'pt'));
+}
+const tipoEmUso=nome=>EQ.filter(e=>(e.tipo||'').toLowerCase()===String(nome||'').toLowerCase());
+const osLabel=o=>o.no||num(o.num);
+function nextNo(){const y=today().slice(0,4);let m=0;OS.forEach(o=>{const p=(o.no||'').split('-');if(p[0]===y)m=Math.max(m,+p[1]||0)});return y+'-'+String(m+1).padStart(3,'0')+'-0'}
+const norm=x=>String(x||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+
+/* ---------- telas ---------- */
+function render(){
+  if(!db&&loaded){$('#tabs').innerHTML='';$('#view').innerHTML='<div class="card" style="cursor:default"><div class="pat">Não foi possível abrir os dados do time</div><p>Entre na sua conta Claude (claude.ai) e recarregue esta página.</p><p>Se você já está logado, peça a quem criou o programa para compartilhar o link com o seu e-mail, com acesso de Colaborador ou Editor. Assim você vê e salva os mesmos dados que o resto da equipe.</p></div>';return}
+  const T=[['eq','Equipamentos'],['blo','Blocos'],['cal','Calibrações'],['os','Ordens de serviço'],['cad','Cadastros'],['loc','Locação']];
+  $('#tabs').innerHTML=T.map(([k,l])=>`<button class="${tab===k?'on':''}" data-a="tab" data-id="${k}">${l}</button>`).join('');
+  $('#view').innerHTML=tab==='eq'?vEq():tab==='blo'?vBlo():tab==='cal'?vCal():tab==='cad'?vCad():tab==='loc'?vLoc():vOS();
+}
+function vEq(){
+  const m=inOpenOS(),lm=inOpenLoc(),all=EQ;
+  const venc=all.filter(e=>calSt(e)==='venc').length,prox=all.filter(e=>calSt(e)==='prox').length;
+  const k=q.toLowerCase();
+  const list=all.filter(e=>multiMatch(k,e.pat+' '+e.desc+' '+(e.tipo||'')+' '+(e.tensao||'')+' '+(e.configuracao||'')+' '+(e.chaveIdentificacao||'')+' '+(e.serie||'')+' '+(e.serie2||''))&&(!ftipo||e.tipo===ftipo)&&(flt==='all'||(flt==='em')===!!(m[e.id]||lm[e.id]))).sort((a,b)=>String(a.pat).localeCompare(String(b.pat),'pt',{numeric:true}));LISTA=list;
+  return`<div class="stats"><div class="stat"><b>${all.length}</b>cadastrados</div><div class="stat"><b>${Object.keys(m).length}</b>em campo</div><div class="stat"><b style="color:var(--er)">${venc}</b>calibração vencida</div><div class="stat"><b style="color:var(--wn)">${prox}</b>vencem em 30 dias</div></div>
+  <div class="bar" style="flex-wrap:wrap">${[['all','Todos'],['disp','Disponíveis'],['em','Em campo']].map(([k,l])=>`<button class="sm${flt===k?' pri':''}" data-a="flt" data-id="${k}">${l}</button>`).join('')}</div><div class="bar"><select data-a="ftipo" aria-label="Filtrar por tipo"><option value="">Todos os tipos</option>${tiposList(ftipo).map(t=>`<option value="${esc(t)}"${t===ftipo?' selected':''}>${esc(t)}${EQ.filter(e=>e.tipo===t).length?' ('+EQ.filter(e=>e.tipo===t).length+')':''}</option>`).join('')}</select></div><div class="bar" style="flex-wrap:wrap"><input id="busca" placeholder="Buscar por patrimônio, descrição, tipo ou série (vários: 0239, 0234, 0224)" value="${esc(q)}" data-a="busca"><button class="pri" data-a="newEq">Novo item</button></div>
+  <div class="bar" style="flex-wrap:wrap"><button class="sm pri" data-a="impOpen">Importar planilha</button><button class="sm" data-a="exportEqFiltered">Exportar filtrados para Excel</button><button class="sm" data-a="exportEqAll">Exportar todos para Excel</button></div>${isAdmin?`<div class="bar" style="flex-wrap:wrap"><button class="sm" data-a="selAll">Selecionar todos (${list.length})</button><button class="sm" data-a="selNone">Limpar seleção</button><button class="sm dg" data-a="delSel"${SEL.size?'':' disabled'}>Excluir selecionados (${SEL.size})</button></div>`:''}
+  ${list.length?list.map(e=>`<div class="card" data-a="editEq" data-id="${e.id}"${SEL.has(e.id)?' style="outline:2px solid var(--er)"':''}><div class="top">${isAdmin?`<input type="checkbox" data-a="selEq" data-id="${e.id}"${SEL.has(e.id)?' checked':''} aria-label="Selecionar" style="width:22px;height:22px;margin-right:8px;flex:none">`:''}<div style="flex:1"><div class="pat">${esc(e.pat)}</div><div>${esc(e.desc)}</div>${isFonte(e.tipo)?((e.tensao||e.serie)?`<div class="mu">Voltagem: ${esc(e.tensao||e.serie)}</div>`:''):(e.hasSerie&&e.serie?`<div class="mu">${serLabels(e)[0]}: ${esc(e.serie)}</div>`:'')}${!isFonte(e.tipo)&&e.hasSerie&&e.serie2?`<div class="mu">${serLabels(e)[1]}: ${esc(e.serie2)}</div>`:''}${isNotebook(e.tipo)&&e.configuracao?`<div class="mu">Configuração: ${esc(e.configuracao)}</div>`:''}${isNotebook(e.tipo)&&e.chaveIdentificacao?`<div class="mu">Chave de identificação: ${esc(e.chaveIdentificacao)}</div>`:''}${isNotebook(e.tipo)&&e.bitlocker?`<div class="mu">BitLocker: cadastrado</div>`:''}</div><div>${m[e.id]?`<span class="chip wn">Em campo: ${osLabel(m[e.id])}</span>`:lm[e.id]?`<span class="chip wn">Em locação: ${esc(lm[e.id].numero||'')}</span>`:'<span class="chip ok">Disponível</span>'}</div></div><div><span class="chip">${esc(e.tipo)}</span>${calChip(e)}</div></div>`).join(''):`<div class="empty">${loaded?(all.length?'Nenhum item encontrado.':'Nenhum item cadastrado. Toque em Novo item para começar.'):'Carregando…'}</div>`}`;
+}
+function vCalAp(){
+  const k=q.toLowerCase();const list=EQ.filter(e=>e.needsCal&&(!k||(e.pat+' '+e.desc+' '+(e.calDate||'')+' '+(e.calDue||'')+' '+(e.hist||[]).join(' ')).toLowerCase().includes(k))).sort((a,b)=>(a.calDue||'').localeCompare(b.calDue||''));
+  return `<div class="bar"><input id="busca" placeholder="Buscar calibração por patrimônio, descrição ou data" value="${esc(q)}" data-a="busca"></div>`+(list.length?list.map(e=>`<div class="card" style="cursor:default"><div class="top"><div><div class="pat">${esc(e.pat)}</div><div>${esc(e.desc)}</div><div class="mu">Última: ${fmt(e.calDate)}</div></div><button class="sm pri" data-a="calDlg" data-id="${e.id}">Registrar calibração</button></div><div>${calChip(e)}</div></div>`).join(''):`<div class="empty">Nenhum item com calibração. Marque “Exige calibração anual” no cadastro do item.</div>`);
+}
+
+/* ---------- Blocos ---------- */
+const TIPOS_BLOCO=['Bloco padrão','Bloco escalonado','Calço','Bloco de referência'];
+function tiposBlocoList(){const l=[...TIPOS_BLOCO];BL.forEach(b=>{if(b.tipo&&!l.some(t=>t.toLowerCase()===b.tipo.toLowerCase()))l.push(b.tipo)});return l.sort((a,b)=>a.localeCompare(b,'pt'))}
+const bloDesc=b=>[b.espessura?'Espessura '+b.espessura:'',b.diam?'Ø ext. '+b.diam:'',b.material||''].filter(Boolean).join(' · ');
+function vBlo(){
+  const m=inOpenOS(),all=BL;
+  const venc=all.filter(b=>calSt(b)==='venc').length,prox=all.filter(b=>calSt(b)==='prox').length;
+  const emCampo=all.filter(b=>!!m[b.id]).length;
+  const k=q.toLowerCase();
+  const list=all.filter(b=>multiMatch(k,[b.tipo,b.ident,b.espessura,b.diam,b.material].join(' '))).sort((a,b)=>String(a.ident).localeCompare(String(b.ident),'pt',{numeric:true}));LISTABL=list;
+  return `<div class="stats"><div class="stat"><b>${all.length}</b>cadastrados</div><div class="stat"><b>${emCampo}</b>em campo</div><div class="stat"><b style="color:var(--er)">${venc}</b>calibração vencida</div><div class="stat"><b style="color:var(--wn)">${prox}</b>vencem em 30 dias</div></div>
+  <div class="bar" style="flex-wrap:wrap"><input id="busca" placeholder="Buscar por tipo, identificação, espessura ou material (vários: B-01, B-02)" value="${esc(q)}" data-a="busca"><button class="pri" data-a="newBlo">Novo bloco</button></div>
+  <div class="bar" style="flex-wrap:wrap"><button class="sm pri" data-a="impbOpen">Importar planilha</button><button class="sm" data-a="exportBloFiltered">Exportar filtrados para Excel</button><button class="sm" data-a="exportBloAll">Exportar todos para Excel</button></div>${isAdmin?`<div class="bar" style="flex-wrap:wrap"><button class="sm" data-a="selAllBlo">Selecionar todos (${list.length})</button><button class="sm" data-a="selNoneBlo">Limpar seleção</button><button class="sm dg" data-a="delSelBlo"${SELB.size?'':' disabled'}>Excluir selecionados (${SELB.size})</button></div>`:''}`+
+  (list.length?list.map(b=>`<div class="card" data-a="editBlo" data-id="${b.id}"${SELB.has(b.id)?' style="outline:2px solid var(--er)"':''}><div class="top">${isAdmin?`<input type="checkbox" data-a="selBlo" data-id="${b.id}"${SELB.has(b.id)?' checked':''} aria-label="Selecionar" style="width:22px;height:22px;margin-right:8px;flex:none">`:''}<div style="flex:1"><div class="pat">${esc(b.ident)}</div><div>${esc(b.tipo)}</div><div class="mu">${esc(bloDesc(b))||'—'}</div></div><div>${calChip(b)}</div></div></div>`).join(''):`<div class="empty">${loaded?(BL.length?'Nenhum bloco encontrado.':'Nenhum bloco cadastrado. Toque em Novo bloco para começar.'):'Carregando…'}</div>`);
+}
+function exportBlocos(apenasFiltrados){
+  if(!window.XLSX){note('Não foi possível carregar o componente de Excel. Verifique a conexão com a internet e tente novamente.');return}
+  const k=q.toLowerCase();
+  const lista=(apenasFiltrados?BL.filter(b=>multiMatch(k,[b.tipo,b.ident,b.espessura,b.diam,b.material].join(' '))):[...BL]).sort((a,b)=>String(a.ident).localeCompare(String(b.ident),'pt',{numeric:true}));
+  if(!lista.length){note('Não há blocos para exportar com a seleção atual.');return}
+  const ws=XLSX.utils.json_to_sheet(lista.map(b=>({'Tipo':b.tipo||'','Identificação':b.ident||'','Espessura':b.espessura||'','Diâmetro externo':b.diam||'','Material':b.material||'','Última calibração':b.calDate||'','Validade':b.calDue||''})));
+  ws['!cols']=[{wch:22},{wch:20},{wch:14},{wch:18},{wch:22},{wch:18},{wch:14}];
+  ws['!autofilter']={ref:XLSX.utils.encode_range(XLSX.utils.decode_range(ws['!ref']))};
+  const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Blocos');
+  XLSX.writeFile(wb,`blocos-${apenasFiltrados?'filtrados-':''}${new Date().toISOString().slice(0,10)}.xlsx`);
+  note(`${lista.length} bloco(s) exportado(s) para Excel.`);
+}
+function bloDlg(b){
+  cur=b||null;b=b||{};
+  dlg(`<h2>${cur?'Editar bloco':'Novo bloco'}</h2>
+  <label>Tipo<input id="b_tipo" list="dl_bt" value="${esc(b.tipo)}" placeholder="Selecione ou digite um novo tipo" autocomplete="off"></label>
+  <datalist id="dl_bt">${tiposBlocoList().map(t=>`<option value="${esc(t)}"></option>`).join('')}</datalist>
+  <label>Identificação<input id="b_ident" value="${esc(b.ident)}"></label>
+  <div class="g2"><label>Espessura<input id="b_esp" value="${esc(b.espessura)}" placeholder="Ex.: 25 mm"></label>
+  <label>Diâmetro externo (opcional)<input id="b_diam" value="${esc(b.diam)}" placeholder="Quando necessário"></label></div>
+  <label>Material<input id="b_mat" value="${esc(b.material)}" placeholder="Ex.: Aço carbono, Alumínio"></label>
+  <label>Última calibração<input type="date" id="b_cd" data-a="bcdChange" value="${b.calDate||''}"></label>
+  <label>Validade (1 ano depois, editável)<input type="date" id="b_cv" value="${b.calDue||''}"></label>
+  ${cur?bloHist(cur):''}
+  <div id="err" class="warn"></div>
+  <div class="row"><button class="pri" data-a="saveBlo">Salvar</button><button data-a="close">Cancelar</button>${cur&&isAdmin?'<button class="dg" data-a="delBlo">Excluir</button>':''}</div>`);
+}
+function bloHist(b){const h=b.hist||[];return `<h3>Histórico de calibrações</h3>`+(h.length?`<div class="mu">${[...h].reverse().map(fmt).join(', ')}</div>`:'<div class="mu">Nenhum registro.</div>')}
+function saveBlo(){
+  const v=id=>$('#'+id).value.trim(),tipo=v('b_tipo'),ident=v('b_ident');
+  if(!tipo||!ident)return err('Preencha o tipo e a identificação.');
+  if(BL.some(x=>norm(x.ident)===norm(ident)&&(!cur||x.id!==cur.id)))return err('Já existe um bloco com essa identificação.');
+  const cd=v('b_cd');let cv=v('b_cv');if(cd&&!cv)cv=addYear(cd);
+  const hist=[...((cur&&cur.hist)||[])];
+  if(cd&&!hist.includes(cd))hist.push(cd);
+  save('blo',{...(()=>{const o={...(cur||{})};delete o.obs;return o})(),id:cur?cur.id:uid('b'),tipo,ident,espessura:v('b_esp'),diam:v('b_diam'),material:v('b_mat'),needsCal:true,calDate:cd,calDue:cd?cv:'',hist});
+  $('#dlg').close();
+}
+function calDlgBlo(id){
+  const b=BL.find(x=>x.id===id);cur=b;
+  dlg(`<h2>Registrar calibração do bloco</h2><div><b>${esc(b.ident)}</b> · ${esc(b.tipo)}</div>
+  <label style="margin-top:10px">Data da calibração<input type="date" id="c_d" value="${today()}"></label>
+  <div class="mu">A nova validade será 1 ano depois da data informada.</div>
+  <div class="mu" style="margin-top:8px">Histórico: ${(b.hist||[]).length?[...b.hist].reverse().map(fmt).join(', '):'nenhum registro'}</div>
+  <div class="row"><button class="pri" data-a="saveCalBlo">Salvar</button><button data-a="close">Cancelar</button></div>`);
+}
+function vCalBl(){
+  const k=q.toLowerCase();
+  const list=BL.filter(b=>!k||[b.ident,b.tipo,b.espessura,b.material,b.calDate,b.calDue,(b.hist||[]).join(' ')].join(' ').toLowerCase().includes(k)).sort((a,b)=>(a.calDue||'').localeCompare(b.calDue||''));
+  return `<div class="bar"><input id="busca" placeholder="Buscar calibração por identificação, tipo ou data" value="${esc(q)}" data-a="busca"></div>`+(list.length?list.map(b=>`<div class="card" style="cursor:default"><div class="top"><div><div class="pat">${esc(b.ident)}</div><div>${esc(b.tipo)}${bloDesc(b)?' · '+esc(bloDesc(b)):''}</div><div class="mu">Última: ${fmt(b.calDate)} · ${(b.hist||[]).length} registro(s) no histórico</div></div><button class="sm pri" data-a="calDlgBlo" data-id="${b.id}">Registrar calibração</button></div><div>${calChip(b)}</div></div>`).join(''):`<div class="empty">Nenhum bloco cadastrado. Cadastre na aba Blocos.</div>`);
+}
+const ICO_AP='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg>';
+const ICO_BL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5 12 12l9-4.5z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></svg>';
+function vCal(){
+  return `<div class="card" style="cursor:default"><h2>Calibrações</h2><div class="calcards">
+  <button class="calcard ap${calSub==='ap'?' on':''}" data-a="calSub" data-id="ap">${ICO_AP}<b>Aparelhos</b><span>Calibrações existentes</span></button>
+  <button class="calcard bl${calSub==='bl'?' on':''}" data-a="calSub" data-id="bl">${ICO_BL}<b>Blocos</b><span>Calibrações dos blocos</span></button></div>
+  <p class="calnote">As duas categorias terão seus próprios registros e históricos de calibração.</p></div>`+(calSub==='bl'?vCalBl():vCalAp());
+}
+function vOS(){
+  const k=q.toLowerCase();const list=[...OS].filter(o=>!k||(osLabel(o)+' '+(o.cliente||o.dest||'')+' '+(o.equipe||[o.team]).filter(Boolean).join(' ')+' '+(o.items||[]).map(i=>i.pat+' '+i.desc).join(' ')).toLowerCase().includes(k)).sort((a,b)=>String(b.createdAt||b.date||b.id).localeCompare(String(a.createdAt||a.date||a.id)));
+  return`<div class="bar"><input id="busca" placeholder="Buscar por número da OS, cliente, equipe ou equipamento" value="${esc(q)}" data-a="busca"><button class="pri" data-a="newOS">Nova OS</button></div>`+(list.length?list.map(o=>`<div class="card" data-a="osDet" data-id="${o.id}"><div class="top"><div><div class="pat">${esc(osLabel(o))} · ${esc(o.cliente||o.dest||'')}</div><div class="mu">${esc((o.equipe||[o.team]).filter(Boolean).join(', '))}</div><div class="mu">Saída: ${fmt(o.date)}${o.ret?' · Retorno: '+fmt(o.ret):''}</div></div><span class="chip ${o.status==='Aberta'?'wn':'ok'}">${o.status==='Aberta'?'Em campo':'Devolvida'}</span></div><div>${(o.items||[]).map(i=>`<span class="chip">${esc(i.pat||i.desc)}</span>`).join('')}</div></div>`).join(''):'<div class="empty">Nenhuma OS criada ainda.</div>');
+}
+function vCad(){
+  const c=CAD[sub],k0=c.f[0][0],L=[...GET[sub]()].sort((a,b)=>String(a[k0]).localeCompare(String(b[k0]),'pt'));
+  return`<div class="bar" style="flex-wrap:wrap">${Object.keys(CAD).map(k=>`<button class="sm${sub===k?' pri':''}" data-a="sub" data-id="${k}">${CAD[k].t}</button>`).join('')}<button class="sm" style="margin-left:auto" data-a="newCad">Novo cadastro</button></div>`+(L.length?L.map(x=>`<div class="card" data-a="editCad" data-id="${x.id}"><div class="pat">${esc(x[k0])}</div><div class="mu">${sub==='tip'?(n=>n+(n===1?' item cadastrado':' itens cadastrados'))(tipoEmUso(x.nome).length):c.f.slice(1).map(f=>x[f[0]]).filter(Boolean).map(esc).join(' · ')}</div></div>`).join(''):`<div class="empty">Nada cadastrado em ${c.t.toLowerCase()} ainda.</div>`);
+}
+
+
+/* ---------- locação de equipamentos ---------- */
+let locDraftItems=[];
+function locActiveEq(){const m={};LOC.filter(x=>x.status!=='Devolvida').forEach(l=>(l.items||[]).forEach(i=>{if(i.eqId)m[i.eqId]=l}));return m}
+function locActiveBlo(){const m={};LOC.filter(x=>x.status!=='Devolvida').forEach(l=>(l.items||[]).forEach(i=>{if(i.blockId)m[i.blockId]=l}));return m}
+function inOpenLoc(){return locActiveEq()}
+function vLoc(){
+  const abertas=LOC.filter(x=>x.status!=='Devolvida').length;
+  const atrasadas=LOC.filter(x=>x.status!=='Devolvida'&&x.previsao&&x.previsao<today()).length;
+  const sorted=[...LOC].sort((a,b)=>String(b.criado||'').localeCompare(String(a.criado||'')));
+  return `<div class="stats"><div class="stat"><b>${LOC.length}</b>locações registradas</div><div class="stat"><b>${abertas}</b>em andamento</div><div class="stat"><b style="color:var(--er)">${atrasadas}</b>com retorno atrasado</div></div>
+  <div class="bar" style="flex-wrap:wrap"><button class="pri" data-a="newLoc">＋ Nova locação</button><span class="mu">Controle de saída, prazo, devolução e fotos dos equipamentos.</span></div>
+  ${sorted.length?sorted.map(l=>`<div class="card" data-a="locDetail" data-id="${esc(l.id)}"><div class="top"><div style="flex:1"><div class="pat">${esc(l.numero||'Locação')} · ${esc(l.cliente||'Cliente não informado')}</div><div>${(l.items||[]).map(i=>esc(i.patrimonio||i.descricao)).join(' · ')}</div><div class="mu">Saída: ${fmt(l.saida)} · Previsão: ${fmt(l.previsao)} · ${l.status==='Devolvida'?'Devolvida em '+fmt(l.devolucao):'Em locação'}</div></div><span class="chip ${l.status==='Devolvida'?'ok':l.previsao&&l.previsao<today()?'er':'wn'}">${l.status==='Devolvida'?'Devolvida':l.previsao&&l.previsao<today()?'Atrasada':'Em locação'}</span></div></div>`).join(''):`<div class="empty">Nenhuma locação cadastrada. Clique em “Nova locação” para começar.</div>`}`;
+}
+function locDlg(l){
+  cur=l||null;
+  locDraftItems=(l?.items||[]).map(x=>({...x,photos:[...(x.photos||[])]}));
+  const cliOptions=CL.slice().sort((a,b)=>String(a.nome).localeCompare(String(b.nome),'pt')).map(c=>`<option value="${esc(c.nome)}"${l?.cliente===c.nome?' selected':''}>${esc(c.nome)}</option>`).join('');
+  dlg(`<h2>${l?'Editar locação':'Nova locação'}</h2>
+  <h3>Dados da locação</h3>
+  <div class="g2">
+    <label>Cliente<select id="l_cliente"><option value="">Selecione um cliente</option>${cliOptions}</select></label>
+    <label>Responsável pela retirada (Eu)<input id="l_resp" value="${esc(l?.responsavel||'')}" placeholder="Nome completo"></label>
+    <label>CPF<input id="l_cpf" value="${esc(l?.cpf||'')}"></label>
+    <label>Local<input id="l_local" value="${esc(l?.local||'')}"></label>
+    <label>Data da retirada<input id="l_saida" type="date" value="${esc(l?.saida||today())}"></label>
+    <label>Previsão de retorno<input id="l_prev" type="date" value="${esc(l?.previsao||'')}"></label>
+  </div>
+  <h3>Tabela 2 do formulário: dimensões e peso</h3>
+  <div class="g2">
+    <label>Dimensões<input id="l_dim" value="${esc(l?.dimensoes||'')}" placeholder="Ex.: 60 x 40 x 30 cm"></label>
+    <label>Peso<input id="l_peso" value="${esc(l?.peso||'')}" placeholder="Ex.: 12 kg"></label>
+  </div>
+  <hr><h3>Equipamentos e blocos da locação</h3>
+  <div class="bar" style="align-items:stretch;flex-wrap:wrap">
+    <input id="l_eq" list="l_dl_eq" placeholder="Digite ou leia o patrimônio (ou a descrição de um item sem patrimônio)" autocomplete="off" style="flex:1;min-width:220px">
+    <button class="pri" data-a="locAddEq">＋ Adicionar item</button>
+    <button data-a="locAddAvulso">＋ Item sem patrimônio</button>
+  </div>
+  <datalist id="l_dl_eq">${EQ.filter(e=>(!inOpenOS()[e.id])&&(!locActiveEq()[e.id]||locActiveEq()[e.id].id===l?.id)).map(e=>`<option value="${esc(e.pat)}">EQUIPAMENTO · ${esc(e.desc)}</option>`).join('')}${BL.filter(b=>(!inOpenOS()[b.id])&&(!locActiveBlo()[b.id]||locActiveBlo()[b.id].id===l?.id)).map(b=>`<option value="${esc(b.ident)}">BLOCO · ${esc(b.tipo)} · ${esc(bloDesc(b))}</option>`).join('')}</datalist>
+  <div class="mu" style="margin:-5px 0 12px">Informe o patrimônio do equipamento ou a identificação do bloco. Itens sem patrimônio (ex.: sapatas) saem no formulário com “****”. A ordem dos itens é a mesma da Tabela 1 e das fotos.</div>
+  <div id="locItems">${locItemsHtml()}</div>
+  <label style="margin-top:14px">Observações (uso interno)<textarea id="l_obs" rows="2">${esc(l?.observacoes||'')}</textarea></label>
+  <div class="row"><button class="pri" data-a="saveLoc">Salvar locação</button><button data-a="close">Cancelar</button></div>`);
+}
+function locItemsHtml(){
+ return locDraftItems.length?locDraftItems.map((i,n)=>`<div class="card" style="cursor:default;padding:14px;margin-bottom:10px">
+ <div class="top" style="align-items:center;gap:10px"><span class="chip" style="font-size:.9rem">Item ${n+1}</span><div style="flex:1;min-width:160px">${i.itemType==='avulso'?`<input data-litem="${n}" data-k="descricao" value="${esc(i.descricao||'')}" placeholder="Descrição do item" style="width:100%">`:`<div class="pat">${esc(i.patrimonio||'SEM PATRIMÔNIO')}</div><div>${esc(i.descricao||'')}</div>`}${i.itemType==='avulso'?'<div class="mu">Sem patrimônio (sai como ****)</div>':''}</div>
+ <label style="margin:0;width:90px">Qtd.<input type="number" min="1" step="1" data-litem="${n}" data-k="quantidade" value="${esc(i.quantidade||1)}"></label>
+ <div class="row" style="margin:0;gap:4px;flex-wrap:nowrap"><button class="sm" data-a="locUp" data-id="${n}" title="Subir"${n===0?' disabled':''}>▲</button><button class="sm" data-a="locDown" data-id="${n}" title="Descer"${n===locDraftItems.length-1?' disabled':''}>▼</button><button class="sm dg" data-a="locRmEq" data-id="${n}">Remover</button></div></div>
+ <div class="bar" style="align-items:center;margin:12px 0 8px"><b style="flex:1">Fotos deste item (${(i.photos||[]).length})</b><button type="button" class="sm" data-a="locCamera" data-id="${n}">＋ Adicionar fotos</button><input type="file" accept="image/jpeg,image/png,image/webp" multiple data-locphoto="${n}" id="loc_photo_${n}" style="display:none"></div>
+ <div class="row" style="flex-wrap:wrap;margin-top:4px">${(i.photos||[]).map((p,j)=>`<div style="width:104px"><img src="${esc(p.url||('/locacao-fotos/'+p.name))}" alt="Foto do equipamento" style="width:104px;height:82px;object-fit:cover;border-radius:7px;border:1px solid var(--bd)"><button class="sm" style="width:100%;margin-top:4px" data-a="locRmPhoto" data-id="${n}:${j}">Excluir foto</button></div>`).join('')||'<span class="mu">Nenhuma foto adicionada.</span>'}</div></div>`).join(''):'<div class="empty">Nenhum item adicionado. Digite o patrimônio ou a identificação do bloco acima para começar.</div>';
+}
+function locAddItem(){
+ const v=String($('#l_eq')?.value||'').trim();if(!v)return note('Digite o patrimônio do equipamento.');
+ const key=v.toLowerCase();
+ const e=EQ.find(x=>String(x.pat||'').trim().toLowerCase()===key);
+ const b=BL.find(x=>String(x.ident||'').trim().toLowerCase()===key);
+ const item=e||b;
+ if(!item)return note('Patrimônio ou identificação de bloco não encontrado. Para incluir um item sem patrimônio, use “Item sem patrimônio”.');
+ if(inOpenOS()[item.id])return note('Este item está em uma OS aberta. Registre a devolução antes de incluí-lo na locação.');
+ if(e&&locActiveEq()[e.id]&&locActiveEq()[e.id].id!==cur?.id)return note('Este equipamento já está em outra locação ativa.');
+ if(b&&locActiveBlo()[b.id]&&locActiveBlo()[b.id].id!==cur?.id)return note('Este bloco já está em outra locação ativa.');
+ if(locDraftItems.some(x=>e?x.eqId===e.id:x.blockId===b.id))return note('Este item já foi adicionado nesta locação.');
+ locDraftItems.push(e?{eqId:e.id,itemType:'eq',patrimonio:e.pat,descricao:e.desc,tipo:e.tipo,quantidade:1,condicao:'',photos:[]}:{blockId:b.id,itemType:'blo',patrimonio:b.ident,descricao:(b.tipo||'Bloco')+' · '+bloDesc(b),tipo:b.tipo,quantidade:1,condicao:'',photos:[]});
+ $('#l_eq').value='';$('#locItems').innerHTML=locItemsHtml();note('');
+}
+function locAddAvulso(){
+ const v=String($('#l_eq')?.value||'').trim();
+ locDraftItems.push({itemType:'avulso',patrimonio:'',descricao:v,quantidade:1,condicao:'',photos:[]});
+ $('#l_eq').value='';$('#locItems').innerHTML=locItemsHtml();note('');
+ if(!v){const d=document.querySelectorAll('#locItems input[data-k=descricao]');d.length&&d[d.length-1].focus()}
+}
+function locMove(i,dir){const j=i+dir;if(j<0||j>=locDraftItems.length)return;[locDraftItems[i],locDraftItems[j]]=[locDraftItems[j],locDraftItems[i]];$('#locItems').innerHTML=locItemsHtml()}
+async function locUpload(file){
+ const data=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=reject;r.readAsDataURL(file)});
+ const res=await fetch('/api/locacao-fotos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({mime:file.type,data})});
+ const j=await res.json();if(!res.ok)throw new Error(j.erro||'Falha ao enviar foto');return {name:j.name,url:j.url,mime:file.type};
+}
+async function locPhotosInput(input){
+ const idx=+input.dataset.locphoto; if(!locDraftItems[idx])return;
+ try{
+  for(const file of [...input.files]){
+   if(!/^image\/(jpeg|png|webp)$/.test(file.type))throw new Error('Use fotos JPG, PNG ou WEBP.');
+   if(file.size>7*1024*1024)throw new Error('Cada foto deve ter até 7 MB.');
+   locDraftItems[idx].photos.push(await locUpload(file));
+  }
+  $('#locItems').innerHTML=locItemsHtml();note('Fotos anexadas à locação.');
+ }catch(e){note(e.message||'Não foi possível anexar a foto.')}
+}
+async function saveLoc(){
+ const cliente=$('#l_cliente').value,saida=$('#l_saida').value,previsao=$('#l_prev').value;
+ if(!cliente)return note('Selecione o cliente.');
+ if(!saida||!previsao)return note('Informe a data de saída e a previsão de retorno.');
+ if(!locDraftItems.length)return note('Adicione ao menos um equipamento.');
+ if(locDraftItems.some(i=>!String(i.descricao||'').trim()))return note('Preencha a descrição de todos os itens sem patrimônio.');
+ if(previsao<saida)return note('A previsão de retorno não pode ser anterior à saída.');
+ locDraftItems.forEach(i=>{i.quantidade=Math.max(1,parseInt(i.quantidade,10)||1);i.descricao=String(i.descricao||'').trim()});
+ const id=cur?.id||uid('loc_'),ano=saida.slice(0,4);
+ const numero=cur?.numero||('LOC-'+ano+'-'+String(LOC.filter(x=>(x.numero||'').startsWith('LOC-'+ano)).length+1).padStart(4,'0'));
+ const l={...(cur||{}),id,numero,cliente,responsavel:$('#l_resp').value.trim(),cpf:$('#l_cpf').value.trim(),local:$('#l_local').value.trim(),dimensoes:$('#l_dim').value.trim(),peso:$('#l_peso').value.trim(),saida,previsao,devolucao:cur?.devolucao||'',status:cur?.status||'Em locação',observacoes:$('#l_obs').value.trim(),items:locDraftItems,criado:cur?.criado||new Date().toISOString(),atualizado:new Date().toISOString()};
+ await save('loc',l);upsert(LOC,l);$('#dlg').close();render();note('Locação '+numero+' salva.');
+}
+function locDetail(id){
+ cur=LOC.find(x=>x.id===id);if(!cur)return;
+ const l=cur;
+ dlg(`<h2>${esc(l.numero)} — ${esc(l.cliente)}</h2><div class="mu">Saída: ${fmt(l.saida)} · Previsão de retorno: ${fmt(l.previsao)} · ${l.status==='Devolvida'?'Devolvida em '+fmt(l.devolucao):esc(l.status||'Em locação')}</div>
+ <p><b>Responsável:</b> ${esc(l.responsavel||'—')} · <b>CPF:</b> ${esc(l.cpf||'—')}</p><p><b>Local:</b> ${esc(l.local||'—')} · <b>Dimensões:</b> ${esc(l.dimensoes||'—')} · <b>Peso:</b> ${esc(l.peso||'—')}</p>
+ ${(l.items||[]).map((i,n)=>`<div class="card" style="cursor:default"><b>Item ${n+1} · ${esc(i.quantidade||1)}x · ${esc(i.patrimonio||'****')} — ${esc(i.descricao||'')}</b><div class="row" style="flex-wrap:wrap">${(i.photos||[]).map(p=>`<img src="${esc(p.url||('/locacao-fotos/'+p.name))}" alt="Foto do equipamento" style="width:110px;height:90px;object-fit:cover;border-radius:6px">`).join('')||'<span class="mu">Sem fotos.</span>'}</div></div>`).join('')}
+ <p><b>Observações:</b> ${esc(l.observacoes||'—')}</p>
+ <div id="err" class="warn"></div>
+ <div class="row"><button class="pri" data-a="locPrint">Imprimir / salvar PDF</button><button data-a="locEdit">Editar</button>${l.status!=='Devolvida'?'<button data-a="locReturn">Registrar devolução</button>':''}${isAdmin?'<button class="dg" data-a="delLoc">Excluir</button>':''}<button data-a="close">Fechar</button></div>`);
+}
+async function delLoc(id,b){
+ if(!isAdmin)return err('Somente o administrador pode excluir locações.');
+ const l=cur;if(!l)return;
+ arm(b,'dloc',async()=>{
+  try{
+   if(window.claude){await del('loc',l.id)}
+   else{
+    const r=await fetch('/api/loc/'+encodeURIComponent(l.id),{method:'DELETE'});
+    if(!r.ok){const j=await r.json().catch(()=>({}));if(r.status===401||r.status===403){isAdmin=false;drawAdmin()}return err(j.erro||(r.status===401||r.status===403?'Somente o administrador pode excluir locações. Entre novamente como administrador.':'Não foi possível excluir a locação.'))}
+   }
+   LOC=LOC.filter(x=>x.id!==l.id);cur=null;$('#dlg').close();render();note('Locação '+(l.numero||'')+' excluída.');
+  }catch(e){err('Sem conexão com o servidor.')}
+ });
+}
+/* Formulário F.13.001 Rev. 0 — Listagem de Equipamentos (fiel ao modelo) */
+function locDocHTML(l){
+ const E=esc,abs=u=>{u=String(u||'');return /^(data:|blob:|https?:)/i.test(u)?u:location.origin+(u.startsWith('/')?'':'/')+u};
+ const itens=(l.items||[]).filter(Boolean);
+ const ln=(v,w)=>`<span class="ln" style="width:${w}mm">${E(v||'')}</span>`;
+ const dp=String(l.saida||'').slice(0,10).split('-');
+ const data=dp.length===3?[dp[2],dp[1],dp[0]]:['','',''];
+ /* ---- divisão da Tabela 1 em páginas ---- */
+ const n=itens.length,tbl=[];
+ if(n<=16){tbl.push({ini:0,qtd:Math.max(11,n),first:true,last:true,rowH:n<=11?8.2:Math.min(8.2,90/n)})}
+ else{
+  const q1=Math.min(17,n-1);tbl.push({ini:0,qtd:q1,first:true,last:false,rowH:8.2});
+  let i=q1,rest=n-q1;
+  while(rest>0){const take=rest<=20?rest:Math.min(26,rest-1);tbl.push({ini:i,qtd:take,first:false,last:rest<=20,rowH:8.2});i+=take;rest-=take}
+ }
+ /* ---- fotos: linhas de até 2 fotos, 2 linhas por página ---- */
+ let num=0;const linhas=[];
+ itens.forEach((it,idx)=>{const ph=(it.photos||[]).filter(Boolean);for(let k=0;k<ph.length;k+=2){linhas.push({idx,it,multi:ph.length>1,fs:ph.slice(k,k+2).map(p=>({src:abs(p.url||('/locacao-fotos/'+p.name)),n:++num}))})}});
+ const fotoPgs=[];for(let k=0;k<linhas.length;k+=2)fotoPgs.push(linhas.slice(k,k+2));
+ const total=tbl.length+fotoPgs.length;
+ const cab=p=>`<div class="hdr"><div class="hl"><img src="${E(abs(LOGO))}" alt="New END"></div><div class="hc"><b>Listagem de<br>Equipamentos</b><small>F.13.001 Rev. 0</small></div><div class="hr">Página ${p} de ${total}</div></div>`;
+ const rod=`<div class="ftr">Rua 01, nº 282, Galpão 05, Loteamento Industrial Zeta - CEP 13184-802, Hortolândia/SP<br><a>www.newend.com.br</a></div>`;
+ const t2=`<p class="cap">Tabela 1: Lista dos Equipamentos</p><table class="t2"><colgroup><col style="width:93.6mm"><col style="width:86.4mm"></colgroup><tr><th>Dimensões</th><th>Peso</th></tr><tr><td>${E(l.dimensoes||'')}</td><td>${E(l.peso||'')}</td></tr></table><p class="cap cap2">Tabela 2: Dimensões</p>`;
+ let pag=0,html='';
+ tbl.forEach(t=>{
+  pag++;let rows='';
+  for(let r=t.ini;r<t.ini+t.qtd;r++){const it=itens[r];rows+=`<tr style="height:${t.rowH}mm"><td class="c">${r+1}</td><td class="c">${it?E(it.quantidade||1):''}</td><td class="d">${it?E(it.descricao||''):''}</td><td class="c">${it?E(it.patrimonio||'****'):''}</td></tr>`}
+  const intro=t.first?`<p class="cli">Cliente: ${E(l.cliente||'')}</p>
+   <p class="eu">Eu ${ln(l.responsavel,105)}, CPF:${ln(l.cpf,48)},</p>
+   <p class="dec">Declaro ter recebido da empresa New END Tecnologia em Inspeções Ltda todos os materiais listados na tabela abaixo em perfeitas condições de uso.</p>
+   <p class="loc"><span>Local:${ln(l.local,92)}</span><span class="dt">Data:${ln(data[0],13.5)} / ${ln(data[1],13.5)} / ${ln(data[2],17.5)}</span></p>
+   <p class="ds">As descrições dos Equipamentos estão descritos na Tabela 1 abaixo:</p>`:'<p class="ds cont">Tabela 1 (continuação):</p>';
+  html+=`<div class="page">${cab(pag)}<div class="body">${intro}<table class="t1" style="font-size:${t.rowH<7?10.5:12}pt"><colgroup><col style="width:12.4mm"><col style="width:25.7mm"><col style="width:95mm"><col style="width:46.9mm"></colgroup><tr class="th"><th>Item</th><th>Quantidade</th><th>Descrição</th><th class="cp">Código Patrimônio</th></tr>${rows}</table>${t.last?t2:''}</div>${rod}</div>`;
+ });
+ fotoPgs.forEach(pg=>{
+  pag++;let corpo='',k=0;
+  while(k<pg.length){
+   const g=pg[k].idx,grupo=[];while(k<pg.length&&pg[k].idx===g)grupo.push(pg[k++]);
+   const it=grupo[0].it,fs=grupo.flatMap(x=>x.fs),a=fs[0].n,b=fs[fs.length-1].n;
+   corpo+=`<div class="grp">${grupo.map(x=>`<div class="frow${!x.multi?' one':''}">${x.fs.map(f=>`<div class="fbox"><img src="${E(f.src)}" alt="Foto ${f.n}"></div>`).join('')}</div>`).join('')}<p class="fcap">${a===b?'Foto '+a:'Fotos '+a+' a '+b}: ${E(it.descricao||'')}${it.patrimonio?' – Patrimônio '+E(it.patrimonio):''} (Item ${g+1}).</p></div>`;
+  }
+  html+=`<div class="page">${cab(pag)}<div class="body fotos">${corpo}</div>${rod}</div>`;
+ });
+ const css=`@page{size:A4;margin:0}*{box-sizing:border-box}html,body{margin:0;padding:0}
+ body{font-family:Arial,"Liberation Sans",Helvetica,sans-serif;color:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .page{width:210mm;height:297mm;position:relative;overflow:hidden;background:#fff;break-after:page;page-break-after:always}
+ .page:last-child{break-after:auto;page-break-after:auto}
+ @media screen{body{background:#6b6b6b;padding:6mm 0}.page{margin:0 auto 6mm;box-shadow:0 2px 10px rgba(0,0,0,.4)}}
+ .hdr{position:absolute;top:9.7mm;left:13.4mm;width:181.6mm;height:24mm;border:.3mm solid #000;display:flex}
+ .hl{width:50.4mm;border-right:.3mm solid #000;display:flex;align-items:center;justify-content:center;padding:1.5mm}
+ .hl img{max-width:100%;max-height:19.5mm;object-fit:contain}
+ .hc{width:87.6mm;border-right:.3mm solid #000;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+ .hc b{font-size:21.5pt;line-height:1.16}.hc small{font-size:8pt;margin-top:1mm}
+ .hr{flex:1;display:flex;align-items:center;padding-left:1mm;font-size:11.5pt}
+ .body{position:absolute;top:34mm;left:13mm;width:183mm;bottom:23.5mm}
+ .ftr{position:absolute;left:3mm;right:0;top:274.4mm;border-top:.25mm solid #000;text-align:center;font-size:8.6pt;line-height:1.35;padding-top:1.2mm}
+ .ftr a{color:#00f;text-decoration:none}
+ p{margin:0;font-size:12pt}
+ .cli{margin-top:13.2mm}.eu{margin-top:9.3mm;white-space:nowrap}
+ .ln{display:inline-block;border-bottom:.25mm solid #000;height:5.3mm;vertical-align:-1.2mm;text-align:center;font-size:11pt;line-height:5.3mm;white-space:nowrap;overflow:hidden;padding:0 1mm}
+ .eu .ln{margin-left:1.2mm}
+ .dec{margin-top:6.6mm;line-height:1.62}
+ .loc{margin-top:6.3mm;display:flex}.loc .dt{margin-left:auto;margin-right:6.5mm}
+ .ds{margin-top:10.2mm}.ds.cont{margin-top:8mm;font-weight:bold}
+ table{border-collapse:collapse;table-layout:fixed;margin-left:1.2mm}
+ .t1{width:180mm;margin-top:3.3mm}
+ .t1 th,.t1 td,.t2 th,.t2 td{border:.25mm solid #000;padding:0 1.3mm;vertical-align:middle;word-wrap:break-word}
+ .t1 tr.th{height:10.2mm}.t1 th{font-size:13pt;padding:0 .4mm;white-space:nowrap}.t1 th.cp{font-size:11.5pt}
+ .t1 td.c{text-align:center}.t1 td.d{text-align:left}
+ .cap{text-align:center;margin-top:7.8mm}
+ .t2{width:180mm;margin-top:10.8mm}.t2 tr:first-child{height:10.2mm}.t2 tr:last-child{height:8.2mm}
+ .t2 th{font-size:15pt}.t2 td{text-align:center;font-size:12pt}
+ .cap2{margin-top:6.9mm}
+ .fotos{padding-top:6mm}
+ .grp{margin-bottom:9mm;break-inside:avoid}
+ .frow{display:flex;justify-content:center;gap:9mm;margin-bottom:5mm}
+ .fbox{width:84mm;height:92mm;display:flex;align-items:center;justify-content:center}
+ .frow.one .fbox{width:118mm}
+ .fbox img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+ .fcap{text-align:center;font-size:12pt;margin-top:1mm;padding:0 6mm}`;
+ return`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>F.13.001 - Listagem de Equipamentos - ${E(l.numero||'')} - ${E(l.cliente||'')}</title><style>${css}</style></head><body>${html}</body></html>`;
+}
+function locPrint(){
+ const l=cur;if(!l)return;
+ const w=window.open('','_blank');if(!w)return note('Permita pop-ups para gerar o documento.');
+ w.document.open();w.document.write(locDocHTML(l).replace('</body>',`<script>window.onload=()=>{const imgs=[...document.images];Promise.all(imgs.map(i=>i.complete?Promise.resolve():new Promise(r=>{i.onload=i.onerror=r}))).then(()=>setTimeout(()=>window.print(),150))};<\/script></body>`));
+ w.document.close();
+}
+
+/* ---------- diálogos ---------- */
+function dlg(h){const d=$('#dlg');d.innerHTML=h;if(!d.open)d.showModal()}
+const normT=t=>String(t||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+const isAp=t=>normT(t)==='aparelho',isCab=t=>normT(t)==='cabecote',isFonte=t=>['fonte','carregador'].includes(normT(t)),isNotebook=t=>normT(t)==='notebook';
+function serFields(tipo,e){
+  e=e||{};
+  if(isAp(tipo))return `<label>Série (Tela)<input id="f_sr2" value="${esc(e.serie2)}"></label><label>Série (Módulo)<input id="f_sr" value="${esc(e.serie)}"></label>`;
+  if(isCab(tipo))return `<label>PN<input id="f_sr2" value="${esc(e.serie2)}"></label><label>SN<input id="f_sr" value="${esc(e.serie)}"></label>`;
+  if(isNotebook(tipo))return `<label>SN (Número de série)<input id="f_sr" value="${esc(e.serie)}" placeholder="Informe o número de série do notebook"></label>`;
+  return `<label class="chk"><input type="checkbox" id="f_ns" data-a="togSer"${e.hasSerie?' checked':''}> Possui número de série</label><div id="serbox" style="${e.hasSerie?'':'display:none'}"><label>Número de série (módulo)<input id="f_sr" value="${esc(e.serie)}"></label>
+  <label class="chk"><input type="checkbox" id="f_n2" data-a="togSer2"${e.serie2?' checked':''}> Possui segundo número de série (tela)</label><div id="ser2box" style="${e.serie2?'':'display:none'}"><label>Número de série da tela<input id="f_sr2" value="${esc(e.serie2)}"></label></div></div>`;
+}
+function serLabels(e){return isAp(e.tipo)?['Série (Módulo)','Série (Tela)']:isCab(e.tipo)?['SN','PN']:isNotebook(e.tipo)?['SN','Série (tela)']:[e.serie2?'Série (módulo)':'Série','Série (tela)']}
+function eqDlg(e){
+  cur=e||null;e=e||{tipo:tiposList()[0]||'Aparelho'};if(!cur&&TP.some(t=>t.nome==='Aparelho'))e.tipo='Aparelho';
+  dlg(`<h2>${cur?'Editar item':'Novo item'}</h2>
+  <label>Nº de patrimônio<input id="f_pat" value="${esc(e.pat)}"></label>
+  <label>Descrição<input id="f_desc" value="${esc(e.desc)}"></label>
+  <label>Tipo<select id="f_tipo" data-a="tipoSel">${tiposList(e.tipo).map(t=>`<option value="${esc(t)}"${t===e.tipo?' selected':''}>${esc(t)}</option>`).join('')}<option value="__novo__">＋ Cadastrar novo tipo…</option></select></label>
+  <div id="tipobox" style="display:none"><label>Nome do novo tipo<input id="f_tipo_novo" placeholder="Ex.: Cabo, Transdutor, Maleta"></label></div>
+  <div id="voltbox" style="${isFonte(e.tipo)?'':'display:none'}">
+    <label>Tensão da fonte
+      <select id="f_volt" data-a="voltSel">
+        <option value="">Selecione a tensão</option>
+        ${['5V','9V','12V','18V','24V','36V','48V'].map(v=>`<option value="${v}"${e.tensao===v?' selected':''}>${v}</option>`).join('')}
+        <option value="__outra__"${e.tensao&&!['5V','9V','12V','18V','24V','36V','48V'].includes(e.tensao)?' selected':''}>Outra tensão…</option>
+      </select>
+    </label>
+    <label id="outravoltbox" style="${e.tensao&&!['5V','9V','12V','18V','24V','36V','48V'].includes(e.tensao)?'':'display:none'}">Informe a tensão<input id="f_volt_outra" placeholder="Ex.: 15V" value="${esc(e.tensao&&!['5V','9V','12V','18V','24V','36V','48V'].includes(e.tensao)?e.tensao:'')}"></label>
+  </div>
+  <div id="noteWrap" style="${isNotebook(e.tipo)?'':'display:none'}">
+    <label>Configuração<input id="f_config" placeholder="Ex.: Intel Core i5, 16GB RAM, SSD 512GB" value="${esc(e.configuracao||'')}"></label>
+    <label>Chave de identificação<input id="f_chaveid" placeholder="Informe a chave de identificação" value="${esc(e.chaveIdentificacao||'')}"></label>
+    <label>BitLocker<input type="password" id="f_bitlocker" autocomplete="new-password" placeholder="Chave de recuperação do BitLocker" value="${esc(e.bitlocker||'')}"></label>
+    <div class="mu">A chave BitLocker é sensível. Restrinja o acesso ao cadastro e evite compartilhá-la.</div>
+  </div>
+  <div id="serwrap">${serFields(e.tipo,e)}</div>
+  <div id="ncwrap" style="${isCab(e.tipo)?'display:none':''}"><label class="chk"><input type="checkbox" id="f_nc" data-a="togCal"${e.needsCal&&!isCab(e.tipo)?' checked':''}> Exige calibração anual</label></div>
+  <div id="calbox" style="${e.needsCal?'':'display:none'}"><label>Última calibração<input type="date" id="f_cd" data-a="cdChange" value="${e.calDate||''}"></label><label>Validade (1 ano depois, editável)<input type="date" id="f_cv" value="${e.calDue||''}"></label></div>
+  <label>Observação<input id="f_obs" value="${esc(e.obs)}"></label>${cur?eqHist(cur):''}
+  <div id="err" class="warn"></div>
+  <div class="row"><button class="pri" data-a="saveEq">Salvar</button><button data-a="close">Cancelar</button>${cur&&isAdmin?'<button class="dg" data-a="delEq">Excluir</button>':''}</div>`);
+}
+function saveEq(){
+  const v=id=>$('#'+id).value.trim(),pat=v('f_pat'),desc=v('f_desc');
+  if(!pat||!desc)return $('#err').textContent='Preencha o patrimônio e a descrição.';
+  let tipo=$('#f_tipo').value;
+  if(tipo==='__novo__'){
+    tipo=v('f_tipo_novo');
+    if(!tipo)return $('#err').textContent='Digite o nome do novo tipo.';
+    const ja=TP.find(t=>(t.nome||'').toLowerCase()===tipo.toLowerCase());
+    if(ja)tipo=ja.nome;else save('tip',{id:uid('t'),nome:tipo});
+  }
+  if(EQ.some(x=>x.pat===pat&&(!cur||x.id!==cur.id)))return $('#err').textContent='Já existe um item com esse patrimônio.';
+  const fixo=isAp(tipo)||isCab(tipo)||isNotebook(tipo),sr=$('#f_sr')?v('f_sr'):'',sr2=$('#f_sr2')?v('f_sr2'):'';
+  const hs=fixo?!!(sr||sr2):$('#f_ns').checked;
+  const nc=!isCab(tipo)&&$('#f_nc').checked;let cd=v('f_cd'),cv=v('f_cv');
+  if(nc&&cd&&!cv)cv=addYear(cd);
+  const tensao=isFonte(tipo)?($('#f_volt').value==='__outra__'?v('f_volt_outra'):v('f_volt')):'';
+  if(isFonte(tipo)&&!tensao)return $('#err').textContent='Selecione ou informe a tensão da fonte.';
+  const configuracao=isNotebook(tipo)?v('f_config'):'';
+  const chaveIdentificacao=isNotebook(tipo)?v('f_chaveid'):'';
+  const bitlocker=isNotebook(tipo)?v('f_bitlocker'):'';
+  save('eq',{...(cur||{}),id:cur?cur.id:uid('e'),pat,desc,tipo,tensao,configuracao,chaveIdentificacao,bitlocker,hasSerie:hs,serie:hs?sr:'',serie2:fixo?sr2:(hs&&$('#f_n2').checked?sr2:''),needsCal:nc,calDate:nc?cd:'',calDue:nc?cv:'',obs:v('f_obs')});
+  $('#dlg').close();
+}
+function calDlg(id){
+  const e=EQ.find(x=>x.id===id);cur=e;
+  dlg(`<h2>Registrar calibração</h2><div><b>${esc(e.pat)}</b> · ${esc(e.desc)}</div>
+  <label style="margin-top:10px">Data da calibração<input type="date" id="c_d" value="${today()}"></label>
+  <div class="mu">A nova validade será 1 ano depois da data informada.</div>
+  <div class="mu" style="margin-top:8px">Histórico: ${(e.hist||[]).length?e.hist.map(fmt).join(', '):'nenhum registro'}</div>
+  <div class="row"><button class="pri" data-a="saveCal">Salvar</button><button data-a="close">Cancelar</button></div>`);
+}
+function eqHist(e){const L=OS.filter(o=>(o.items||[]).some(i=>i.id===e.id)).sort((a,b)=>osLabel(b).localeCompare(osLabel(a)));return`<h3>Histórico de saídas</h3>`+(L.length?L.map(o=>`<div class="mu" style="padding:3px 0">${esc(osLabel(o))} · ${esc(o.cliente||o.dest||'')} · ${fmt(o.date)}${o.ret?' a '+fmt(o.ret):' (em campo)'}</div>`).join(''):'<div class="mu">Nenhuma saída registrada.</div>')}
+const err=t=>{$('#err').textContent=t};
+const dig=x=>String(x||'').replace(/\D/g,'');
+function osDlg(){
+  MT=[];TM=[];warned=false;
+  dlg(`<h2>Nova OS · ${nextNo()}</h2>
+  <div class="g2"><label>Número da OS<input id="o_no" value="${esc(nextNo())}" required></label><label>Data de saída<input type="date" id="o_d" value="${today()}"></label>
+  <label>Executar conforme instrução/procedimento<input id="o_i"></label>
+  <label>Cliente (nome ou CNPJ)<input id="o_c" list="dl_c" data-a="fCli" autocomplete="off"></label>
+  <label>Responsável<input id="o_r"></label>
+  <label>Local<input id="o_l"></label>
+  <label>Contato<input id="o_t"></label>
+  <label>Placa do veículo<input id="o_p" list="dl_p" data-a="fVei" autocomplete="off"></label>
+  <label>Veículo<input id="o_v"></label></div>
+  <h3>Equipe</h3><div class="tm" id="o_tm"></div>
+  <div class="bar"><input id="o_n" list="dl_n" placeholder="Digite o nome para buscar" data-a="fPes" autocomplete="off"><button class="sm" data-a="addPes">Adicionar</button></div>
+  <h3>Material</h3><div id="o_rows"></div>
+  <div class="bar"><input id="o_a" list="dl_a" placeholder="Patrimônio, nº de série ou nome do item sem patrimônio" data-a="fEq" autocomplete="off"><button class="sm" data-a="addAvulso">Adicionar sem patrimônio</button></div><div class="mu" style="margin:-4px 0 6px">Item sem patrimônio: escreva o nome e toque em “Adicionar sem patrimônio”. Na OS sai como ****.</div>
+  <label>Observação<input id="o_o"></label>
+  <datalist id="dl_c">${CL.map(c=>`<option value="${esc(c.nome)}">${esc(c.cnpj)}</option>`).join('')}</datalist>
+  <datalist id="dl_p">${VE.map(v=>`<option value="${esc(v.placa)}">${esc(v.modelo)}</option>`).join('')}</datalist>
+  <datalist id="dl_n">${PE.map(x=>`<option value="${esc(x.nome)}"></option>`).join('')}</datalist>
+  <datalist id="dl_a"></datalist>
+  <div id="err" class="warn"></div>
+  <div class="row"><button class="pri" data-a="saveOS">Gerar OS</button><button data-a="close">Cancelar</button></div>`);
+  drawTeam();drawRows();
+}
+function drawTeam(){$('#o_tm').innerHTML=TM.map((n,i)=>`<span class="chip" style="cursor:pointer" data-a="rmPes" data-id="${i}">${esc(n)} ×</span>`).join('')||'<span class="mu">Ninguém adicionado.</span>'}
+function drawRows(){
+  $('#o_rows').innerHTML=MT.map((r,i)=>`<div class="rw"><input class="q" type="number" min="1" value="${r.qtd}" data-r="${i}" data-k="qtd" aria-label="Quantidade"><input class="c" value="${esc(r.pat)}" placeholder="Patrimônio" data-r="${i}" data-k="pat"><input value="${esc(r.desc)}" placeholder="Descrição" data-r="${i}" data-k="desc"><button class="sm dg" data-a="rmRow" data-id="${i}" aria-label="Remover">×</button></div>`).join('')||'<div class="mu" style="margin-bottom:6px">Nenhum item ainda.</div>';
+  const m=inOpenOS(),lm=inOpenLoc();
+  $('#dl_a').innerHTML=EQ.filter(e=>!m[e.id]&&!lm[e.id]&&!MT.some(r=>r.id===e.id)).map(e=>`<option value="${esc(e.pat)}">${esc(e.desc)}${isFonte(e.tipo)&&e.tensao?' · '+esc(e.tensao):''}${e.serie?' · S/N '+esc(e.serie):''}${e.serie2?' · Tela '+esc(e.serie2):''}</option>`).join('')+BL.filter(b=>!m[b.id]&&!MT.some(r=>r.id===b.id)).map(b=>`<option value="${esc(b.ident)}">BLOCO · ${esc(b.tipo)} · ${esc(bloDesc(b))}</option>`).join('');
+}
+function addPes(v,quiet){
+  v=String(v||'').trim();if(!v)return;
+  const p=PE.find(x=>x.nome.toLowerCase()===v.toLowerCase());
+  if(!p&&quiet)return;
+  const n=p?p.nome:v;if(!TM.includes(n))TM.push(n);
+  $('#o_n').value='';drawTeam();
+}
+function addEq(v,quiet){
+  v=String(v||'').trim();if(!v)return;
+  const key=v.toLowerCase();
+  const e=EQ.find(x=>x.pat===v)||EQ.find(x=>(x.serie&&x.serie.toLowerCase()===key)||(x.serie2&&x.serie2.toLowerCase()===key));
+  const b=BL.find(x=>(x.ident||'').toLowerCase()===key);
+  const item=e||b;
+  if(!item){if(!quiet)err('Patrimônio, série ou identificação do bloco não encontrado.');return}
+  if(inOpenOS()[item.id])return err('Este item já está em outra OS aberta. Registre a devolução antes de incluí-lo novamente.');
+  if(e&&inOpenLoc()[e.id])return err('Este item está em uma locação ativa. Registre a devolução antes de incluí-lo em uma OS.');
+  err('');if(!MT.some(r=>r.id===item.id))MT.push({id:item.id,qtd:1,pat:e?e.pat:'BLOCO · '+item.ident,desc:e?item.desc+(isFonte(item.tipo)&&item.tensao?' · '+item.tensao:''):item.tipo+' · '+bloDesc(item),itemType:e?'eq':'blo'});
+  $('#o_a').value='';drawRows();
+}
+function fillCli(){
+  const v=$('#o_c').value,c=CL.find(x=>x.nome.toLowerCase()===v.trim().toLowerCase())||CL.find(x=>dig(x.cnpj)&&dig(x.cnpj)===dig(v));
+  if(!c)return;
+  $('#o_c').value=c.nome;$('#o_r').value=c.resp||'';$('#o_l').value=c.local||'';$('#o_t').value=c.contato||'';
+}
+function fillVei(){
+  const v=VE.find(x=>norm(x.placa)===norm($('#o_p').value));
+  if(!v)return;
+  $('#o_p').value=v.placa;$('#o_v').value=v.modelo||'';
+}
+function saveOS(){
+  const v=id=>$('#'+id).value.trim(),cliente=v('o_c');
+  if(!cliente)return err('Informe o cliente.');
+  if(!TM.length)return err('Adicione ao menos uma pessoa na equipe.');
+  const its=MT.filter(r=>r.desc.trim());
+  if(!its.length)return err('Adicione ao menos um item de material.');
+  const bad=its.map(r=>r.itemType==='blo'?BL.find(b=>b.id===r.id):EQ.find(e=>e.id===r.id)).filter(e=>e&&(calSt(e)==='venc'||calSt(e)==='sem'));
+  if(bad.length&&!warned){warned=true;return err('Atenção: '+bad.map(e=>e.pat).join(', ')+' com calibração vencida ou sem registro. Toque em Gerar OS de novo para confirmar.')}
+  const no=v('o_no')||nextNo();if(OS.some(x=>osLabel(x).toLowerCase()===no.toLowerCase()))return err('Já existe uma OS com esse número.');
+  const o={id:uid('o'),no,createdAt:new Date().toISOString(),date:v('o_d'),instr:v('o_i'),cliente,resp:v('o_r'),local:v('o_l'),contato:v('o_t'),placa:v('o_p').toUpperCase(),veiculo:v('o_v'),equipe:[...TM],obs:v('o_o'),status:'Aberta',items:its.map(r=>({id:r.id||'',qtd:r.qtd||1,pat:r.pat.trim(),desc:r.desc.trim()}))};
+  save('os',o);tab='os';osView(o);
+}
+function osView(o){
+  cur=o;const can=DL&&window.html2pdf;
+  dlg(`<h2>OS ${esc(osLabel(o))}</h2>
+  <div><b>Cliente:</b> ${esc(o.cliente||o.dest)}${o.resp?' · '+esc(o.resp):''}</div>
+  ${o.local?`<div><b>Local:</b> ${esc(o.local)}${o.contato?' · '+esc(o.contato):''}</div>`:''}
+  ${o.veiculo||o.placa?`<div><b>Veículo:</b> ${esc(o.veiculo)} ${esc(o.placa)}</div>`:''}
+  <div><b>Equipe:</b> ${esc((o.equipe||[o.team]).filter(Boolean).join(', '))}</div>
+  <div><b>Saída:</b> ${fmt(o.date)}${o.ret?' · <b>Retorno:</b> '+fmt(o.ret):''}</div>
+  ${(o.reativacoes||[]).length?`<div class="mu">Reativada pelo administrador em ${fmt(o.reativacoes[o.reativacoes.length-1].date.slice(0,10))}${o.reativacoes.length>1?' ('+o.reativacoes.length+' reativações)':''}</div>`:''}
+  <div style="margin-top:8px">${(o.items||[]).map(i=>`<div style="padding:4px 0;border-bottom:1px solid var(--bd)">${i.qtd||1}x <b>${esc(i.pat||'—')}</b> ${esc(i.desc)}</div>`).join('')}</div>
+  ${o.obs?`<div style="margin-top:8px"><b>Obs.:</b> ${esc(o.obs)}</div>`:''}
+  <div class="row">${can?'<button class="pri" data-a="pdf">Baixar PDF</button>':''}<button${can?'':' class="pri"'} data-a="print">Imprimir</button><button data-a="editNo">Editar número</button>${o.status==='Aberta'?'<button data-a="ret">Registrar devolução</button>':''}${isAdmin&&o.status!=='Aberta'?'<button data-a="reativar">Reativar OS (Administrador)</button>':''}${isAdmin?'<button class="dg" data-a="delOS">Excluir</button>':''}<button data-a="close">Fechar</button></div>`);
+}
+function reativarDlg(){
+  const o=cur,m=inOpenOS(),conf=[...new Set((o.items||[]).filter(i=>i.id&&m[i.id]&&m[i.id].id!==o.id).map(i=>osLabel(m[i.id])))];
+  dlg(`<h2>Reativar OS</h2>
+  <div class="card" style="cursor:default"><div class="pat">OS nº ${esc(osLabel(o))}</div><div class="mu">${esc(o.cliente||o.dest||'')} · ${(o.items||[]).length} item(ns)</div><span class="chip ok">Devolvida</span></div>
+  <div style="margin-top:10px">${conf.length?`<div class="warn">Não é possível reativar agora: há equipamento(s) desta OS em outra OS em andamento (${esc(conf.join(', '))}). Registre a devolução dela antes.</div>`:'Confirma a reativação desta OS? Ela voltará ao estado <b>Em campo</b> e seus equipamentos ficarão indisponíveis novamente. A ação será registrada no histórico de auditoria.'}</div>
+  <div id="err" class="warn"></div>
+  <div class="row">${conf.length?'':'<button class="pri" data-a="reativarOk">Sim, reativar OS</button>'}<button data-a="osBack">${conf.length?'Voltar':'Cancelar'}</button></div>`);
+}
+async function reativarOk(){
+  if(!isAdmin)return err('Somente o administrador pode reativar OS.');
+  try{
+    const r=await fetch('/api/os/'+encodeURIComponent(cur.id)+'/reativar',{method:'POST'}),j=await r.json().catch(()=>({}));
+    if(!r.ok)return err(j.erro||'Não foi possível reativar a OS.');
+    upsert(OS,j.os);cur=j.os;render();osView(j.os);note('OS '+osLabel(j.os)+' reativada. A ação foi registrada na auditoria.');
+  }catch(e){err('Sem conexão com o servidor.')}
+}
+function editNoDlg(){dlg(`<h2>Editar número da OS</h2><label>Número da OS<input id="new_os_no" value="${esc(osLabel(cur))}"></label><div class="mu">A alteração mantém o mesmo registro e a ordem original da OS.</div><div id="err" class="warn"></div><div class="row"><button class="pri" data-a="saveNo">Salvar número</button><button data-a="close">Cancelar</button></div>`)}
+async function saveNo(){const no=$('#new_os_no').value.trim();if(!no)return err('Informe o número da OS.');if(OS.some(o=>o.id!==cur.id&&osLabel(o).toLowerCase()===no.toLowerCase()))return err('Já existe outra OS com esse número.');const updated={...cur,no};await save('os',updated);cur=updated;$('#dlg').close();osView(updated)}
+function osHTML(o){
+  const E=esc,L=(o.items||[]).map(i=>({...i,qtd:i.qtd||1})),eq=o.equipe||[o.team].filter(Boolean);
+  while(L.length<15)L.push(null);
+  const sg=(a,b)=>`<td style="height:46px"></td>`;
+  return`<div class="pr" id="prdoc"><table><tr><td style="width:27%;text-align:center;padding:4px"><img src="${LOGO}" style="height:54px" alt=""></td><td class="c"><div style="font-size:20px;font-weight:700">Ordem de Serviço</div><div style="font-size:9px;margin-top:6px">F.03.001 Rev. 0</div></td><td style="width:31%;font-weight:700">N° O.S.: ${E(osLabel(o))}<div style="margin-top:6px">DATA: ${fmt(o.date)}</div></td></tr></table>
+  <div class="h">EXECUTAR CONFORME A INSTRUÇÃO/PROCEDIMENTO: <span style="font-weight:400;font-style:normal">${E(o.instr)}</span></div>
+  <table><tr><td><b>CLIENTE:</b> ${E(o.cliente||o.dest)}</td><td><b>RESPONSÁVEL:</b> ${E(o.resp)}</td></tr><tr><td><b>LOCAL:</b> ${E(o.local)}</td><td><b>CONTATO:</b> ${E(o.contato)}</td></tr><tr><td><b>VEÍCULO:</b> ${E(o.veiculo)}</td><td><b>PLACA:</b> ${E(o.placa)}</td></tr></table>
+  <div class="h" style="margin-top:12px">EQUIPE:</div><table>${eq.map(n=>`<tr><td>${E(n)}</td></tr>`).join('')||'<tr><td>&nbsp;</td></tr>'}</table>
+  <div class="h" style="margin-top:12px">MATERIAL:</div><table><tr><th style="width:9%">ITEM</th><th style="width:9%">QTD</th><th style="width:22%">CÓD PATRIM.</th><th>DESCRIÇÃO</th></tr>${L.map((r,i)=>`<tr><td class="c">${r?i+1:'&nbsp;'}</td><td class="c">${r?E(r.qtd):''}</td><td class="c">${r?E(r.pat||'****'):''}</td><td>${r?E(r.desc):''}</td></tr>`).join('')}</table>
+  <table style="margin-top:12px"><tr><td style="height:72px;vertical-align:top"><b><i>OBS:</i></b> ${E(o.obs)}<div style="margin-top:36px;font-size:9px"><b>NA = NÃO APLICÁVEL</b></div></td></tr></table>
+  <div class="h tn" style="margin-top:10px">INFORMAÇÕES ADICIONAIS</div><div class="tn" style="font-size:9.5px;line-height:1.4">1-) Qualquer motivo que impossibilite a conclusão na íntegra desta OS deverá ser registrado em observações.<br>2-) As informações descritas acima são de total responsabilidade do responsável da Equipe de Inspeção.<br>3-) Verificar todos os dados referentes a recursos e a rastreabilidade dos arquivos e relatórios técnicos.<br>4-) A assinatura deve ser realizada de forma legível, dispensando a necessidade de rubrica.</div>
+  <table style="margin-top:12px"><tr><th colspan="2">SAÍDA</th><th colspan="2">RETORNO</th></tr><tr>${sg()+sg()+sg()+sg()}</tr><tr>${['RESPONSÁVEL','DEPTO OPERACIONAL','RESPONSÁVEL','DEPTO OPERACIONAL'].map(t=>`<td class="c"><b>${t}</b></td>`).join('')}</tr><tr>${'<td><b>DATA:</b></td>'.repeat(4)}</tr></table>
+  <div class="c tn" style="font-size:8.5px;margin-top:14px;border-top:1px solid #000;padding-top:3px">Rua 01, nº 282, Galpão 05, Loteamento Industrial Zeta - CEP 13184-802, Hortolândia/SP<br>www.newend.com.br</div></div>`;
+}
+function printOS(){
+  $('#print').innerHTML=osHTML(cur);
+  try{window.print()}catch(e){note('Impressão indisponível aqui. Baixe o PDF e imprima por ele.')}
+}
+async function pdfOS(b){
+  const o=cur;$('#print').innerHTML=osHTML(o);b.disabled=true;
+  try{
+    const blob=await html2pdf().set({margin:6,image:{type:'jpeg',quality:.95},html2canvas:{scale:2},jsPDF:{unit:'mm',format:'a4'},pagebreak:{mode:['css','legacy'],avoid:'tr'}}).from($('#prdoc')).outputPdf('blob');
+    await DL.save({filename:'OS_'+osLabel(o)+'_'+String(o.cliente||'').replace(/[^A-Za-z0-9]+/g,'_').slice(0,30)+'.pdf',data:blob});
+  }catch(e){if(!e||e.code!=='declined')note('Não foi possível gerar o PDF. Tente Imprimir.')}
+  b.disabled=false;
+}
+function cadDlg(x){
+  cur=x||null;const c=CAD[sub];x=x||{};
+  dlg(`<h2>${cur?'Editar':'Novo'} · ${c.t}</h2>${c.f.map(f=>sub==='cli'&&f[0]==='cnpj'?`<label>${f[1]}<span class="row" style="flex-wrap:nowrap"><input id="k_cnpj" style="flex:1;min-width:0" value="${esc(x.cnpj)}" inputmode="numeric" placeholder="00.000.000/0000-00"><button type="button" data-a="buscaCnpj" id="btnCnpj">Buscar</button></span></label><div id="cnpjmsg" class="mu"></div>`:`<label>${f[1]}<input id="k_${f[0]}" value="${esc(x[f[0]])}"></label>`).join('')}<div id="err" class="warn"></div><div class="row"><button class="pri" data-a="saveCad">Salvar</button><button data-a="close">Cancelar</button>${cur&&isAdmin?'<button class="dg" data-a="delCad">Excluir</button>':''}</div>`);
+}
+function saveCad(){
+  const c=CAD[sub],o={...(cur||{}),id:cur?cur.id:uid(sub[0])};
+  c.f.forEach(f=>{let v=$('#k_'+f[0]).value.trim();if(f[0]==='placa')v=v.toUpperCase();o[f[0]]=v});
+  if(!o[c.f[0][0]])return err('Preencha: '+c.f[0][1]+'.');
+  if(sub==='tip'){
+    if(TP.some(t=>t.id!==o.id&&(t.nome||'').toLowerCase()===o.nome.toLowerCase()))return err('Já existe um tipo com esse nome.');
+    if(cur&&cur.nome!==o.nome)tipoEmUso(cur.nome).forEach(e=>save('eq',{...e,tipo:o.nome}));
+  }
+  if(sub==='cli'&&dig(o.cnpj)){
+    if(dig(o.cnpj).length!==14)return err('O CNPJ deve ter 14 dígitos.');
+    const dup=CL.find(x=>x.id!==o.id&&dig(x.cnpj)===dig(o.cnpj));
+    if(dup)return err('Já existe um cliente com esse CNPJ: '+dup.nome+'.');
+  }
+  save(sub,o);$('#dlg').close();
+}
+const fmtCnpj=d=>d.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/,'$1.$2.$3/$4-$5');
+async function buscaCnpj(){
+  const d=dig($('#k_cnpj').value),msg=$('#cnpjmsg'),btn=$('#btnCnpj');
+  if(d.length!==14){msg.textContent='';return err('Digite os 14 números do CNPJ para buscar.')}
+  err('');msg.textContent='Consultando a Receita…';btn.disabled=true;
+  try{
+    const r=await fetch('/api/cnpj/'+d,{cache:'no-store'}),j=await r.json().catch(()=>({}));
+    if(!r.ok){msg.textContent='';return err(j.erro==='coleção não encontrada'?'O servidor está com o server.js desatualizado (sem a busca de CNPJ). Substitua o server.js pelo novo e reinicie o servidor.':(j.erro||'Não foi possível consultar o CNPJ.'))}
+    $('#k_cnpj').value=fmtCnpj(d);
+    const put=(id,v)=>{const el=$('#'+id);if(v&&!el.value.trim())el.value=v};
+    put('k_nome',j.nome);put('k_local',[j.municipio,j.uf].filter(Boolean).join(' - '));put('k_contato',j.telefone||j.email);
+    msg.textContent='Dados encontrados: '+j.nome+(j.fantasia?' ('+j.fantasia+')':'')+(j.situacao?' · Situação: '+j.situacao:'')+'. Campos já preenchidos foram mantidos; confira antes de salvar.';
+    if(j.situacao&&!/ativa/i.test(j.situacao))err('Atenção: a situação cadastral desta empresa é '+j.situacao+'.');
+  }catch(e){msg.textContent='';err('Sem conexão com o servidor. Acesse o sistema pelo endereço http do servidor.')}
+  finally{btn.disabled=false}
+}
+
+/* ---------- importação de equipamentos em lote ---------- */
+const IMP={step:1,file:'',sheet:'',head:[],data:[],map:{},tiposNovos:true,atualizar:false,tipoPadrao:'',items:[],res:null};
+const IMP_CAMPOS=[['pat','Patrimônio *'],['desc','Descrição *'],['tipo','Tipo'],['serie','Nº de série / SN (Notebook)'],['serie2','Nº de série (tela)'],['configuracao','Configuração (Notebook)'],['chaveIdentificacao','Chave de identificação (Notebook)'],['bitlocker','BitLocker (Notebook)'],['calDate','Última calibração'],['calDue','Validade da calibração'],['obs','Observações']];
+const IMP_SIN={
+  pat:['patrimonio','pat','tag','codigo','cod','npatrimonio','numpatrimonio','nopatrimonio','numerodopatrimonio','numeropatrimonio'],
+  desc:['descricao','desc','equipamento','item','nome','modelo','descricaodoequipamento'],
+  tipo:['tipo','categoria','tipodeitem','tipodoitem'],
+  serie:['numerodeserie','nserie','ns','snnotebook','sn','serie','serial','numeroserie','seriemodulo','nseriemodulo','numerodeseriemodulo'],
+  serie2:['seriedatela','serietela','nseriedatela','nserietela','numerodeseriedatela','numerodeserietela','tela'],
+  configuracao:['configuracao','config','configuracaonotebook','hardware'],
+  chaveIdentificacao:['chavedeidentificacao','chaveidentificacao','identificacao','idchave'],
+  bitlocker:['bitlocker','chavebitlocker','recuperacaobitlocker','chaverecuperacaobitlocker'],
+  calDate:['ultimacalibracao','ultimacal','datacalibracao','datadacalibracao','dtcalibracao','calibracao'],
+  calDue:['validade','validadedacalibracao','validadecalibracao','proximacalibracao','proximacal','vencimento','vencimentodacalibracao','proximacalibracaovalidade'],
+  obs:['observacoes','observacao','obs','anotacoes']
+};
+const impN=s=>String(s==null?'':s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+const impS=v=>v==null?'':String(v).trim();
+const colName=i=>{let s='',n=i+1;while(n>0){const r=(n-1)%26;s=String.fromCharCode(65+r)+s;n=Math.floor((n-1)/26)}return s};
+function impDt(y,m,d){y=+y;m=+m;d=+d;const x=new Date(y,m-1,d);if(y<1990||y>2100||x.getMonth()!==m-1||x.getDate()!==d)return{err:1};return{v:y+'-'+String(m).padStart(2,'0')+'-'+String(d).padStart(2,'0')}}
+function impData(v){
+  if(v===''||v==null)return{v:''};
+  if(typeof v==='number'){const p=window.XLSX&&XLSX.SSF.parse_date_code(v);return p?impDt(p.y,p.m,p.d):{err:1}}
+  const t=String(v).trim();if(!t)return{v:''};let m;
+  if((m=t.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/)))return impDt(m[1],m[2],m[3]);
+  if((m=t.match(/^(\d{1,2})[\/.\-](\d{1,2})[\/.\-](\d{2,4})$/)))return impDt(m[3].length===2?'20'+m[3]:m[3],m[2],m[1]);
+  return{err:1};
+}
+function parseCSV(t){
+  t=t.replace(/^\uFEFF/,'');
+  const first=t.split(/\r?\n/,1)[0]||'';
+  const sep=[';','\t',','].map(c=>[c,first.split(c).length]).sort((a,b)=>b[1]-a[1])[0][0];
+  const rows=[];let row=[],f='',q=false;
+  for(let i=0;i<t.length;i++){const c=t[i];
+    if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++}else q=false}else f+=c}
+    else if(c==='"')q=true;
+    else if(c===sep){row.push(f);f=''}
+    else if(c==='\n'||c==='\r'){if(c==='\r'&&t[i+1]==='\n')i++;row.push(f);rows.push(row);row=[];f=''}
+    else f+=c}
+  if(f!==''||row.length){row.push(f);rows.push(row)}
+  return rows;
+}
+function impAutoMap(){
+  IMP.map={};const ordem=['serie2','serie','configuracao','chaveIdentificacao','bitlocker','pat','desc','tipo','calDate','calDue','obs'];
+  IMP.head.forEach((h,i)=>{const n=impN(h);if(!n)return;for(const f of ordem){if(IMP.map[f]!==undefined)continue;if(IMP_SIN[f].includes(n)){IMP.map[f]=String(i);break}}});
+}
+function impAnalisar(){
+  const g=(row,f)=>{const c=IMP.map[f];return c===''||c===undefined?'':row[+c]};
+  const exist=new Map(EQ.map(e=>[String(e.pat).trim().toLowerCase(),e]));
+  const visto=new Map(),novos=new Map(),tipos=tiposList();
+  const padrao=IMP.tipoPadrao||(tipos.includes('Aparelho')?'Aparelho':tipos[0]||'Aparelho');
+  IMP.items=IMP.data.map(({linha,row})=>{
+    const mot=[];
+    let patV=g(row,'pat');if(typeof patV==='number'&&Number.isInteger(patV)&&patV>=0&&patV<10000)patV=String(patV).padStart(4,'0');
+    const pat=impS(patV),desc=impS(g(row,'desc')),serie=impS(g(row,'serie')),serie2=impS(g(row,'serie2')),configuracao=impS(g(row,'configuracao')),chaveIdentificacao=impS(g(row,'chaveIdentificacao')),bitlocker=impS(g(row,'bitlocker')),obs=impS(g(row,'obs'));
+    const tipoInf=impS(g(row,'tipo'));let tipo=tipoInf;
+    if(!pat)mot.push('Patrimônio em branco');
+    if(!desc)mot.push('Descrição em branco');
+    const d1=impData(g(row,'calDate')),d2=impData(g(row,'calDue'));
+    if(d1.err)mot.push('Data da última calibração inválida');
+    if(d2.err)mot.push('Validade da calibração inválida');
+    if(!tipo)tipo=padrao;
+    else{const f=tipos.find(t=>t.toLowerCase()===tipo.toLowerCase());
+      if(f)tipo=f;
+      else if(IMP.tiposNovos){const k=tipo.toLowerCase();if(novos.has(k))tipo=novos.get(k);else novos.set(k,tipo)}
+      else mot.push('Tipo não cadastrado: '+tipo)}
+    let status='novo',ref=null;
+    if(mot.length)status='erro';
+    else{const key=pat.toLowerCase();
+      if(visto.has(key)){status='dupPlan';mot.push('Patrimônio repetido na linha '+visto.get(key))}
+      else{visto.set(key,linha);const ex=exist.get(key);
+        if(ex){ref=ex;if(IMP.atualizar)status='atualizar';else{status='dup';mot.push('Patrimônio já cadastrado ('+ex.desc+')')}}}}
+    let obj=null;
+    if(status==='novo'){
+      const calDate=d1.v||'',calDue=d2.v||(calDate?addYear(calDate):'');
+      obj={id:uid('e'),pat,desc,tipo,hasSerie:!!(serie||serie2),serie,serie2,configuracao,chaveIdentificacao,bitlocker,needsCal:!!(calDate||calDue),calDate,calDue,obs};
+    }else if(status==='atualizar'){
+      obj={...ref};obj.desc=desc||obj.desc;if(tipoInf)obj.tipo=tipo;
+      if(serie)obj.serie=serie;if(serie2)obj.serie2=serie2;if(serie||serie2)obj.hasSerie=true;if(configuracao)obj.configuracao=configuracao;if(chaveIdentificacao)obj.chaveIdentificacao=chaveIdentificacao;if(bitlocker)obj.bitlocker=bitlocker;
+      if(d1.v||d2.v){obj.needsCal=true;if(d1.v)obj.calDate=d1.v;obj.calDue=d2.v||(d1.v?addYear(d1.v):obj.calDue)}
+      if(obs)obj.obs=obs;
+    }
+    return{linha,row,pat,desc,tipo,serie,serie2,configuracao,chaveIdentificacao,bitlocker,calDate:d1.v||'',calDue:d2.v||'',status,mot,obj};
+  });
+}
+async function impLer(file){
+  try{
+    const buf=await file.arrayBuffer();let rows,sheet='';
+    if(/\.(csv|txt)$/i.test(file.name)){
+      let txt;try{txt=new TextDecoder('utf-8',{fatal:true}).decode(buf)}catch(_){txt=new TextDecoder('windows-1252').decode(buf)}
+      rows=parseCSV(txt);
+    }else{
+      if(!window.XLSX)return err('Não foi possível carregar o componente de Excel. Verifique a conexão com a internet e tente novamente.');
+      const wb=XLSX.read(buf,{type:'array'});
+      sheet=wb.SheetNames[0];
+      rows=XLSX.utils.sheet_to_json(wb.Sheets[sheet],{header:1,raw:true,defval:''});
+    }
+    const lin=rows.map((r,i)=>({linha:i+1,row:r})).filter(x=>x.row.some(c=>impS(c)!==''));
+    if(lin.length<2)return err('A planilha precisa ter uma linha de títulos e ao menos um equipamento.');
+    IMP.file=file.name;IMP.sheet=sheet;IMP.head=lin[0].row.map(impS);IMP.data=lin.slice(1);
+    impAutoMap();impAnalisar();IMP.step=2;IMP.res=null;impDraw();
+  }catch(e){err('Não foi possível ler o arquivo. Use um arquivo .xlsx ou .csv válido.')}
+}
+function impResumo(){
+  const c={novo:0,atualizar:0,dup:0,erro:0};
+  IMP.items.forEach(i=>{if(i.status==='novo')c.novo++;else if(i.status==='atualizar')c.atualizar++;else if(i.status==='erro')c.erro++;else c.dup++});
+  return c;
+}
+const impChip=i=>({novo:'<span class="chip ok">Novo</span>',atualizar:'<span class="chip wn">Atualizar existente</span>',dup:'<span class="chip wn">Duplicado</span>',dupPlan:'<span class="chip wn">Repetido na planilha</span>',erro:'<span class="chip er">Corrigir</span>'}[i.status]||'');
+const impTh='style="text-align:left;padding:5px 7px;border-bottom:1px solid var(--bd);position:sticky;top:0;background:var(--sf)"',impTd='style="padding:5px 7px;border-bottom:1px solid var(--bd);vertical-align:top"';
+function impDraw(){
+  const d=$('#dlg');d.style.width='min(1000px,96vw)';
+  if(IMP.step===1){
+    dlg(`<h2>Importar equipamentos em lote</h2>
+    <div class="mu">Envie uma planilha Excel (.xlsx) ou CSV. A primeira linha deve ter os títulos das colunas. Você confere tudo antes de cadastrar.</div>
+    <label>Arquivo da planilha<input type="file" id="imp_file" accept=".xlsx,.xls,.csv" data-a="impFile"></label>
+    <div class="mu" style="margin-top:8px">Colunas reconhecidas: Patrimônio e Descrição (obrigatórias), Tipo, séries, Configuração, Chave de identificação e BitLocker para notebooks, calibrações e Observações. Se a validade não for informada, ela é calculada em 1 ano a partir da última calibração.</div>
+    <div id="err" class="warn"></div>
+    <div class="row"><button data-a="impModelo">Baixar modelo de planilha</button><button data-a="close">Cancelar</button></div>`);
+    return;
+  }
+  if(IMP.step===2){
+    const c=impResumo(),tipos=tiposList(),faltaCol=IMP.map.pat===undefined||IMP.map.desc===undefined;
+    const optsCol=f=>`<option value="">(não importar)</option>`+IMP.head.map((h,i)=>`<option value="${i}"${String(i)===IMP.map[f]?' selected':''}>${colName(i)} – ${esc(h||'(sem título)')}</option>`).join('');
+    const pad=IMP.tipoPadrao||(tipos.includes('Aparelho')?'Aparelho':tipos[0]);
+    dlg(`<h2>Importar equipamentos · conferência</h2>
+    <div class="mu">Arquivo: <b>${esc(IMP.file)}</b>${IMP.sheet?' · aba '+esc(IMP.sheet):''} · ${IMP.items.length} linha(s) lidas</div>
+    <h3 style="margin:12px 0 4px;font-size:1rem">1. Colunas da planilha</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px">${IMP_CAMPOS.map(([f,l])=>`<label style="margin:0">${l}<select data-a="impMap" data-id="${f}">${optsCol(f)}</select></label>`).join('')}</div>
+    ${faltaCol?'<div class="warn">Indique as colunas de Patrimônio e Descrição.</div>':''}
+    <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:10px">
+      <label style="margin:0">Tipo para linhas sem tipo<select data-a="impTipo">${tipos.map(t=>`<option value="${esc(t)}"${t===pad?' selected':''}>${esc(t)}</option>`).join('')}</select></label>
+      <label class="chk" style="margin:0"><input type="checkbox" data-a="impOpt" data-id="tiposNovos"${IMP.tiposNovos?' checked':''}> Cadastrar tipos novos encontrados</label>
+      <label class="chk" style="margin:0"><input type="checkbox" data-a="impOpt" data-id="atualizar"${IMP.atualizar?' checked':''}> Atualizar patrimônios já cadastrados</label>
+    </div>
+    <h3 style="margin:14px 0 4px;font-size:1rem">2. Pré-visualização</h3>
+    <div><span class="chip ok">${c.novo} novo(s)</span><span class="chip wn">${c.atualizar} a atualizar</span><span class="chip wn">${c.dup} duplicado(s)</span><span class="chip er">${c.erro} a corrigir</span></div>
+    <div style="overflow:auto;max-height:42vh;border:1px solid var(--bd);border-radius:8px;margin-top:6px"><table style="width:100%;border-collapse:collapse;font-size:.85rem"><tr><th ${impTh}>Linha</th><th ${impTh}>Patrimônio</th><th ${impTh}>Descrição</th><th ${impTh}>Tipo</th><th ${impTh}>Série (módulo / tela)</th><th ${impTh}>Calibração</th><th ${impTh}>Situação</th></tr>
+    ${IMP.items.slice(0,500).map(i=>`<tr><td ${impTd}>${i.linha}</td><td ${impTd}>${esc(i.pat)}</td><td ${impTd}>${esc(i.desc)}</td><td ${impTd}>${esc(i.tipo)}</td><td ${impTd}>${esc(i.serie)}${i.serie2?' / '+esc(i.serie2):''}</td><td ${impTd}>${i.calDate?fmt(i.calDate):''}${i.calDue?' → '+fmt(i.calDue):''}</td><td ${impTd}>${impChip(i)}${i.mot.length?'<div class="mu">'+esc(i.mot.join('; '))+'</div>':''}</td></tr>`).join('')}</table></div>
+    ${IMP.items.length>500?'<div class="mu">Mostrando as 500 primeiras linhas; todas serão processadas.</div>':''}
+    <div id="imp_prog" class="mu"></div><div id="err" class="warn"></div>
+    <div class="row"><button class="pri" id="imp_run" data-a="impRun"${(c.novo+c.atualizar)&&!faltaCol?'':' disabled'}>Importar ${c.novo+c.atualizar} equipamento(s)</button><button data-a="impBack">Trocar arquivo</button><button data-a="close">Cancelar</button></div>`);
+    return;
+  }
+  const r=IMP.res,prob=IMP.items.filter(i=>['erro','dup','dupPlan','falha'].includes(i.final||i.status));
+  dlg(`<h2>Importação concluída</h2>
+  <div><span class="chip ok">${r.ok} cadastrado(s)</span><span class="chip ok">${r.up} atualizado(s)</span><span class="chip wn">${IMP.items.filter(i=>i.status==='dup'||i.status==='dupPlan').length} duplicado(s) ignorado(s)</span><span class="chip er">${IMP.items.filter(i=>i.status==='erro').length+r.fail} precisam de correção</span></div>
+  ${prob.length?`<div style="overflow:auto;max-height:42vh;border:1px solid var(--bd);border-radius:8px;margin-top:8px"><table style="width:100%;border-collapse:collapse;font-size:.85rem"><tr><th ${impTh}>Linha</th><th ${impTh}>Patrimônio</th><th ${impTh}>Descrição</th><th ${impTh}>Motivo</th></tr>${prob.slice(0,200).map(i=>`<tr><td ${impTd}>${i.linha}</td><td ${impTd}>${esc(i.pat)}</td><td ${impTd}>${esc(i.desc)}</td><td ${impTd}>${esc(i.mot.join('; '))}</td></tr>`).join('')}</table></div>`:'<div class="mu" style="margin-top:8px">Todas as linhas foram importadas sem pendências.</div>'}
+  <div class="mu" style="margin-top:6px">Baixe o relatório para guardar o resultado e corrigir as linhas pendentes na planilha.</div>
+  <div class="row"><button class="pri" data-a="impRel">Baixar relatório (Excel)</button><button data-a="close">Fechar</button></div>`);
+}
+async function impRun(){
+  if(!db)return note(NOLOGIN);
+  const todo=IMP.items.filter(i=>i.status==='novo'||i.status==='atualizar');
+  if(!todo.length)return;
+  const prog=$('#imp_prog');$('#imp_run').disabled=true;
+  const tipos=tiposList(),nomes=[...new Set(todo.map(i=>i.obj.tipo))].filter(t=>!tipos.some(x=>x.toLowerCase()===t.toLowerCase()));
+  for(const nome of nomes){try{const t={id:uid('t'),nome};await db.collection('tip').doc(t.id).set(t);upsert(TP,t)}catch(e){}}
+  let ok=0,up=0,fail=0;
+  for(let n=0;n<todo.length;n++){
+    const it=todo[n];if(prog)prog.textContent='Importando '+(n+1)+' de '+todo.length+'…';
+    try{await db.collection('eq').doc(it.obj.id).set(it.obj);upsert(EQ,it.obj);it.final=it.status==='novo'?'cadastrado':'atualizado';it.status==='novo'?ok++:up++}
+    catch(e){it.final='falha';it.mot.push('Erro ao salvar no servidor');fail++}
+  }
+  IMP.res={ok,up,fail};IMP.step=3;render();impDraw();
+}
+function impModelo(){
+  if(!window.XLSX)return err('Não foi possível carregar o componente de Excel. Verifique a conexão com a internet.');
+  const ws=XLSX.utils.aoa_to_sheet([['Patrimônio','Descrição','Tipo','Número de série (módulo) / SN (Notebook)','Número de série (tela)','Configuração','Chave de identificação','BitLocker','Última calibração','Validade da calibração','Observações']]);
+  ws['!cols']=[{wch:14},{wch:36},{wch:16},{wch:26},{wch:24},{wch:20},{wch:24},{wch:34}];
+  const ins=XLSX.utils.aoa_to_sheet([['Instruções'],['Preencha uma linha por equipamento, a partir da linha 2 da aba "Equipamentos".'],['Obrigatórios: Patrimônio e Descrição.'],['Datas no formato dd/mm/aaaa. Se informar só a última calibração, a validade é calculada em 1 ano.'],['Formate a coluna Patrimônio como Texto para não perder zeros à esquerda (ex.: 0018). Números sem zeros são completados até 4 dígitos.'],['Tipos novos podem ser cadastrados automaticamente durante a importação.']]);
+  ins['!cols']=[{wch:110}];
+  const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Equipamentos');XLSX.utils.book_append_sheet(wb,ins,'Instruções');
+  XLSX.writeFile(wb,'modelo-importacao-equipamentos.xlsx');
+}
+function impRel(){
+  if(!window.XLSX)return note('Não foi possível carregar o componente de Excel. Verifique a conexão com a internet.');
+  const R=IMP.items,r=IMP.res||{ok:0,up:0,fail:0},wb=XLSX.utils.book_new();
+  const dups=R.filter(i=>i.status==='dup'||i.status==='dupPlan'),corr=R.filter(i=>i.status==='erro'||i.final==='falha');
+  const ws0=XLSX.utils.aoa_to_sheet([['Relatório de importação de equipamentos'],['Arquivo',IMP.file],['Data',new Date().toLocaleString('pt-BR')],['Linhas lidas',R.length],['Cadastrados',r.ok],['Atualizados',r.up],['Duplicados ignorados',dups.length],['Precisam de correção',corr.length]]);
+  ws0['!cols']=[{wch:26},{wch:50}];XLSX.utils.book_append_sheet(wb,ws0,'Resumo');
+  const imp=R.filter(i=>i.final==='cadastrado'||i.final==='atualizado').map(i=>({'Linha':i.linha,'Patrimônio':i.pat,'Descrição':i.desc,'Tipo':i.obj.tipo,'Ação':i.final==='cadastrado'?'Cadastrado':'Atualizado'}));
+  if(imp.length)XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(imp),'Importados');
+  const usados=new Set(),chaves=IMP.head.map((h,i)=>{let k=h||('Coluna '+colName(i));if(usados.has(k))k+=' ('+colName(i)+')';usados.add(k);return k});
+  if(corr.length)XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(corr.map(i=>{const o={'Linha':i.linha,'Motivo':i.mot.join('; ')};chaves.forEach((k,c)=>{o[k]=impS(i.row[c])});return o})),'Corrigir');
+  if(dups.length)XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(dups.map(i=>({'Linha':i.linha,'Patrimônio':i.pat,'Descrição':i.desc,'Motivo':i.mot.join('; ')}))),'Duplicados');
+  XLSX.writeFile(wb,'relatorio-importacao-'+today()+'.xlsx');
+}
+
+/* ---------- eventos ---------- */
+const armed={};
+function arm(b,key,fn){if(armed[key]){delete armed[key];fn()}else{armed[key]=1;b.textContent='Toque de novo para confirmar';setTimeout(()=>delete armed[key],4000)}}
+
+/* ---------- Importação de blocos ---------- */
+const IMPB={step:1,file:'',sheet:'',head:[],data:[],map:{},atualizar:false,items:[],res:null};
+const IMPB_CAMPOS=[['tipo','Tipo *'],['ident','Identificação *'],['espessura','Espessura'],['diam','Diâmetro externo'],['material','Material'],['calDate','Última calibração'],['calDue','Validade']];
+const IMPB_SIN={
+  tipo:['tipo','tipodebloco','categoria'],
+  ident:['identificacao','identificacaodobloco','id','codigo','cod','bloco','numero','nbloco'],
+  espessura:['espessura','esp'],
+  diam:['diametroexterno','diametro','diamext','diametroext','dext'],
+  material:['material'],
+  calDate:['ultimacalibracao','ultimacal','datacalibracao','datadacalibracao','dtcalibracao','calibracao'],
+  calDue:['validade','validadedacalibracao','validadecalibracao','proximacalibracao','vencimento','vencimentodacalibracao']
+};
+function impbDt(v){
+  if(typeof v!=='number'){const t=impS(v),n=impN(v);
+    if(!t||!n||['na','nao','sem','sc','nenhum','nenhuma','pendente','vencido','vencida','naopossui','naocalibrado','naoseaplica'].includes(n)||/^(sem|nao)/.test(n))return{v:'',sem:true}}
+  return impData(v);
+}
+function impbAutoMap(){IMPB.map={};IMPB.head.forEach((h,i)=>{const n=impN(h);if(!n)return;for(const[f]of IMPB_CAMPOS){if(IMPB.map[f]!==undefined)continue;if(IMPB_SIN[f].includes(n)){IMPB.map[f]=String(i);break}}})}
+function impbAnalisar(){
+  const g=(row,f)=>{const c=IMPB.map[f];return c===''||c===undefined?'':row[+c]};
+  const exist=new Map(BL.map(b=>[norm(b.ident),b])),visto=new Map();
+  IMPB.items=IMPB.data.map(({linha,row})=>{
+    const mot=[],tipo=impS(g(row,'tipo')),ident=impS(g(row,'ident')),espessura=impS(g(row,'espessura')),diam=impS(g(row,'diam')),material=impS(g(row,'material'));
+    if(!tipo)mot.push('Tipo em branco');
+    if(!ident)mot.push('Identificação em branco');
+    const d1=impbDt(g(row,'calDate')),d2=impbDt(g(row,'calDue'));
+    if(d1.err)mot.push('Data da última calibração inválida');
+    if(d2.err)mot.push('Validade inválida');
+    let status='novo',ref=null;
+    if(mot.length)status='erro';
+    else{const key=norm(ident);
+      if(visto.has(key)){status='dupPlan';mot.push('Identificação repetida na linha '+visto.get(key))}
+      else{visto.set(key,linha);const ex=exist.get(key);
+        if(ex){ref=ex;if(IMPB.atualizar)status='atualizar';else{status='dup';mot.push('Identificação já cadastrada')}}}}
+    const calDate=d1.v||'',calDue=d2.v||(calDate?addYear(calDate):'');let obj=null;
+    if(status==='novo')obj={id:uid('b'),tipo,ident,espessura,diam,material,needsCal:true,calDate,calDue,hist:calDate?[calDate]:[]};
+    else if(status==='atualizar'){
+      obj={...ref};delete obj.obs;obj.tipo=tipo||obj.tipo;
+      if(espessura)obj.espessura=espessura;if(diam)obj.diam=diam;if(material)obj.material=material;
+      if(calDate||d2.v){obj.needsCal=true;if(calDate){obj.calDate=calDate;const h=[...(obj.hist||[])];if(!h.includes(calDate))h.push(calDate);obj.hist=h}obj.calDue=calDue}
+    }
+    return{linha,row,tipo,ident,espessura,diam,material,calDate:d1.v||'',calDue:d2.v||'',status,mot,obj};
+  });
+}
+async function impbLer(file){
+  try{
+    const buf=await file.arrayBuffer();let rows,sheet='';
+    if(/\.(csv|txt)$/i.test(file.name)){
+      let txt;try{txt=new TextDecoder('utf-8',{fatal:true}).decode(buf)}catch(_){txt=new TextDecoder('windows-1252').decode(buf)}
+      rows=parseCSV(txt);
+    }else{
+      if(!window.XLSX)return err('Não foi possível carregar o componente de Excel. Verifique a conexão com a internet e tente novamente.');
+      const wb=XLSX.read(buf,{type:'array'});sheet=wb.SheetNames[0];
+      rows=XLSX.utils.sheet_to_json(wb.Sheets[sheet],{header:1,raw:true,defval:''});
+    }
+    const lin=rows.map((r,i)=>({linha:i+1,row:r})).filter(x=>x.row.some(c=>impS(c)!==''));
+    if(lin.length<2)return err('A planilha precisa ter uma linha de títulos e ao menos um bloco.');
+    IMPB.file=file.name;IMPB.sheet=sheet;IMPB.head=lin[0].row.map(impS);IMPB.data=lin.slice(1);
+    impbAutoMap();impbAnalisar();IMPB.step=2;IMPB.res=null;impbDraw();
+  }catch(e){err('Não foi possível ler o arquivo. Use um arquivo .xlsx ou .csv válido.')}
+}
+function impbDraw(){
+  const d=$('#dlg');d.style.width='min(1000px,96vw)';
+  if(IMPB.step===1){
+    dlg(`<h2>Importar blocos em lote</h2>
+    <div class="mu">Envie uma planilha Excel (.xlsx) ou CSV. A primeira linha deve ter os títulos das colunas. Você confere tudo antes de cadastrar.</div>
+    <label>Arquivo da planilha<input type="file" id="impb_file" accept=".xlsx,.xls,.csv" data-a="impbFile"></label>
+    <div class="mu" style="margin-top:8px">Colunas: Tipo e Identificação (obrigatórias), Espessura, Diâmetro externo, Material, Última calibração e Validade. Blocos sem calibração podem ficar com as datas em branco (ou “-”, “N/A”, “sem calibração”): são cadastrados normalmente e aparecem como “Sem calibração registrada” até você registrar a primeira. Se a validade não for informada, ela é calculada em 1 ano a partir da última calibração.</div>
+    <div id="err" class="warn"></div>
+    <div class="row"><button data-a="impbModelo">Baixar modelo de planilha</button><button data-a="close">Cancelar</button></div>`);
+    return;
+  }
+  if(IMPB.step===2){
+    const c={novo:0,atualizar:0,dup:0,erro:0};IMPB.items.forEach(i=>{if(i.status==='novo')c.novo++;else if(i.status==='atualizar')c.atualizar++;else if(i.status==='erro')c.erro++;else c.dup++});
+    const falta=IMPB.map.tipo===undefined||IMPB.map.ident===undefined;
+    const opts=f=>`<option value="">(não importar)</option>`+IMPB.head.map((h,i)=>`<option value="${i}"${String(i)===IMPB.map[f]?' selected':''}>${colName(i)} – ${esc(h||'(sem título)')}</option>`).join('');
+    dlg(`<h2>Importar blocos · conferência</h2>
+    <div class="mu">Arquivo: <b>${esc(IMPB.file)}</b>${IMPB.sheet?' · aba '+esc(IMPB.sheet):''} · ${IMPB.items.length} linha(s) lidas</div>
+    <h3 style="margin:12px 0 4px;font-size:1rem">1. Colunas da planilha</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px">${IMPB_CAMPOS.map(([f,l])=>`<label style="margin:0">${l}<select data-a="impbMap" data-id="${f}">${opts(f)}</select></label>`).join('')}</div>
+    ${falta?'<div class="warn">Indique as colunas de Tipo e Identificação.</div>':''}
+    <label class="chk" style="margin:10px 0 0"><input type="checkbox" data-a="impbOpt"${IMPB.atualizar?' checked':''}> Atualizar blocos já cadastrados (mesma identificação)</label>
+    <h3 style="margin:14px 0 4px;font-size:1rem">2. Pré-visualização</h3>
+    <div><span class="chip ok">${c.novo} novo(s)</span><span class="chip wn">${c.atualizar} a atualizar</span><span class="chip wn">${c.dup} duplicado(s)</span><span class="chip er">${c.erro} a corrigir</span></div>
+    <div style="overflow:auto;max-height:42vh;border:1px solid var(--bd);border-radius:8px;margin-top:6px"><table style="width:100%;border-collapse:collapse;font-size:.85rem"><tr><th ${impTh}>Linha</th><th ${impTh}>Tipo</th><th ${impTh}>Identificação</th><th ${impTh}>Espessura</th><th ${impTh}>Diâm. externo</th><th ${impTh}>Material</th><th ${impTh}>Calibração</th><th ${impTh}>Situação</th></tr>
+    ${IMPB.items.slice(0,500).map(i=>`<tr><td ${impTd}>${i.linha}</td><td ${impTd}>${esc(i.tipo)}</td><td ${impTd}>${esc(i.ident)}</td><td ${impTd}>${esc(i.espessura)}</td><td ${impTd}>${esc(i.diam)}</td><td ${impTd}>${esc(i.material)}</td><td ${impTd}>${i.calDate?fmt(i.calDate):''}${i.calDue?' → '+fmt(i.calDue):''}</td><td ${impTd}>${impChip(i)}${i.mot.length?'<div class="mu">'+esc(i.mot.join('; '))+'</div>':''}</td></tr>`).join('')}</table></div>
+    ${IMPB.items.length>500?'<div class="mu">Mostrando as 500 primeiras linhas; todas serão processadas.</div>':''}
+    <div id="impb_prog" class="mu"></div><div id="err" class="warn"></div>
+    <div class="row"><button class="pri" id="impb_run" data-a="impbRun"${(c.novo+c.atualizar)&&!falta?'':' disabled'}>Importar ${c.novo+c.atualizar} bloco(s)</button><button data-a="impbBack">Trocar arquivo</button><button data-a="close">Cancelar</button></div>`);
+    return;
+  }
+  const r=IMPB.res,prob=IMPB.items.filter(i=>['erro','dup','dupPlan','falha'].includes(i.final||i.status));
+  dlg(`<h2>Importação concluída</h2>
+  <div><span class="chip ok">${r.ok} cadastrado(s)</span><span class="chip ok">${r.up} atualizado(s)</span><span class="chip wn">${IMPB.items.filter(i=>i.status==='dup'||i.status==='dupPlan').length} duplicado(s) ignorado(s)</span><span class="chip er">${IMPB.items.filter(i=>i.status==='erro').length+r.fail} precisam de correção</span></div>
+  ${prob.length?`<div style="overflow:auto;max-height:42vh;border:1px solid var(--bd);border-radius:8px;margin-top:8px"><table style="width:100%;border-collapse:collapse;font-size:.85rem"><tr><th ${impTh}>Linha</th><th ${impTh}>Tipo</th><th ${impTh}>Identificação</th><th ${impTh}>Motivo</th></tr>${prob.slice(0,200).map(i=>`<tr><td ${impTd}>${i.linha}</td><td ${impTd}>${esc(i.tipo)}</td><td ${impTd}>${esc(i.ident)}</td><td ${impTd}>${esc(i.mot.join('; '))}</td></tr>`).join('')}</table></div>`:'<div class="mu" style="margin-top:8px">Todas as linhas foram importadas sem pendências.</div>'}
+  <div class="row"><button class="pri" data-a="impbRel">Baixar relatório (Excel)</button><button data-a="close">Fechar</button></div>`);
+}
+async function impbRun(){
+  if(!db)return note(NOLOGIN);
+  const todo=IMPB.items.filter(i=>i.status==='novo'||i.status==='atualizar');
+  if(!todo.length)return;
+  const prog=$('#impb_prog');$('#impb_run').disabled=true;
+  let ok=0,up=0,fail=0,off=false;
+  for(let n=0;n<todo.length;n++){
+    const it=todo[n];if(prog)prog.textContent='Importando '+(n+1)+' de '+todo.length+'…';
+    try{await db.collection('blo').doc(it.obj.id).set(it.obj);upsert(BL,it.obj);it.final=it.status==='novo'?'cadastrado':'atualizado';it.status==='novo'?ok++:up++}
+    catch(e){it.final='falha';it.mot.push('Erro ao salvar no servidor'+(e&&e.message?' (código '+e.message+')':''));fail++;if(e&&e.message==='404')off=true}
+  }
+  if(off)note('O servidor não reconhece a coleção de blocos. Substitua o server.js pela versão nova e reinicie o servidor.');
+  IMPB.res={ok,up,fail};IMPB.step=3;render();impbDraw();
+}
+function impbModelo(){
+  if(!window.XLSX)return err('Não foi possível carregar o componente de Excel. Verifique a conexão com a internet.');
+  const ws=XLSX.utils.aoa_to_sheet([['Tipo','Identificação','Espessura','Diâmetro externo','Material','Última calibração','Validade']]);
+  ws['!cols']=[{wch:22},{wch:20},{wch:14},{wch:18},{wch:22},{wch:18},{wch:14}];
+  const ins=XLSX.utils.aoa_to_sheet([['Instruções'],['Preencha uma linha por bloco, a partir da linha 2 da aba "Blocos".'],['Obrigatórios: Tipo e Identificação (a identificação não pode se repetir).'],['Diâmetro externo é opcional: preencha só quando necessário.'],['Datas no formato dd/mm/aaaa. Se informar só a última calibração, a validade é calculada em 1 ano.']]);
+  ins['!cols']=[{wch:100}];
+  const wb=XLSX.utils.book_new();XLSX.utils.book_append_sheet(wb,ws,'Blocos');XLSX.utils.book_append_sheet(wb,ins,'Instruções');
+  XLSX.writeFile(wb,'modelo-importacao-blocos.xlsx');
+}
+function impbRel(){
+  if(!window.XLSX)return note('Não foi possível carregar o componente de Excel. Verifique a conexão com a internet.');
+  const R=IMPB.items,r=IMPB.res||{ok:0,up:0,fail:0},wb=XLSX.utils.book_new();
+  const dups=R.filter(i=>i.status==='dup'||i.status==='dupPlan'),corr=R.filter(i=>i.status==='erro'||i.final==='falha');
+  const ws0=XLSX.utils.aoa_to_sheet([['Relatório de importação de blocos'],['Arquivo',IMPB.file],['Data',new Date().toLocaleString('pt-BR')],['Linhas lidas',R.length],['Cadastrados',r.ok],['Atualizados',r.up],['Duplicados ignorados',dups.length],['Precisam de correção',corr.length]]);
+  ws0['!cols']=[{wch:26},{wch:50}];XLSX.utils.book_append_sheet(wb,ws0,'Resumo');
+  const imp=R.filter(i=>i.final==='cadastrado'||i.final==='atualizado').map(i=>({'Linha':i.linha,'Tipo':i.tipo,'Identificação':i.ident,'Ação':i.final==='cadastrado'?'Cadastrado':'Atualizado'}));
+  if(imp.length)XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(imp),'Importados');
+  const usados=new Set(),chaves=IMPB.head.map((h,i)=>{let k=h||('Coluna '+colName(i));if(usados.has(k))k+=' ('+colName(i)+')';usados.add(k);return k});
+  if(corr.length)XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(corr.map(i=>{const o={'Linha':i.linha,'Motivo':i.mot.join('; ')};chaves.forEach((k,c)=>{o[k]=impS(i.row[c])});return o})),'Corrigir');
+  if(dups.length)XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(dups.map(i=>({'Linha':i.linha,'Tipo':i.tipo,'Identificação':i.ident,'Motivo':i.mot.join('; ')}))),'Duplicados');
+  XLSX.writeFile(wb,'relatorio-importacao-blocos-'+today()+'.xlsx');
+}
+
+function exportEquipamentos(apenasFiltrados){
+  if(!window.XLSX){note('Não foi possível carregar o componente de Excel. Verifique a conexão com a internet e tente novamente.');return}
+  const m=inOpenOS(),k=q.toLowerCase();
+  const ordenar=(a,b)=>String(a.pat).localeCompare(String(b.pat),'pt',{numeric:true});
+  const lista=(apenasFiltrados
+    ? EQ.filter(e=>multiMatch(k,e.pat+' '+e.desc+' '+(e.tipo||'')+' '+(e.tensao||'')+' '+(e.serie||'')+' '+(e.serie2||''))&&(!ftipo||e.tipo===ftipo)&&(flt==='all'||(flt==='em')===!!m[e.id]))
+    : [...EQ]).sort(ordenar);
+  if(!lista.length){note('Não há equipamentos para exportar com a seleção atual.');return}
+  const linhas=lista.map(e=>({
+    'Patrimônio':e.pat||'',
+    'Descrição':e.desc||'',
+    'Tipo':e.tipo||'',
+    'Tensão da fonte':isFonte(e.tipo)?(e.tensao||''):'',
+    'Configuração':isNotebook(e.tipo)?(e.configuracao||''):'',
+    'Chave de identificação':isNotebook(e.tipo)?(e.chaveIdentificacao||''):'',
+    'Possui número de série':e.hasSerie?'Sim':'Não',
+    'Número de série (módulo)':!isNotebook(e.tipo)?(e.serie||''):'',
+    'SN (Notebook)':isNotebook(e.tipo)?(e.serie||''):'',
+    'Número de série (tela)':e.serie2||'',
+    'Situação':m[e.id]?'Em campo':'Disponível',
+    'Ordem de serviço':m[e.id]?osLabel(m[e.id]):'',
+    'Exige calibração':e.needsCal?'Sim':'Não',
+    'Última calibração':e.calDate||'',
+    'Próxima calibração / validade':e.calDue||'',
+    'Status da calibração':e.needsCal?({'venc':'Vencida','prox':'Vence em até 30 dias','sem':'Sem registro','ok':'Em dia'}[calSt(e)]||''):'Não se aplica',
+    'Observações':e.obs||''
+  }));
+  const ws=XLSX.utils.json_to_sheet(linhas);
+  ws['!cols']=[{wch:18},{wch:34},{wch:20},{wch:22},{wch:24},{wch:24},{wch:16},{wch:20},{wch:18},{wch:18},{wch:26},{wch:24},{wch:40}];
+  ws['!autofilter']={ref:XLSX.utils.encode_range(XLSX.utils.decode_range(ws['!ref']))};
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Equipamentos');
+  const data=new Date().toISOString().slice(0,10);
+  XLSX.writeFile(wb,`equipamentos-${apenasFiltrados?'filtrados-':''}${data}.xlsx`);
+  note(`${lista.length} equipamento(s) exportado(s) para Excel.`);
+}
+
+const A={
+  tab:id=>{tab=id;q='';render()},sub:id=>{sub=id;q='';render()},flt:id=>{flt=id;render()},
+  adminLogin,adminSubmit,adminLogout,editNo:editNoDlg,saveNo,
+  newEq:()=>eqDlg(),editEq:id=>eqDlg(EQ.find(e=>e.id===id)),saveEq,
+  exportEqFiltered:()=>exportEquipamentos(true),exportEqAll:()=>exportEquipamentos(false),
+  togCal:()=>{$('#calbox').style.display=$('#f_nc').checked?'':'none'},
+  togSer2:()=>{$('#ser2box').style.display=$('#f_n2').checked?'':'none'},
+  togSer:()=>{$('#serbox').style.display=$('#f_ns').checked?'':'none'},
+  cdChange:()=>{const d=$('#f_cd').value;if(d)$('#f_cv').value=addYear(d)},
+  selEq:id=>{SEL.has(id)?SEL.delete(id):SEL.add(id);render()},
+  selAll:()=>{LISTA.forEach(e=>SEL.add(e.id));render()},
+  selNone:()=>{SEL.clear();render()},
+  delSel:(id,b)=>{
+    if(!isAdmin)return note('Somente o administrador pode excluir equipamentos.');
+    const m=inOpenOS(),ids=[...SEL].filter(i=>EQ.some(e=>e.id===i)),bloq=ids.filter(i=>m[i]),ok=ids.filter(i=>!m[i]);
+    if(!ok.length)return note(bloq.length?'Os itens selecionados estão em OS aberta. Registre a devolução antes de excluir.':'Nenhum item selecionado.');
+    arm(b,'dsel',async()=>{for(const i of ok){await del('eq',i);SEL.delete(i)}render();note(ok.length+' item(ns) excluído(s).'+(bloq.length?' '+bloq.length+' não excluído(s) por estar(em) em OS aberta.':''))});
+  },
+  delEq:(id,b)=>{
+    if(!isAdmin)return err('Somente o administrador pode excluir equipamentos.');
+    if(inOpenOS()[cur.id])return err('Este item está em uma OS aberta. Registre a devolução antes de excluir.');
+    arm(b,'de',()=>{del('eq',cur.id);$('#dlg').close()});
+  },
+  tipoSel:()=>{const t=$('#f_tipo').value,g=id=>$('#'+id)?$('#'+id).value:'';$('#serwrap').innerHTML=serFields(t,{serie:g('f_sr'),serie2:g('f_sr2'),hasSerie:true});const cab=isCab(t);$('#ncwrap').style.display=cab?'none':'';if(cab){$('#f_nc').checked=false;$('#calbox').style.display='none'}$('#tipobox').style.display=$('#f_tipo').value==='__novo__'?'none':'';$('#voltbox').style.display=isFonte(t)?'':'none';if(!isFonte(t)&&$('#f_volt')){$('#f_volt').value='';$('#outravoltbox').style.display='none'}$('#noteWrap').style.display=isNotebook(t)?'':'none';if($('#f_tipo').value==='__novo__')$('#f_tipo_novo').focus()},
+  voltSel:()=>{const s=$('#f_volt');if(s)$('#outravoltbox').style.display=s.value==='__outra__'?'':'none'},
+  calDlg,
+  calSub:id=>{calSub=id;q='';render()},
+  impbOpen:()=>{IMPB.step=1;IMPB.res=null;impbDraw()},impbBack:()=>{IMPB.step=1;impbDraw()},impbRun,impbRel,impbModelo,
+  impbOpt:(id,b)=>{IMPB.atualizar=b.checked;impbAnalisar();impbDraw()},
+  selBlo:id=>{SELB.has(id)?SELB.delete(id):SELB.add(id);render()},
+  selAllBlo:()=>{LISTABL.forEach(b=>SELB.add(b.id));render()},
+  selNoneBlo:()=>{SELB.clear();render()},
+  delSelBlo:(id,b)=>{
+    if(!isAdmin)return note('Somente o administrador pode excluir blocos.');
+    const ids=[...SELB].filter(i=>BL.some(x=>x.id===i));
+    if(!ids.length)return note('Nenhum bloco selecionado.');
+    arm(b,'dselb',async()=>{for(const i of ids){await del('blo',i);SELB.delete(i)}render();note(ids.length+' bloco(s) excluído(s).')});
+  },
+  exportBloFiltered:()=>exportBlocos(true),exportBloAll:()=>exportBlocos(false),
+  newBlo:()=>bloDlg(),editBlo:id=>bloDlg(BL.find(b=>b.id===id)),saveBlo,
+  bcdChange:()=>{const d=$('#b_cd').value;if(d)$('#b_cv').value=addYear(d)},
+  delBlo:(id,b)=>{if(!isAdmin)return err('Somente o administrador pode excluir blocos.');arm(b,'dbl',()=>{del('blo',cur.id);$('#dlg').close()})},
+  calDlgBlo,saveCalBlo:()=>{const d=$('#c_d').value;if(!d)return;const h=[...(cur.hist||[])];if(!h.includes(d))h.push(d);save('blo',{...cur,needsCal:true,calDate:d,calDue:addYear(d),hist:h});$('#dlg').close()},
+  saveCal:()=>{const d=$('#c_d').value;if(!d)return;save('eq',{...cur,calDate:d,calDue:addYear(d),hist:[...(cur.hist||[]),d]});$('#dlg').close()},
+  newCad:()=>cadDlg(),editCad:id=>cadDlg(GET[sub]().find(x=>x.id===id)),saveCad,
+  delCad:(id,b)=>{if(!isAdmin)return err('Somente o administrador pode excluir cadastros.');if(sub==='tip'){const n=tipoEmUso(cur.nome).length;if(n)return err('Este tipo está em uso por '+n+' item(ns). Troque o tipo desses itens antes de excluir.')}arm(b,'dc',()=>{del(sub,cur.id);$('#dlg').close()})},
+  newOS:()=>{if(!EQ.length&&!BL.length){note('Cadastre ao menos um equipamento ou bloco antes de criar uma OS.');return}note('');osDlg()},
+  saveOS,osDet:id=>osView(OS.find(o=>o.id===id)),print:printOS,pdf:(id,b)=>pdfOS(b),
+  addPes:()=>addPes($('#o_n').value),rmPes:i=>{TM.splice(+i,1);drawTeam()},
+  addAvulso:()=>{const el=$('#o_a'),t=(el.value||'').trim();if(t&&(EQ.some(x=>x.pat===t||x.serie===t||x.serie2===t)||BL.some(x=>x.ident===t))){addEq(t);return}MT.push({qtd:1,pat:'',desc:t});el.value='';drawRows();if(!t){const d=document.querySelectorAll('#o_rows input[data-k=desc]');d.length&&d[d.length-1].focus()}},rmRow:i=>{MT.splice(+i,1);drawRows()},
+  ret:()=>{save('os',{...cur,status:'Devolvida',ret:today()});$('#dlg').close()},
+  delOS:(id,b)=>{if(!isAdmin)return err('Somente o administrador pode excluir OS.');arm(b,'do',()=>{del('os',cur.id);$('#dlg').close()})},
+  reativar:()=>reativarDlg(),reativarOk,osBack:()=>osView(cur),
+  impOpen:()=>{IMP.step=1;IMP.res=null;impDraw()},impBack:()=>{IMP.step=1;impDraw()},impRun,impRel,impModelo,
+  impOpt:(id,b)=>{IMP[id]=b.checked;impAnalisar();impDraw()},
+  buscaCnpj,
+  newLoc:()=>locDlg(),locAddEq:locAddItem,locCamera:i=>$('#loc_photo_'+i)?.click(),
+  locRmEq:i=>{locDraftItems.splice(+i,1);$('#locItems').innerHTML=locItemsHtml()},
+  locRmPhoto:v=>{const [i,j]=v.split(':').map(Number);locDraftItems[i]?.photos.splice(j,1);$('#locItems').innerHTML=locItemsHtml()},
+  saveLoc,locDetail,locEdit:()=>locDlg(cur),locPrint,delLoc,locAddAvulso,locUp:i=>locMove(+i,-1),locDown:i=>locMove(+i,1),locReturn:async()=>{if(!cur)return;const l={...cur,status:'Devolvida',devolucao:today(),atualizado:new Date().toISOString()};await save('loc',l);upsert(LOC,l);$('#dlg').close();render();note('Devolução registrada.')},
+  close:()=>$('#dlg').close()
+};
+document.addEventListener('click',e=>{
+  const t=e.target;if(t.tagName==='INPUT'&&t.type!=='checkbox')return;
+  const b=t.closest('[data-a]');if(b&&A[b.dataset.a])A[b.dataset.a](b.dataset.id,b);
+});
+const auto=(a,v)=>{if(a==='ftipo'){ftipo=v;render()}else if(a==='fCli')fillCli();else if(a==='fVei')fillVei();else if(a==='fPes')addPes(v,true);else if(a==='fEq')addEq(v,true)};
+document.addEventListener('input',e=>{
+  const t=e.target,d=t.dataset||{};
+  if(d.a==='busca'){q=t.value;const p=t.selectionStart;render();const i=$('#busca');i.focus();i.setSelectionRange(p,p)}
+  else if(d.r!==undefined){const r=MT[+d.r];r[d.k]=d.k==='qtd'?(+t.value||1):t.value}
+  else if(!e.inputType||e.inputType==='insertReplacementText')auto(d.a,t.value);
+});
+document.addEventListener('change',e=>{const d=e.target.dataset||{};
+  if(d.locphoto!==undefined){locPhotosInput(e.target);return}
+  if(d.litem!==undefined){const item=locDraftItems[+d.litem];if(item)item[d.k]=e.target.value;return}if(d.a==='cdChange')A.cdChange();else if(d.a==='bcdChange')A.bcdChange();else if(d.a==='tipoSel')A.tipoSel();
+  else if(d.a==='impFile')impLer(e.target.files[0]);
+  else if(d.a==='impbFile')impbLer(e.target.files[0]);
+  else if(d.a==='impbMap'){IMPB.map[d.id]=e.target.value;impbAnalisar();impbDraw()}
+  else if(d.a==='impMap'){IMP.map[d.id]=e.target.value;impAnalisar();impDraw()}
+  else if(d.a==='impTipo'){IMP.tipoPadrao=e.target.value;impAnalisar();impDraw()}
+  else auto(d.a,e.target.value)});
+$('#dlg').addEventListener('close',()=>{$('#dlg').style.width=''});
+</script>
+</body>
+</html>

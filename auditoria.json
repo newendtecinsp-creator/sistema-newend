@@ -1,0 +1,6203 @@
+[
+  {
+    "date": "2026-11-05T15:15:22.692Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw3oqpicrgad",
+    "record": {
+      "id": "omw3oqpicrgad",
+      "no": "2026-004-0",
+      "createdAt": "2026-11-05T15:13:20.292Z",
+      "date": "2026-11-05",
+      "instr": "",
+      "cliente": "Danitech",
+      "resp": "Daniela",
+      "local": "sumare",
+      "contato": "",
+      "placa": "FMC-6H61",
+      "veiculo": "VOLKSWAGEM SAVEIRO ROBUST",
+      "equipe": [
+        "DIEGO SANTOS DE ARAÚJO"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "emw3jej33y3yl",
+          "qtd": 1,
+          "pat": "0021",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-05T15:15:26.731Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw3okujpydd4",
+    "record": {
+      "id": "omw3okujpydd4",
+      "no": "2026-003-0",
+      "createdAt": "2026-11-05T15:08:46.885Z",
+      "date": "2026-11-05",
+      "instr": "",
+      "cliente": "Danitech",
+      "resp": "Daniela",
+      "local": "sumare",
+      "contato": "",
+      "placa": "FMC-6H61",
+      "veiculo": "VOLKSWAGEM SAVEIRO ROBUST",
+      "equipe": [
+        "DIEGO SANTOS DE ARAÚJO"
+      ],
+      "obs": "",
+      "status": "Devolvida",
+      "items": [
+        {
+          "id": "emw3jo3fr2or5",
+          "qtd": 1,
+          "pat": "0142",
+          "desc": "GE DM5E"
+        },
+        {
+          "id": "emw3jej33y3yl",
+          "qtd": 1,
+          "pat": "0021",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        },
+        {
+          "id": "emw3jpm3j3oa4",
+          "qtd": 1,
+          "pat": "0013",
+          "desc": "SIUI CTS-9006"
+        },
+        {
+          "id": "emw3j5t7r22j4",
+          "qtd": 1,
+          "pat": "0020",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        },
+        {
+          "id": "emw3i5bridass",
+          "qtd": 1,
+          "pat": "0169",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        },
+        {
+          "id": "emw3i3ubi2wk9",
+          "qtd": 1,
+          "pat": "0019",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3i2mou5k2g",
+          "qtd": 1,
+          "pat": "0018",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        }
+      ],
+      "ret": "2026-11-05"
+    }
+  },
+  {
+    "date": "2026-11-05T15:15:30.913Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw3imzlypx5e",
+    "record": {
+      "id": "omw3imzlypx5e",
+      "no": "2026-001-0",
+      "date": "2026-11-05",
+      "instr": "",
+      "cliente": "DANITECH",
+      "resp": "DANIELA",
+      "local": "SUMARE",
+      "contato": "1999999999",
+      "placa": "FMC-6H61",
+      "veiculo": "VOLKSWAGEM SAVEIRO ROBUST",
+      "equipe": [
+        "DIEGO SANTOS DE ARAÚJO"
+      ],
+      "obs": "",
+      "status": "Devolvida",
+      "items": [
+        {
+          "id": "emw3i2mou5k2g",
+          "qtd": 1,
+          "pat": "0018",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3i3ubi2wk9",
+          "qtd": 1,
+          "pat": "0019",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3i5bridass",
+          "qtd": 1,
+          "pat": "0169",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        }
+      ],
+      "ret": "2026-11-05"
+    }
+  },
+  {
+    "date": "2026-11-05T15:15:35.400Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw3iom52f78q",
+    "record": {
+      "id": "omw3iom52f78q",
+      "no": "2026-002-0",
+      "date": "2026-11-05",
+      "instr": "",
+      "cliente": "DANITECH",
+      "resp": "DANIELA",
+      "local": "SUMARE",
+      "contato": "1999999999",
+      "placa": "FMC-6H61",
+      "veiculo": "VOLKSWAGEM SAVEIRO ROBUST",
+      "equipe": [
+        "DIEGO SANTOS DE ARAÚJO"
+      ],
+      "obs": "",
+      "status": "Devolvida",
+      "items": [
+        {
+          "id": "emw3i5bridass",
+          "qtd": 1,
+          "pat": "0169",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        },
+        {
+          "id": "emw3i3ubi2wk9",
+          "qtd": 1,
+          "pat": "0019",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3i2mou5k2g",
+          "qtd": 1,
+          "pat": "0018",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        }
+      ],
+      "ret": "2026-11-05"
+    }
+  },
+  {
+    "date": "2026-11-06T11:41:23.722Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw3y9r5gytc8",
+    "record": {
+      "id": "omw3y9r5gytc8",
+      "no": "2026-001-0",
+      "createdAt": "2026-11-05T19:40:05.428Z",
+      "date": "2026-11-05",
+      "instr": "",
+      "cliente": "DANITECH",
+      "resp": "Daniela",
+      "local": "sumare",
+      "contato": "1999999",
+      "placa": "FMC-6H61",
+      "veiculo": "VOLKSWAGEM SAVEIRO ROBUST",
+      "equipe": [
+        "DIEGO SANTOS DE ARAÚJO",
+        "LARISSA TAINÁ TOSO"
+      ],
+      "obs": "",
+      "status": "Devolvida",
+      "items": [
+        {
+          "id": "emw3y7w7vkgjl",
+          "qtd": 1,
+          "pat": "0236",
+          "desc": "OLYMPUS 2.25L16-A4"
+        },
+        {
+          "id": "emw3j5t7r22j4",
+          "qtd": 1,
+          "pat": "0020",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        },
+        {
+          "id": "emw3y4x9v2npm",
+          "qtd": 1,
+          "pat": "0214",
+          "desc": "OLYMPUS 10L32-A10"
+        },
+        {
+          "id": "emw3y75d7zgnf",
+          "qtd": 1,
+          "pat": "0229",
+          "desc": "OLYMPUS 2.25L16-A10"
+        }
+      ],
+      "ret": "2026-11-06"
+    }
+  },
+  {
+    "date": "2026-11-06T13:36:44.370Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xybm3x0",
+    "admin": true,
+    "record": {
+      "id": "emw509xybm3x0",
+      "pat": "0145",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "W0234",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:36:46.390Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xycczs8",
+    "admin": true,
+    "record": {
+      "id": "emw509xycczs8",
+      "pat": "0149",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "E14535",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:36:49.552Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xyc72kw",
+    "admin": true,
+    "record": {
+      "id": "emw509xyc72kw",
+      "pat": "0151",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "K1304",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 7"
+    }
+  },
+  {
+    "date": "2026-11-06T13:36:51.713Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xyclsiw",
+    "admin": true,
+    "record": {
+      "id": "emw509xyclsiw",
+      "pat": "0156",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "D0408",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:36:54.078Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3ycl3q6c8k",
+    "admin": true,
+    "record": {
+      "id": "emw3ycl3q6c8k",
+      "pat": "0207",
+      "desc": "OLYMPUS 2.25L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN XAAB-0005 SN J3809",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:36:56.753Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xs938jyx4",
+    "admin": true,
+    "record": {
+      "id": "emw3xs938jyx4",
+      "pat": "0208",
+      "desc": "DOPPLER 2.25L64-0.75X12-D62",
+      "tipo": "Cabeçote",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 19"
+    }
+  },
+  {
+    "date": "2026-11-06T13:36:58.799Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xycbqjm",
+    "admin": true,
+    "record": {
+      "id": "emw509xycbqjm",
+      "pat": "0209",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "J0938",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:00.963Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xycx02t",
+    "admin": true,
+    "record": {
+      "id": "emw509xycx02t",
+      "pat": "0210",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0213",
+      "serie2": "N0766",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:02.610Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xycm79x",
+    "admin": true,
+    "record": {
+      "id": "emw509xycm79x",
+      "pat": "0211",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0207",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:04.919Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3y4x9v2npm",
+    "admin": true,
+    "record": {
+      "id": "emw3y4x9v2npm",
+      "pat": "0214",
+      "desc": "OLYMPUS 10L32-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN XAAB-0183 SN M0996",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 3"
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:06.857Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3yhj71cmn9",
+    "admin": true,
+    "record": {
+      "id": "emw3yhj71cmn9",
+      "pat": "0216",
+      "desc": "OLYMPUS 5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN XAAB-0184 SN U4273",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:08.920Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xu866j5sd",
+    "admin": true,
+    "record": {
+      "id": "emw3xu866j5sd",
+      "pat": "0218",
+      "desc": "DOPPLER 3.5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "LEC397",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:11.129Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xv70sx9mw",
+    "admin": true,
+    "record": {
+      "id": "emw3xv70sx9mw",
+      "pat": "0219",
+      "desc": "DOPPLER 5S16-0.5X10-D10 BRACELETE COBRA",
+      "tipo": "Cabeçote",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 10"
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:13.184Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3yfewlysp9",
+    "admin": true,
+    "record": {
+      "id": "emw3yfewlysp9",
+      "pat": "0221",
+      "desc": "OLYMPUS 5DL16 12X5-A26",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN XAAB-11140 SN U4844",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CABEÇOTE ANEXADO AO BRACELETE - PATRIMÓNIO 0300"
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:16.104Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xolvpg66z",
+    "admin": true,
+    "record": {
+      "id": "emw3xolvpg66z",
+      "pat": "0222",
+      "desc": "BIGPROBE 2.25DM7X4-2.8X3-A17",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN10038 SN BJAB08",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:17.860Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xyclevn",
+    "admin": true,
+    "record": {
+      "id": "emw509xyclevn",
+      "pat": "0223",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "N2346",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:19.656Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xychaeb",
+    "admin": true,
+    "record": {
+      "id": "emw509xychaeb",
+      "pat": "0224",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "",
+      "serie2": "N0878",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:21.352Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xyc0n2v",
+    "admin": true,
+    "record": {
+      "id": "emw509xyc0n2v",
+      "pat": "0225",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "N3048",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:24.146Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xycuv3u",
+    "admin": true,
+    "record": {
+      "id": "emw509xycuv3u",
+      "pat": "0228",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10007",
+      "serie2": "R1164",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:25.777Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3y75d7zgnf",
+    "admin": true,
+    "record": {
+      "id": "emw3y75d7zgnf",
+      "pat": "0229",
+      "desc": "OLYMPUS 2.25L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN XAAB-10189 SN K3698",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:27.368Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xtjt8aaeo",
+    "admin": true,
+    "record": {
+      "id": "emw3xtjt8aaeo",
+      "pat": "0230",
+      "desc": "DOPPLER 2.25L64-0.75X12-D62",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "FIB376",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 5- 16 - 63"
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:29.083Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xy1joobfc",
+    "admin": true,
+    "record": {
+      "id": "emw3xy1joobfc",
+      "pat": "0231",
+      "desc": "DOPPLER 5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "1KS1272MHD947",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:30.384Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xx7ldo2sp",
+    "admin": true,
+    "record": {
+      "id": "emw3xx7ldo2sp",
+      "pat": "0232",
+      "desc": "DOPPLER 5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "MHD948",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:31.855Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3y0703f16o",
+    "admin": true,
+    "record": {
+      "id": "emw3y0703f16o",
+      "pat": "0233",
+      "desc": "M2M 5L64-G3",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN 2059 SN N1010",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:33.683Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xzihvlve1",
+    "admin": true,
+    "record": {
+      "id": "emw3xzihvlve1",
+      "pat": "0234",
+      "desc": "M2M 32L10-G1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN 13054 SN 1014",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:35.305Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw509xyct9zj",
+    "admin": true,
+    "record": {
+      "id": "emw509xyct9zj",
+      "pat": "0235",
+      "desc": "5L32-A32",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10952",
+      "serie2": "P3647",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:38.009Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3y7w7vkgjl",
+    "admin": true,
+    "record": {
+      "id": "emw3y7w7vkgjl",
+      "pat": "0236",
+      "desc": "OLYMPUS 2.25L16-A4",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN XAAB-0028 SN N4493",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:39.586Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3yeljqid7o",
+    "admin": true,
+    "record": {
+      "id": "emw3yeljqid7o",
+      "pat": "0237",
+      "desc": "OLYMPUS 4L16 8X9-DGS",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "PN XAIW-0013 SN H2663",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:42.608Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3xrgtpss7p",
+    "admin": true,
+    "record": {
+      "id": "emw3xrgtpss7p",
+      "pat": "0239",
+      "desc": "DOPPLER  2.25DM7X4-2.71X3.0-F66-U-50-5.0-P1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "1KA0322NIE055",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:44.379Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3y2uscnzog",
+    "admin": true,
+    "record": {
+      "id": "emw3y2uscnzog",
+      "pat": "0311",
+      "desc": "MGE 7.5S64-1.0X7-S27(SIDE)-U-110-10-P1-F.A",
+      "tipo": "Cabeçote",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CABEÇOTE ANEXO AO SCANNER 0311"
+    }
+  },
+  {
+    "date": "2026-11-06T13:37:45.843Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw3y3gasllwu",
+    "admin": true,
+    "record": {
+      "id": "emw3y3gasllwu",
+      "pat": "0312",
+      "desc": "MGE 7.5S64-1.0X7-S27(SIDE)-U-110-5.0-P1-F.A",
+      "tipo": "Cabeçote",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CABEÇOTE ANEXO AO SCANNER 0312"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:10.086Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo8yrk",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo8yrk",
+      "pat": "-",
+      "desc": "7.5S64-1.0X7-S27(SIDE)-U-110-10-P1-F.A",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KS1263MGE144",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB ANEXADO AO SCANNER - P.0311"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:11.713Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmozc7s",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmozc7s",
+      "pat": "0145",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "W0234",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:12.961Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmozrs2",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmozrs2",
+      "pat": "0150",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "D0067",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 12-17-19-34-46-52"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:14.163Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoc8tj",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoc8tj",
+      "pat": "0151",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "K1304",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 7"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:16.050Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoliul",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoliul",
+      "pat": "0156",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "D0408",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:17.137Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmopuk9",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmopuk9",
+      "pat": "0202",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0040",
+      "serie2": "M1149",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 1- 2 - 3 - 4 - 5"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:18.370Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoto6k",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoto6k",
+      "pat": "0206",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0040",
+      "serie2": "M1177",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:19.537Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoqw5w",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoqw5w",
+      "pat": "0207",
+      "desc": "2.25L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0005",
+      "serie2": "J3809",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:20.652Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmol2g1",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmol2g1",
+      "pat": "0208",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "FGC965",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 19"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:21.770Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo3mn1",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo3mn1",
+      "pat": "0209",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "J0938",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:22.971Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo9l92",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo9l92",
+      "pat": "0210",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0213",
+      "serie2": "N0766",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:24.128Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo5088",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo5088",
+      "pat": "0211",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0207",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:25.403Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmohgch",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmohgch",
+      "pat": "0213",
+      "desc": "7.5L60 PWZ1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10207",
+      "serie2": "K2592",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO SCANNER - P 0305"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:26.584Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmotuhx",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmotuhx",
+      "pat": "0214",
+      "desc": "10L32-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0183",
+      "serie2": "M0996",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 3"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:27.809Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo3fya",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo3fya",
+      "pat": "0216",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "U4273",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:28.930Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoqzqt",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoqzqt",
+      "pat": "0218",
+      "desc": "3.5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "LEC397",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:30.210Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo5uzc",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo5uzc",
+      "pat": "0219",
+      "desc": "5S16-0.5X10-D10 BRACELETE COBRA",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 10"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:31.369Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmommoa",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmommoa",
+      "pat": "0221",
+      "desc": "5DL16 12X5-A26",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-11140",
+      "serie2": "U4844",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO BRACELETE - P 0300"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:32.442Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmory17",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmory17",
+      "pat": "0222",
+      "desc": "2.25DM7X4-2.8X3-A17",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "10038",
+      "serie2": "BJAB08",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:33.521Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmokmxz",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmokmxz",
+      "pat": "0223",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "N2346",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:34.707Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmogrp2",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmogrp2",
+      "pat": "0224",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "",
+      "serie2": "N0878",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:35.778Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmocg97",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmocg97",
+      "pat": "0225",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "N3048",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:36.850Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmotfnv",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmotfnv",
+      "pat": "0228",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10007",
+      "serie2": "R1164",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:37.890Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo8t0l",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo8t0l",
+      "pat": "0229",
+      "desc": "2.25L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10189",
+      "serie2": "K3698",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:39.218Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoso8a",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoso8a",
+      "pat": "0230",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "FIB376",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 5- 16 - 63"
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:40.328Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmog5bp",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmog5bp",
+      "pat": "0231",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KS1272MHD947",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:41.393Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoo0w2",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoo0w2",
+      "pat": "0232",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "MHD948",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:42.730Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmozrdw",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmozrdw",
+      "pat": "0233",
+      "desc": "5L64-G3",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "2059",
+      "serie2": "N1010",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:43.851Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo0fbf",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo0fbf",
+      "pat": "0234",
+      "desc": "32L10-G1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "13054",
+      "serie2": "1014",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:46.985Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmo4i47",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmo4i47",
+      "pat": "0235",
+      "desc": "5L32-A32",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10952",
+      "serie2": "P3647",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:48.075Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoruqg",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoruqg",
+      "pat": "0236",
+      "desc": "2.25L16-A4",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0028",
+      "serie2": "N4493",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:49.121Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmogqqa",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmogqqa",
+      "pat": "0237",
+      "desc": "4L16 8X9-DGS",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAIW-0013",
+      "serie2": "H2663",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:50.226Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoz16j",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoz16j",
+      "pat": "0149",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "E14535",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:56:51.233Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51dbmoes88",
+    "admin": true,
+    "record": {
+      "id": "emw51dbmoes88",
+      "pat": "0239",
+      "desc": "2.25DM7X4-2.71X3.0-F66-U-50-5.0-P1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KA0322NIE055",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:58:33.568Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwnbiq",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwnbiq",
+      "pat": "0214",
+      "desc": "10L32-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0183",
+      "serie2": "M0996",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 3"
+    }
+  },
+  {
+    "date": "2026-11-06T13:58:38.749Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw7bt0",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw7bt0",
+      "pat": "0239",
+      "desc": "2.25DM7X4-2.71X3.0-F66-U-50-5.0-P1",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KA0322NIE055",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:58:44.409Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwqrv4",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwqrv4",
+      "pat": "0222",
+      "desc": "2.25DM7X4-2.8X3-A17",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "10038",
+      "serie2": "BJAB08",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:58:49.586Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwampi",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwampi",
+      "pat": "0229",
+      "desc": "2.25L16-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-10189",
+      "serie2": "K3698",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:58:54.333Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwph1a",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwph1a",
+      "pat": "0236",
+      "desc": "2.25L16-A4",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0028",
+      "serie2": "N4493",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T13:59:05.526Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw9358",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw9358",
+      "pat": "0208",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "FGC965",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 19"
+    }
+  },
+  {
+    "date": "2026-11-06T14:01:42.855Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw9yqu",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw9yqu",
+      "pat": "0230",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "FIB376",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 5- 16 - 63"
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.345Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kxz037",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kxz037",
+      "pat": "-",
+      "desc": "7.5S64-1.0X7-S27(SIDE)-U-110-10-P1-F.A",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KS1263MGE144",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB ANEXADO AO SCANNER - P.0311"
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.361Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwxshh",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwxshh",
+      "pat": "0235",
+      "desc": "5L32-A32",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-10952",
+      "serie2": "P3647",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.385Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwa9hm",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwa9hm",
+      "pat": "0237",
+      "desc": "4L16 8X9-DGS",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAIW-0013",
+      "serie2": "H2663",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.407Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwghyl",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwghyl",
+      "pat": "0234",
+      "desc": "32L10-G1",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "13054",
+      "serie2": "1014",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.427Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwivni",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwivni",
+      "pat": "0233",
+      "desc": "5L64-G3",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "2059",
+      "serie2": "N1010",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.447Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw10ib",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw10ib",
+      "pat": "0232",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "MHD948",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.465Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw0xql",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw0xql",
+      "pat": "0231",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KS1272MHD947",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.488Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwfpez",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwfpez",
+      "pat": "0228",
+      "desc": "5L32-A11",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-10007",
+      "serie2": "R1164",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.507Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw4xry",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw4xry",
+      "pat": "0225",
+      "desc": "5L64-A12",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "N3048",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.528Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwayce",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwayce",
+      "pat": "0224",
+      "desc": "5L32-A11",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "",
+      "serie2": "N0878",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.547Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw4h2g",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw4h2g",
+      "pat": "0223",
+      "desc": "5L64-A12",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "N2346",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.567Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwthx1",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwthx1",
+      "pat": "0221",
+      "desc": "5DL16 12X5-A26",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-11140",
+      "serie2": "U4844",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO BRACELETE - P 0300"
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.597Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwyade",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwyade",
+      "pat": "0219",
+      "desc": "5S16-0.5X10-D10 BRACELETE COBRA",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 10"
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.612Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwn1h3",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwn1h3",
+      "pat": "0218",
+      "desc": "3.5S16-0.5X10-D10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "LEC397",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.630Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwlhcn",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwlhcn",
+      "pat": "0216",
+      "desc": "5L16-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "U4273",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.648Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw2kld",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw2kld",
+      "pat": "0213",
+      "desc": "7.5L60 PWZ1",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-10207",
+      "serie2": "K2592",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO SCANNER - P 0305"
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.665Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwjch3",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwjch3",
+      "pat": "0211",
+      "desc": "5L32-A11",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0207",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.689Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwfliu",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwfliu",
+      "pat": "0210",
+      "desc": "5L64-A12",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0213",
+      "serie2": "N0766",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.707Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwyh6o",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwyh6o",
+      "pat": "0209",
+      "desc": "5L64-A12",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "J0938",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.724Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwuctb",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwuctb",
+      "pat": "0207",
+      "desc": "2.25L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0005",
+      "serie2": "J3809",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.748Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwwwdz",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwwwdz",
+      "pat": "0206",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0040",
+      "serie2": "M1177",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:05:51.767Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw5sby",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw5sby",
+      "pat": "0202",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0040",
+      "serie2": "M1149",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 1- 2 - 3 - 4 - 5"
+    }
+  },
+  {
+    "date": "2026-11-06T14:06:13.781Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw470l",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw470l",
+      "pat": "0145",
+      "desc": "5L16-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "W0234",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:06:13.796Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwk9f7",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwk9f7",
+      "pat": "0149",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "E14535",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:06:13.814Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwb85m",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwb85m",
+      "pat": "0150",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "D0067",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 12-17-19-34-46-52"
+    }
+  },
+  {
+    "date": "2026-11-06T14:06:13.833Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kw9n0w",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kw9n0w",
+      "pat": "0151",
+      "desc": "5L16-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "K1304",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 7"
+    }
+  },
+  {
+    "date": "2026-11-06T14:06:36.277Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51h2kwsof5",
+    "admin": true,
+    "record": {
+      "id": "emw51h2kwsof5",
+      "pat": "0156",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "D0408",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.471Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65vbbh",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65vbbh",
+      "pat": "-",
+      "desc": "7.5S64-1.0X7-S27(SIDE)-U-110-10-P1-F.A",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KS1263MGE144",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB ANEXADO AO SCANNER - P.0311"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.488Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65876v",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65876v",
+      "pat": "0145",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "W0234",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.507Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65fwyl",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65fwyl",
+      "pat": "0149",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "E14535",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.524Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt655pe6",
+    "admin": true,
+    "record": {
+      "id": "emw51tt655pe6",
+      "pat": "0150",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "D0067",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 12-17-19-34-46-52"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.541Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65dqkt",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65dqkt",
+      "pat": "0151",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "K1304",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 7"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.558Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65tbyc",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65tbyc",
+      "pat": "0156",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0004",
+      "serie2": "D0408",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.579Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt653opj",
+    "admin": true,
+    "record": {
+      "id": "emw51tt653opj",
+      "pat": "0202",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0040",
+      "serie2": "M1149",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 1- 2 - 3 - 4 - 5"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.600Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65hvkp",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65hvkp",
+      "pat": "0206",
+      "desc": "5L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0040",
+      "serie2": "M1177",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.615Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65xt65",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65xt65",
+      "pat": "0207",
+      "desc": "2.25L64-A2",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0005",
+      "serie2": "J3809",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.632Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65h1nw",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65h1nw",
+      "pat": "0208",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "FGC965",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 19"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.651Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65hz3i",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65hz3i",
+      "pat": "0209",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "J0938",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.667Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65w06i",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65w06i",
+      "pat": "0210",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0213",
+      "serie2": "N0766",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.683Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt659cxr",
+    "admin": true,
+    "record": {
+      "id": "emw51tt659cxr",
+      "pat": "0211",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0207",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.700Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65y3li",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65y3li",
+      "pat": "0213",
+      "desc": "7.5L60 PWZ1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10207",
+      "serie2": "K2592",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO SCANNER - P 0305"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.716Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt654d2t",
+    "admin": true,
+    "record": {
+      "id": "emw51tt654d2t",
+      "pat": "0214",
+      "desc": "10L32-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0183",
+      "serie2": "M0996",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 3"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.736Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt6527xf",
+    "admin": true,
+    "record": {
+      "id": "emw51tt6527xf",
+      "pat": "0216",
+      "desc": "5L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0184",
+      "serie2": "U4273",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.751Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt650ehp",
+    "admin": true,
+    "record": {
+      "id": "emw51tt650ehp",
+      "pat": "0218",
+      "desc": "3.5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "LEC397",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.768Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65yeew",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65yeew",
+      "pat": "0219",
+      "desc": "5S16-0.5X10-D10 BRACELETE COBRA",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 10"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.786Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65y9l1",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65y9l1",
+      "pat": "0221",
+      "desc": "5DL16 12X5-A26",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-11140",
+      "serie2": "U4844",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO BRACELETE - P 0300"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.806Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65g9kq",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65g9kq",
+      "pat": "0222",
+      "desc": "2.25DM7X4-2.8X3-A17",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "10038",
+      "serie2": "BJAB08",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.820Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65muat",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65muat",
+      "pat": "0223",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "N2346",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.832Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65entq",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65entq",
+      "pat": "0224",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "",
+      "serie2": "N0878",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.849Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65k9kr",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65k9kr",
+      "pat": "0225",
+      "desc": "5L64-A12",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0311",
+      "serie2": "N3048",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.862Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65ublt",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65ublt",
+      "pat": "0228",
+      "desc": "5L32-A11",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10007",
+      "serie2": "R1164",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.877Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65alcs",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65alcs",
+      "pat": "0229",
+      "desc": "2.25L16-A10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10189",
+      "serie2": "K3698",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.892Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65itw8",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65itw8",
+      "pat": "0230",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "FIB376",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 5- 16 - 63"
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.908Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65nmyb",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65nmyb",
+      "pat": "0231",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KS1272MHD947",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.922Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65hwpo",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65hwpo",
+      "pat": "0232",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "MHD948",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.938Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt652shm",
+    "admin": true,
+    "record": {
+      "id": "emw51tt652shm",
+      "pat": "0233",
+      "desc": "5L64-G3",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "2059",
+      "serie2": "N1010",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.953Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65j7n9",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65j7n9",
+      "pat": "0234",
+      "desc": "32L10-G1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "13054",
+      "serie2": "1014",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.967Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65glz2",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65glz2",
+      "pat": "0235",
+      "desc": "5L32-A32",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-10952",
+      "serie2": "P3647",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.980Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65a9ar",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65a9ar",
+      "pat": "0236",
+      "desc": "2.25L16-A4",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAAB-0028",
+      "serie2": "N4493",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:49.999Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt65qdm7",
+    "admin": true,
+    "record": {
+      "id": "emw51tt65qdm7",
+      "pat": "0237",
+      "desc": "4L16 8X9-DGS",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "XAIW-0013",
+      "serie2": "H2663",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:08:50.012Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51tt652wsa",
+    "admin": true,
+    "record": {
+      "id": "emw51tt652wsa",
+      "pat": "0239",
+      "desc": "2.25DM7X4-2.71X3.0-F66-U-50-5.0-P1",
+      "tipo": "Cabeçote",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "1KA0322NIE055",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.751Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbdcgv",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbdcgv",
+      "pat": "-",
+      "desc": "7.5S64-1.0X7-S27(SIDE)-U-110-10-P1-F.A",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "1KS1263MGE144",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB ANEXADO AO SCANNER - P.0311"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.767Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb3fq0",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb3fq0",
+      "pat": "0239",
+      "desc": "2.25DM7X4-2.71X3.0-F66-U-50-5.0-P1",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "1KA0322NIE055",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.784Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb1034",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb1034",
+      "pat": "0237",
+      "desc": "4L16 8X9-DGS",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "H2663",
+      "serie2": "XAIW-0013",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.809Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbs1p8",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbs1p8",
+      "pat": "0236",
+      "desc": "2.25L16-A4",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "N4493",
+      "serie2": "XAAB-0028",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.827Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbiolw",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbiolw",
+      "pat": "0235",
+      "desc": "5L32-A32",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "P3647",
+      "serie2": "XAAB-10952",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.845Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb7d0b",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb7d0b",
+      "pat": "0234",
+      "desc": "32L10-G1",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "1014",
+      "serie2": "13054",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.866Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb5pye",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb5pye",
+      "pat": "0233",
+      "desc": "5L64-G3",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "N1010",
+      "serie2": "2059",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.885Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb0l6p",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb0l6p",
+      "pat": "0232",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "MHD948",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.902Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbjl8s",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbjl8s",
+      "pat": "0231",
+      "desc": "5S16-0.5X10-D10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "1KS1272MHD947",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.927Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb4sec",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb4sec",
+      "pat": "0230",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "FIB376",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 5- 16 - 63"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.945Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbwv4k",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbwv4k",
+      "pat": "0229",
+      "desc": "2.25L16-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "K3698",
+      "serie2": "XAAB-10189",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.964Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbupay",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbupay",
+      "pat": "0228",
+      "desc": "5L32-A11",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "R1164",
+      "serie2": "XAAB-10007",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.983Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbg5ky",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbg5ky",
+      "pat": "0225",
+      "desc": "5L64-A12",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "N3048",
+      "serie2": "XAAB-0311",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:29.998Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbr49i",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbr49i",
+      "pat": "0224",
+      "desc": "5L32-A11",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "N0878",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.017Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb68us",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb68us",
+      "pat": "0223",
+      "desc": "5L64-A12",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "N2346",
+      "serie2": "XAAB-0311",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.037Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbocls",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbocls",
+      "pat": "0222",
+      "desc": "2.25DM7X4-2.8X3-A17",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "BJAB08",
+      "serie2": "10038",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.054Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb756p",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb756p",
+      "pat": "0221",
+      "desc": "5DL16 12X5-A26",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "U4844",
+      "serie2": "XAAB-11140",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO BRACELETE - P 0300"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.071Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbdoq4",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbdoq4",
+      "pat": "0219",
+      "desc": "5S16-0.5X10-D10 BRACELETE COBRA",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 10"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.089Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb3l69",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb3l69",
+      "pat": "0218",
+      "desc": "3.5S16-0.5X10-D10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "LEC397",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.105Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbzvth",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbzvth",
+      "pat": "0216",
+      "desc": "5L16-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "U4273",
+      "serie2": "XAAB-0184",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.124Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbafp0",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbafp0",
+      "pat": "0214",
+      "desc": "10L32-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "M0996",
+      "serie2": "XAAB-0183",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 3"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.144Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbveyp",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbveyp",
+      "pat": "0213",
+      "desc": "7.5L60 PWZ1",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "K2592",
+      "serie2": "XAAB-10207",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "CAB  ANEXADO AO SCANNER - P 0305"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.162Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbd61j",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbd61j",
+      "pat": "0211",
+      "desc": "5L32-A11",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "",
+      "serie2": "XAAB-0207",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.181Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb65hx",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb65hx",
+      "pat": "0210",
+      "desc": "5L64-A12",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "N0766",
+      "serie2": "XAAB-0213",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.196Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbqwmm",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbqwmm",
+      "pat": "0209",
+      "desc": "5L64-A12",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "J0938",
+      "serie2": "XAAB-0311",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.212Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbj2ef",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbj2ef",
+      "pat": "0208",
+      "desc": "2.25L64-0.75X12-D62",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "FGC965",
+      "serie2": "-",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 19"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.228Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb8u6s",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb8u6s",
+      "pat": "0207",
+      "desc": "2.25L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "J3809",
+      "serie2": "XAAB-0005",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.244Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbwhpk",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbwhpk",
+      "pat": "0206",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "M1177",
+      "serie2": "XAAB-0040",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.264Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzby0jj",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzby0jj",
+      "pat": "0202",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "M1149",
+      "serie2": "XAAB-0040",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 1- 2 - 3 - 4 - 5"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.283Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzb4843",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzb4843",
+      "pat": "0145",
+      "desc": "5L16-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "W0234",
+      "serie2": "XAAB-0184",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.302Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbv0fy",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbv0fy",
+      "pat": "0149",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "E14535",
+      "serie2": "XAAB-0004",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.324Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbuji5",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbuji5",
+      "pat": "0150",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "D0067",
+      "serie2": "XAAB-0004",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTOS Q - 12-17-19-34-46-52"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.345Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbmlou",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbmlou",
+      "pat": "0151",
+      "desc": "5L16-A10",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "K1304",
+      "serie2": "XAAB-0184",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ELEMENTO Q - 7"
+    }
+  },
+  {
+    "date": "2026-11-06T14:11:30.365Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw51vwzbuqv8",
+    "admin": true,
+    "record": {
+      "id": "emw51vwzbuqv8",
+      "pat": "0156",
+      "desc": "5L64-A2",
+      "tipo": "Aparelho",
+      "hasSerie": true,
+      "serie": "D0408",
+      "serie2": "XAAB-0004",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:46:34.500Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw534seq5jtk",
+    "admin": true,
+    "record": {
+      "id": "omw534seq5jtk",
+      "no": "2026-003-0",
+      "createdAt": "2026-11-06T14:43:58.034Z",
+      "date": "2026-11-06",
+      "instr": "",
+      "cliente": "ASVOTEC TERMOINDUSTRIAL LTDA",
+      "resp": "FLAVIO DOMENICO",
+      "local": "MONTE MOR-SP",
+      "contato": "(19) 97123-7820",
+      "placa": "FMC-6H61",
+      "veiculo": "VOLKSWAGEM SAVEIRO",
+      "equipe": [
+        "DIEGO SANTOS DE ARAÚJO",
+        "ANDRE WILKER DE SOUSA BRAGA",
+        "DANILO LUCAS DA SILVA",
+        "CARLOS ALBERTO DE MATOS"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "emw3tx5gzy7t0",
+          "qtd": 1,
+          "pat": "0006",
+          "desc": "OLYMPUS OMNISCAN MX2  32:128"
+        },
+        {
+          "id": "emw3tvpu3qgdf",
+          "qtd": 1,
+          "pat": "0005",
+          "desc": "OLYMPUS OMNISCAN MX2  32:128"
+        },
+        {
+          "id": "emw3tya5f6cmd",
+          "qtd": 1,
+          "pat": "0007",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128"
+        },
+        {
+          "id": "emw3tz3l2nu7k",
+          "qtd": 1,
+          "pat": "0009",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        },
+        {
+          "id": "emw51znomok5p",
+          "qtd": 1,
+          "pat": "0214",
+          "desc": "10L32-A10"
+        },
+        {
+          "id": "emw4yysnbvl6q",
+          "qtd": 1,
+          "pat": "0310",
+          "desc": "Splits  P2 SPLIT 128"
+        },
+        {
+          "id": "emw52do5hfqqz",
+          "qtd": 1,
+          "pat": "0170",
+          "desc": "OMNISCAN"
+        },
+        {
+          "id": "emw52do5hqoj9",
+          "qtd": 1,
+          "pat": "0154",
+          "desc": "OMNISCAN SX"
+        },
+        {
+          "id": "emw52do5hvhrf",
+          "qtd": 1,
+          "pat": "0095",
+          "desc": "OMNISCAN SX"
+        },
+        {
+          "id": "emw52do5h8mqh",
+          "qtd": 1,
+          "pat": "0086",
+          "desc": "OMNISCAN"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-06T14:46:36.147Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw52guqc9i2n",
+    "admin": true,
+    "record": {
+      "id": "omw52guqc9i2n",
+      "no": "2026-001-0",
+      "createdAt": "2026-11-06T14:25:21.300Z",
+      "date": "2026-11-06",
+      "instr": "",
+      "cliente": "ASVOTEC TERMOINDUSTRIAL LTDA",
+      "resp": "FLAVIO DOMENICO",
+      "local": "MONTE MOR-SP",
+      "contato": "(19) 97123-7820",
+      "placa": "END-0A72",
+      "veiculo": "VOLKSWAGEM POLO",
+      "equipe": [
+        "ANDRE WILKER DE SOUSA BRAGA",
+        "BRUNO EIRAS CAPELLINI",
+        "CARLOS ALBERTO DE MATOS"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "emw3jo3fr2or5",
+          "qtd": 1,
+          "pat": "0142",
+          "desc": "GE DM5E"
+        },
+        {
+          "id": "emw3j5t7r22j4",
+          "qtd": 1,
+          "pat": "0020",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        },
+        {
+          "id": "emw3i3ubi2wk9",
+          "qtd": 1,
+          "pat": "0019",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw4yysnbwxnw",
+          "qtd": 1,
+          "pat": "0307",
+          "desc": "Splits P1-MALE-0.3-2P1-SPLIT 128"
+        },
+        {
+          "id": "emw3tuxa4vz5u",
+          "qtd": 1,
+          "pat": "0152",
+          "desc": "OLYMPUS OMNISCAN MX1 16:128"
+        },
+        {
+          "id": "emw3ttoxg8vjz",
+          "qtd": 1,
+          "pat": "0008",
+          "desc": "OLYMPUS OMNISCAN MX1 16:128"
+        },
+        {
+          "id": "emw4zuc5o41j0",
+          "qtd": 1,
+          "pat": "013",
+          "desc": "ENCODER LEMO 3MTS"
+        },
+        {
+          "id": "emw4yysnbzcyh",
+          "qtd": 1,
+          "pat": "0309",
+          "desc": "Splits  E128P0-0202-EZ"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-06T14:46:37.454Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw52p0d8hgfp",
+    "admin": true,
+    "record": {
+      "id": "omw52p0d8hgfp",
+      "no": "2026-002-0",
+      "createdAt": "2026-11-06T14:31:41.852Z",
+      "date": "2026-11-06",
+      "instr": "",
+      "cliente": "NG METALURGICA S A",
+      "resp": "FABIANO FERNANDES",
+      "local": "PIRACICABA-SP",
+      "contato": "(11) 94994-2711",
+      "placa": "GFD-9F33",
+      "veiculo": "VOLKSWAGEM GOL",
+      "equipe": [
+        "LARISSA TAINÁ TOSO"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "emw3jej33y3yl",
+          "qtd": 1,
+          "pat": "0021",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        },
+        {
+          "id": "emw51znomazio",
+          "qtd": 1,
+          "pat": "0239",
+          "desc": "2.25DM7X4-2.71X3.0-F66-U-50-5.0-P1"
+        },
+        {
+          "id": "emw4yysnbrifr",
+          "qtd": 1,
+          "pat": "0308",
+          "desc": "Splits  E128P0-0202-OM"
+        },
+        {
+          "id": "",
+          "qtd": 1,
+          "pat": "",
+          "desc": "ARANHA IRIS GRANDE"
+        },
+        {
+          "id": "",
+          "qtd": 1,
+          "pat": "",
+          "desc": "TAMBOR IRIS"
+        },
+        {
+          "id": "",
+          "qtd": 1,
+          "pat": "",
+          "desc": "CINTO DE SEGURANÇA"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-06T14:46:38.698Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw537ci1mmeg",
+    "admin": true,
+    "record": {
+      "id": "omw537ci1mmeg",
+      "no": "2026-004-0",
+      "createdAt": "2026-11-06T14:45:57.385Z",
+      "date": "2026-11-06",
+      "instr": "",
+      "cliente": "RHODIA DO BRASIL",
+      "resp": "",
+      "local": "PAULINIA-SP",
+      "contato": "",
+      "placa": "GFD-9F33",
+      "veiculo": "VOLKSWAGEM GOL",
+      "equipe": [
+        "DIEGO LUCAS DA SILVA",
+        "DANIEL LUIZ DA SILVA"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "emw52do5gjpwg",
+          "qtd": 1,
+          "pat": "0059",
+          "desc": "GEKKO"
+        },
+        {
+          "id": "emw52do5gqidj",
+          "qtd": 1,
+          "pat": "0022",
+          "desc": "EDDYFI ECTANE 3 - I  IRIS"
+        },
+        {
+          "id": "emw3jpm3j3oa4",
+          "qtd": 1,
+          "pat": "0013",
+          "desc": "SIUI CTS-9006"
+        },
+        {
+          "id": "emw3u8jvv4tjv",
+          "qtd": 1,
+          "pat": "0174",
+          "desc": "OLYMPUS OMNISCAN SX 16:64"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:22.453Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9b05y",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9b05y",
+      "pat": "0097",
+      "desc": "FONTE CARREGADOR EDDYFI ECTANE 3 - I",
+      "tipo": "15V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:22.472Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo95f3b",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo95f3b",
+      "pat": "0098",
+      "desc": "FONTE CARREGADOR EDDYFI ECTANE 3 - I",
+      "tipo": "15V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:31.789Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9ppuv",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9ppuv",
+      "pat": "0035",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:31.803Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9s7is",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9s7is",
+      "pat": "0036",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:31.820Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9plq9",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9plq9",
+      "pat": "0037",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:31.841Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo98j3p",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo98j3p",
+      "pat": "0042",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:31.853Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9vi68",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9vi68",
+      "pat": "0048",
+      "desc": "FONTE CARREGADOR BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:31.869Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9c5yw",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9c5yw",
+      "pat": "0158",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:31.960Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9bosg",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9bosg",
+      "pat": "0163",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:32.003Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9wqw7",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9wqw7",
+      "pat": "0171",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:32.021Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo97xxa",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo97xxa",
+      "pat": "0172",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:32.036Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo91cz4",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo91cz4",
+      "pat": "0175",
+      "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA",
+      "tipo": "18V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:41.828Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw53npqilf3m",
+    "admin": true,
+    "record": {
+      "id": "tmw53npqilf3m",
+      "nome": "15V"
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:43.466Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw53npmov7yo",
+    "admin": true,
+    "record": {
+      "id": "tmw53npmov7yo",
+      "nome": "18V"
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:58.525Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9xvco",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9xvco",
+      "pat": "0026",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "65V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:58.542Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo94yt9",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo94yt9",
+      "pat": "0099",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "65V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:58.556Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9k5h6",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9k5h6",
+      "pat": "0100",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "65V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:58.572Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9y5ak",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9y5ak",
+      "pat": "0123",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "65V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:58.586Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9mv4w",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9mv4w",
+      "pat": "0124",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "65V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:58.603Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9m8s9",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9m8s9",
+      "pat": "0139",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "65V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:58.618Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo97w54",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo97w54",
+      "pat": "0140",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "65V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T14:59:58.635Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9y1w9",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9y1w9",
+      "pat": "0141",
+      "desc": "FONTE - CARREGADOR NOTEBOOK LENOVO",
+      "tipo": "65V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:03.459Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9y6gw",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9y6gw",
+      "pat": "0126",
+      "desc": "FONTE - CARREGADOR NOTEBOOK POSITIVO",
+      "tipo": "45V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:03.477Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9scn2",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9scn2",
+      "pat": "0127",
+      "desc": "FONTE - CARREGADOR NOTEBOOK POSITIVO",
+      "tipo": "45V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:03.496Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9qrv8",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9qrv8",
+      "pat": "0128",
+      "desc": "FONTE - CARREGADOR NOTEBOOK POSITIVO",
+      "tipo": "45V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:03.523Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9ha3l",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9ha3l",
+      "pat": "0129",
+      "desc": "FONTE - CARREGADOR NOTEBOOK COMPAQ",
+      "tipo": "45V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:03.540Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9dmvv",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9dmvv",
+      "pat": "0131",
+      "desc": "FONTE - CARREGADOR NOTEBOOK COMPAQ",
+      "tipo": "45V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:03.564Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9f2pi",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9f2pi",
+      "pat": "0132",
+      "desc": "FONTE - CARREGADOR NOTEBOOK HP",
+      "tipo": "45V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:03.579Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9xs8n",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9xs8n",
+      "pat": "0136",
+      "desc": "FONTE - CARREGADOR NOTEBOOK POSITIVO",
+      "tipo": "45V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.572Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo99qq4",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo99qq4",
+      "pat": "0028",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.588Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo95dyd",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo95dyd",
+      "pat": "0029",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.612Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9ycij",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9ycij",
+      "pat": "0038",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.630Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo97jwu",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo97jwu",
+      "pat": "0039",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.652Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9hyjl",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9hyjl",
+      "pat": "0040",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.668Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo99x2y",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo99x2y",
+      "pat": "0041",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.691Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo93x8d",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo93x8d",
+      "pat": "0044",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.712Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9ou34",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9ou34",
+      "pat": "0046",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:07.730Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9o26v",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9o26v",
+      "pat": "0168",
+      "desc": "FONTE CARREGADOR  BATERIA",
+      "tipo": "24V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:12.400Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo90nbf",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo90nbf",
+      "pat": "0133",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "19.5V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:12.416Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9mhgc",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9mhgc",
+      "pat": "0135",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "19.5V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:12.432Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9egq4",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9egq4",
+      "pat": "0137",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "19.5V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:12.449Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9kqj0",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9kqj0",
+      "pat": "0138",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "19.5V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:12.463Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw53mpo9nvdy",
+    "admin": true,
+    "record": {
+      "id": "emw53mpo9nvdy",
+      "pat": "0144",
+      "desc": "FONTE - CARREGADOR NOTEBOOK DELL",
+      "tipo": "19.5V",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:16.152Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw53npoxkmnr",
+    "admin": true,
+    "record": {
+      "id": "tmw53npoxkmnr",
+      "nome": "19.5V"
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:21.374Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw53npo1i3ch",
+    "admin": true,
+    "record": {
+      "id": "tmw53npo1i3ch",
+      "nome": "45V"
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:23.327Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw53npppxbly",
+    "admin": true,
+    "record": {
+      "id": "tmw53npppxbly",
+      "nome": "65V"
+    }
+  },
+  {
+    "date": "2026-11-06T15:00:25.095Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw53npnfq5i8",
+    "admin": true,
+    "record": {
+      "id": "tmw53npnfq5i8",
+      "nome": "24V"
+    }
+  },
+  {
+    "date": "2026-11-06T16:29:47.468Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw56mzb3pc6t",
+    "admin": true,
+    "record": {
+      "id": "omw56mzb3pc6t",
+      "no": "2026-001-0",
+      "createdAt": "2026-11-06T16:22:05.631Z",
+      "date": "2026-11-06",
+      "instr": "",
+      "cliente": "NG METALURGICA S A",
+      "resp": "FABIANO FERNANDES",
+      "local": "PIRACICABA-SP",
+      "contato": "(11) 94994-2711",
+      "placa": "END-0A72",
+      "veiculo": "VOLKSWAGEM POLO",
+      "equipe": [
+        "ANDRE WILKER DE SOUSA BRAGA",
+        "LUIS FILIPE ORRUTIA LUZ DOS SANTOS"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "emw3jo3fr2or5",
+          "qtd": 1,
+          "pat": "0142",
+          "desc": "GE DM5E"
+        },
+        {
+          "id": "emw3j5t7r22j4",
+          "qtd": 1,
+          "pat": "0020",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        },
+        {
+          "id": "emw3i3ubi2wk9",
+          "qtd": 1,
+          "pat": "0019",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3ttoxg8vjz",
+          "qtd": 1,
+          "pat": "0008",
+          "desc": "OLYMPUS OMNISCAN MX1 16:128"
+        },
+        {
+          "id": "emw3tvpu3qgdf",
+          "qtd": 1,
+          "pat": "0005",
+          "desc": "OLYMPUS OMNISCAN MX2  32:128"
+        },
+        {
+          "id": "emw3i5bridass",
+          "qtd": 1,
+          "pat": "0169",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        },
+        {
+          "id": "emw3tya5f6cmd",
+          "qtd": 1,
+          "pat": "0007",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.776Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsu78bx",
+    "admin": true,
+    "record": {
+      "id": "emw573tsu78bx",
+      "pat": "0101",
+      "desc": "NTB POSITIVO MOTION GRAY Q232A",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOWS 10",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.796Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsunw98",
+    "admin": true,
+    "record": {
+      "id": "emw573tsunw98",
+      "pat": "0102",
+      "desc": "NTB POSITIVO MOTION GRAY Q232A",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOWS 10",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.821Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuycxw",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuycxw",
+      "pat": "0104",
+      "desc": "ML-SH06",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOWS 10",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "QUEBRADO"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.842Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuqgv4",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuqgv4",
+      "pat": "0105",
+      "desc": "ML-SH03",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOWS 10",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.861Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuxuuy",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuxuuy",
+      "pat": "0106",
+      "desc": "CQ-21",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOW 10",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.879Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuno01",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuno01",
+      "pat": "0107",
+      "desc": "ML-SH03",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOWS 10",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.898Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsu8mgt",
+    "admin": true,
+    "record": {
+      "id": "emw573tsu8mgt",
+      "pat": "0108",
+      "desc": "X12-51822",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOS XP",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.917Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsu9bo6",
+    "admin": true,
+    "record": {
+      "id": "emw573tsu9bo6",
+      "pat": "0109",
+      "desc": "PP23LB",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOWS XP",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "ANEXADO P.0305"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.936Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsukgyr",
+    "admin": true,
+    "record": {
+      "id": "emw573tsukgyr",
+      "pat": "0110",
+      "desc": "INSPIRON N5010",
+      "tipo": "Notebook",
+      "hasSerie": false,
+      "serie": "",
+      "serie2": "",
+      "configuracao": "WINDOWS 8",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.951Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuni9v",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuni9v",
+      "pat": "0115",
+      "desc": "IDEAPAD 1 15AMN7",
+      "tipo": "Notebook",
+      "hasSerie": true,
+      "serie": "373230-550110-358127-266013-419980-204116-219868-435523",
+      "serie2": "",
+      "configuracao": "WINDOWS 11",
+      "chaveIdentificacao": "OD57AD6D",
+      "bitlocker": "373230-550110-358127-266013-419980-204116-219868-435523",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "NEW-END-0115"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.969Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuknw4",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuknw4",
+      "pat": "0116",
+      "desc": "IDEAPAD 1 15AMN7",
+      "tipo": "Notebook",
+      "hasSerie": true,
+      "serie": "655369-051040-219021-663399-693418-586608-082291-211134",
+      "serie2": "",
+      "configuracao": "WINDOWS 11",
+      "chaveIdentificacao": "646C8E24",
+      "bitlocker": "655369-051040-219021-663399-693418-586608-082291-211134",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "NEW-END-0116"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:05.984Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuga2i",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuga2i",
+      "pat": "0117",
+      "desc": "IDEAPAD 1 15AMN7",
+      "tipo": "Notebook",
+      "hasSerie": true,
+      "serie": "512787-014762-345191-033363-352165-018601-685146-130031",
+      "serie2": "",
+      "configuracao": "WINDOWS 11",
+      "chaveIdentificacao": "22A8EFE9",
+      "bitlocker": "512787-014762-345191-033363-352165-018601-685146-130031",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "NEW-END-0117"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:06.002Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsudzks",
+    "admin": true,
+    "record": {
+      "id": "emw573tsudzks",
+      "pat": "0118",
+      "desc": "IDEAPAD 1 15AMN7",
+      "tipo": "Notebook",
+      "hasSerie": true,
+      "serie": "579931-007425-308352-406714-638341-000220-022451-694452",
+      "serie2": "",
+      "configuracao": "WINDOWS 11",
+      "chaveIdentificacao": "E9F2D98E",
+      "bitlocker": "579931-007425-308352-406714-638341-000220-022451-694452",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "NEW-END-0118"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:06.022Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsu89jm",
+    "admin": true,
+    "record": {
+      "id": "emw573tsu89jm",
+      "pat": "0119",
+      "desc": "IDEAPAD 1 15AMN7",
+      "tipo": "Notebook",
+      "hasSerie": true,
+      "serie": "455708-018304-617969-683111-640519-672485-323367-451990",
+      "serie2": "",
+      "configuracao": "WINDOWS 11",
+      "chaveIdentificacao": "E8B593E1",
+      "bitlocker": "455708-018304-617969-683111-640519-672485-323367-451990",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "NEW-END-0119"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:06.040Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuoslu",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuoslu",
+      "pat": "0120",
+      "desc": "IDEAPAD 1 15AMN7",
+      "tipo": "Notebook",
+      "hasSerie": true,
+      "serie": "159808-028226-069718-042141-377003-407957-416812-134717",
+      "serie2": "",
+      "configuracao": "WINDOWS 11",
+      "chaveIdentificacao": "D9F10F21",
+      "bitlocker": "159808-028226-069718-042141-377003-407957-416812-134717",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "NEW-END-0120"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:06.054Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsuv0iy",
+    "admin": true,
+    "record": {
+      "id": "emw573tsuv0iy",
+      "pat": "0121",
+      "desc": "IDEAPAD 1 15AMN7",
+      "tipo": "Notebook",
+      "hasSerie": true,
+      "serie": "336127-213125-445225-309980-062007-115445-683463-127677",
+      "serie2": "",
+      "configuracao": "WINDOWS 11",
+      "chaveIdentificacao": "F9F8F283",
+      "bitlocker": "336127-213125-445225-309980-062007-115445-683463-127677",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "NEW-END-0121"
+    }
+  },
+  {
+    "date": "2026-11-06T16:37:06.070Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw573tsu24sp",
+    "admin": true,
+    "record": {
+      "id": "emw573tsu24sp",
+      "pat": "0122",
+      "desc": "IDEAPAD 1 15AMN7",
+      "tipo": "Notebook",
+      "hasSerie": true,
+      "serie": "536866-277948-495935-182127-679162-027071-474056-457611",
+      "serie2": "",
+      "configuracao": "WINDOWS 11",
+      "chaveIdentificacao": "88E13E12",
+      "bitlocker": "536866-277948-495935-182127-679162-027071-474056-457611",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": "NEW-END-0122"
+    }
+  },
+  {
+    "date": "2026-11-06T16:54:04.601Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw57kgwstsnb",
+    "admin": true,
+    "record": {
+      "id": "omw57kgwstsnb",
+      "no": "2026-002-0",
+      "createdAt": "2026-11-06T16:48:08.092Z",
+      "date": "2026-11-06",
+      "instr": "",
+      "cliente": "NG METALURGICA S A",
+      "resp": "FABIANO FERNANDES",
+      "local": "PIRACICABA-SP",
+      "contato": "(11) 94994-2711",
+      "placa": "FMC-6H61",
+      "veiculo": "VOLKSWAGEM SAVEIRO",
+      "equipe": [
+        "DIEGO SANTOS DE ARAÚJO"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "emw3i2mou5k2g",
+          "qtd": 1,
+          "pat": "0018",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3i3ubi2wk9",
+          "qtd": 1,
+          "pat": "0019",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3i5bridass",
+          "qtd": 1,
+          "pat": "0169",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        },
+        {
+          "id": "emw3j5t7r22j4",
+          "qtd": 1,
+          "pat": "0020",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-06T16:54:06.637Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw57jz5w01lp",
+    "admin": true,
+    "record": {
+      "id": "omw57jz5w01lp",
+      "no": "2026-001-0",
+      "createdAt": "2026-11-06T16:47:45.092Z",
+      "date": "2026-11-06",
+      "instr": "",
+      "cliente": "ASVOTEC TERMOINDUSTRIAL LTDA",
+      "resp": "FLAVIO DOMENICO",
+      "local": "MONTE MOR-SP",
+      "contato": "(19) 97123-7820",
+      "placa": "FMC-6H61",
+      "veiculo": "VOLKSWAGEM SAVEIRO",
+      "equipe": [
+        "DIEGO SANTOS DE ARAÚJO"
+      ],
+      "obs": "",
+      "status": "Devolvida",
+      "items": [
+        {
+          "id": "emw3i2mou5k2g",
+          "qtd": 1,
+          "pat": "0018",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3i3ubi2wk9",
+          "qtd": 1,
+          "pat": "0019",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3i5bridass",
+          "qtd": 1,
+          "pat": "0169",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        },
+        {
+          "id": "emw3j5t7r22j4",
+          "qtd": 1,
+          "pat": "0020",
+          "desc": "EDDYFI ECTANE 3 - I IRIS"
+        }
+      ],
+      "ret": "2026-11-06"
+    }
+  },
+  {
+    "date": "2026-11-06T17:02:24.398Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw580s84ki6z",
+    "admin": true,
+    "record": {
+      "id": "emw580s84ki6z",
+      "pat": "0305",
+      "desc": "NEW END ROBO",
+      "tipo": "SCANNER ULTRASSOM",
+      "hasSerie": true,
+      "serie": "SCANNER AUTO KIT COMPLETO",
+      "serie2": "",
+      "configuracao": "SCANNER AUTO KIT COMPLETO",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:02:29.707Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw580s84g0a7",
+    "admin": true,
+    "record": {
+      "id": "emw580s84g0a7",
+      "pat": "0157",
+      "desc": "ENDVALE",
+      "tipo": "MOUSE ENDVALE",
+      "hasSerie": true,
+      "serie": "MOUSE",
+      "serie2": "",
+      "configuracao": "MOUSE",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:02:36.000Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw580s84vk7t",
+    "admin": true,
+    "record": {
+      "id": "emw580s84vk7t",
+      "pat": "0311",
+      "desc": "MGE",
+      "tipo": "FS04 SCANNER",
+      "hasSerie": true,
+      "serie": "SCANNER MANUAL KIT COMPLETO",
+      "serie2": "",
+      "configuracao": "SCANNER MANUAL KIT COMPLETO",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:02:36.018Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw580s84zsox",
+    "admin": true,
+    "record": {
+      "id": "emw580s84zsox",
+      "pat": "0312",
+      "desc": "MGE",
+      "tipo": "FS04 SCANNER",
+      "hasSerie": true,
+      "serie": "SCANNER MANUAL KIT COMPLETO",
+      "serie2": "",
+      "configuracao": "SCANNER MANUAL KIT COMPLETO",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:02:55.296Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw580s84l66n",
+    "admin": true,
+    "record": {
+      "id": "emw580s84l66n",
+      "pat": "0300",
+      "desc": "JIREH",
+      "tipo": "CIRC-IT",
+      "hasSerie": true,
+      "serie": "BRACELETE KIT COMPLETO",
+      "serie2": "",
+      "configuracao": "BRACELETE KIT COMPLETO",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:03:00.605Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw581k6x2mj4",
+    "admin": true,
+    "record": {
+      "id": "tmw581k6x2mj4",
+      "nome": "CIRC-IT"
+    }
+  },
+  {
+    "date": "2026-11-06T17:03:03.433Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw581k7i4jsg",
+    "admin": true,
+    "record": {
+      "id": "tmw581k7i4jsg",
+      "nome": "FS04 SCANNER"
+    }
+  },
+  {
+    "date": "2026-11-06T17:03:05.395Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw581k6j7xvr",
+    "admin": true,
+    "record": {
+      "id": "tmw581k6j7xvr",
+      "nome": "MOUSE ENDVALE"
+    }
+  },
+  {
+    "date": "2026-11-06T17:03:52.541Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw581k8cjkit",
+    "admin": true,
+    "record": {
+      "id": "tmw581k8cjkit",
+      "nome": "SCANNER ULTRASSOM"
+    }
+  },
+  {
+    "date": "2026-11-06T17:04:23.361Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw58484rx76q",
+    "admin": true,
+    "record": {
+      "id": "emw58484rx76q",
+      "pat": "0157",
+      "desc": "MOUSE ENDVALE",
+      "tipo": "Scanner",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "",
+      "configuracao": "MOUSE",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:04:23.378Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw58484r4m6j",
+    "admin": true,
+    "record": {
+      "id": "emw58484r4m6j",
+      "pat": "0300",
+      "desc": "CIRC-IT",
+      "tipo": "Scanner",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "",
+      "configuracao": "BRACELETE KIT COMPLETO",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:04:23.396Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw58484r7f09",
+    "admin": true,
+    "record": {
+      "id": "emw58484r7f09",
+      "pat": "0305",
+      "desc": "SCANNER ULTRASSOM",
+      "tipo": "Scanner",
+      "hasSerie": true,
+      "serie": "-",
+      "serie2": "",
+      "configuracao": "SCANNER AUTO KIT COMPLETO",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:04:23.414Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw58484rhxkx",
+    "admin": true,
+    "record": {
+      "id": "emw58484rhxkx",
+      "pat": "0311",
+      "desc": "FS04 SCANNER",
+      "tipo": "Scanner",
+      "hasSerie": true,
+      "serie": "007-2308",
+      "serie2": "",
+      "configuracao": "SCANNER MANUAL KIT COMPLETO",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-06T17:04:23.431Z",
+    "action": "exclusão",
+    "collection": "eq",
+    "id": "emw58484r9zcg",
+    "admin": true,
+    "record": {
+      "id": "emw58484r9zcg",
+      "pat": "0312",
+      "desc": "FS04 SCANNER",
+      "tipo": "Scanner",
+      "hasSerie": true,
+      "serie": "DJ-0017",
+      "serie2": "",
+      "configuracao": "SCANNER MANUAL KIT COMPLETO",
+      "chaveIdentificacao": "",
+      "bitlocker": "",
+      "needsCal": false,
+      "calDate": "",
+      "calDue": "",
+      "obs": ""
+    }
+  },
+  {
+    "date": "2026-11-09T16:43:22.813Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omw95696g5zoj",
+    "admin": true,
+    "record": {
+      "id": "omw95696g5zoj",
+      "no": "2026-001-0",
+      "createdAt": "2026-11-09T10:52:10.360Z",
+      "date": "2026-11-09",
+      "instr": "",
+      "cliente": "NG METALURGICA S A",
+      "resp": "FABIANO FERNANDES",
+      "local": "PIRACICABA-SP",
+      "contato": "(11) 94994-2711",
+      "placa": "END-0A72",
+      "veiculo": "VOLKSWAGEM POLO",
+      "equipe": [
+        "ANDRE WILKER DE SOUSA BRAGA",
+        "LARISSA TAINÁ TOSO"
+      ],
+      "obs": "",
+      "status": "Devolvida",
+      "items": [
+        {
+          "id": "emw3i2mou5k2g",
+          "qtd": 1,
+          "pat": "0018",
+          "desc": "EDDYFI M2M GEKKO  64:64"
+        },
+        {
+          "id": "emw3tx5gzy7t0",
+          "qtd": 1,
+          "pat": "0006",
+          "desc": "OLYMPUS OMNISCAN MX2  32:128"
+        },
+        {
+          "id": "emw3tz3l2nu7k",
+          "qtd": 1,
+          "pat": "0009",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        },
+        {
+          "id": "emw51znomtdhb",
+          "qtd": 1,
+          "pat": "0207",
+          "desc": "2.25L64-A2"
+        }
+      ],
+      "ret": "2026-11-09"
+    }
+  },
+  {
+    "date": "2026-11-10T13:12:37.620Z",
+    "action": "exclusão",
+    "collection": "tip",
+    "id": "tmw5c2mb9obob",
+    "admin": true,
+    "record": {
+      "id": "tmw5c2mb9obob",
+      "nome": "Bloco Padrão"
+    }
+  },
+  {
+    "date": "2026-11-10T13:25:17.810Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omwakpljw1f8b",
+    "admin": true,
+    "record": {
+      "id": "omwakpljw1f8b",
+      "no": "2026-001-0",
+      "createdAt": "2026-11-10T10:54:53.276Z",
+      "date": "2026-10-13",
+      "instr": "",
+      "cliente": "OTTANI INDÚSTRIA E COMÉRCIO LTDA",
+      "resp": "OSÉIAS MARTINS",
+      "local": "PIRACICABA-SP",
+      "contato": "(19) 98171-4787",
+      "placa": "",
+      "veiculo": "",
+      "equipe": [
+        "MARCIEL AMORIM"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "emw3tz3l2nu7k",
+          "qtd": 1,
+          "pat": "0009",
+          "desc": "OLYMPUS OMNISCAN MX2 32:128 PR"
+        },
+        {
+          "id": "emw52do5hayj5",
+          "qtd": 1,
+          "pat": "0085",
+          "desc": "OMNISCAN"
+        },
+        {
+          "id": "emw52do5h6qy8",
+          "qtd": 1,
+          "pat": "0081",
+          "desc": "OMNISCAN"
+        },
+        {
+          "id": "emw546pww79w5",
+          "qtd": 1,
+          "pat": "0051",
+          "desc": "CARREGADOR DE BATERIA EXTERNO DUPLO"
+        },
+        {
+          "id": "emw53qb8pstig",
+          "qtd": 1,
+          "pat": "0163",
+          "desc": "FONTE CARREGADOR - MX1 - MX2 - BATERIA"
+        },
+        {
+          "id": "emw51znomw9kk",
+          "qtd": 1,
+          "pat": "0228",
+          "desc": "5L32-A11"
+        },
+        {
+          "id": "emw4zuc5owpjv",
+          "qtd": 1,
+          "pat": "002",
+          "desc": "ENCODER LEMO 3MTS"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-10T14:42:27.486Z",
+    "action": "exclusão",
+    "collection": "os",
+    "id": "omwastpku5a92",
+    "admin": true,
+    "record": {
+      "id": "omwastpku5a92",
+      "no": "2026-001-0",
+      "createdAt": "2026-11-10T14:42:02.046Z",
+      "date": "2026-11-10",
+      "instr": "",
+      "cliente": "ASVOTEC TERMOINDUSTRIAL LTDA",
+      "resp": "FLAVIO DOMENICO",
+      "local": "MONTE MOR-SP",
+      "contato": "(19) 97123-7820",
+      "placa": "GFD-9F33",
+      "veiculo": "VOLKSWAGEM GOL",
+      "equipe": [
+        "CARLOS ALBERTO DE MATOS"
+      ],
+      "obs": "",
+      "status": "Aberta",
+      "items": [
+        {
+          "id": "bmwaqu3rcx67b",
+          "qtd": 1,
+          "pat": "BLOCO · BCU-003",
+          "desc": "BC PADRÃO PHASED ARRAY · Espessura 12.7mm · Ø ext. 12\" · AÇO CARBONO"
+        },
+        {
+          "id": "bmwar2yt5qjec",
+          "qtd": 1,
+          "pat": "BLOCO · BND-003",
+          "desc": "TUBO PADRÃO IRIS · Espessura 1.65mm · Ø ext. 19.0mm · LATÃO"
+        },
+        {
+          "id": "bmwapyclysvy1",
+          "qtd": 1,
+          "pat": "BLOCO · BNE-009",
+          "desc": "BLOCO PADRÃO DE REFERÊNCIA · Espessura 12.7mm · AÇO CARBONO"
+        },
+        {
+          "id": "bmwapyclyw8va",
+          "qtd": 1,
+          "pat": "BLOCO · BNE-011",
+          "desc": "BLOCO PADRÃO DE REFERÊNCIA · Espessura 25.0mm · AÇO CARBONO"
+        }
+      ]
+    }
+  },
+  {
+    "date": "2026-11-10T19:03:03.102Z",
+    "action": "exclusão",
+    "collection": "loc",
+    "id": "loc_mwb1gqbug13a",
+    "admin": true,
+    "record": {
+      "id": "loc_mwb1gqbug13a",
+      "numero": "LOC-2026-0001",
+      "cliente": "OTTANI INDÚSTRIA E COMÉRCIO LTDA",
+      "responsavel": "MARCIEL AMORIM",
+      "rg": "",
+      "cpf": "",
+      "local": "HORTOLÂNDIA",
+      "saida": "2026-11-10",
+      "previsao": "2026-12-12",
+      "devolucao": "",
+      "status": "Em locação",
+      "observacoes": "",
+      "items": [
+        {
+          "eqId": "emw3i3ubi2wk9",
+          "itemType": "eq",
+          "patrimonio": "0019",
+          "descricao": "EDDYFI M2M GEKKO  64:64",
+          "tipo": "Aparelho",
+          "dimensoes": "",
+          "peso": "",
+          "condicao": "",
+          "photos": [
+            {
+              "name": "8e89400190afe412ad3816d803073d1a018a.jpg",
+              "url": "/locacao-fotos/8e89400190afe412ad3816d803073d1a018a.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw3ttoxg8vjz",
+          "itemType": "eq",
+          "patrimonio": "0008",
+          "descricao": "OLYMPUS OMNISCAN MX1 16:128",
+          "tipo": "Aparelho",
+          "dimensoes": "",
+          "peso": "",
+          "condicao": "",
+          "photos": [
+            {
+              "name": "75e86baacd9f4e2ef79bb4821d40ea9a608d.jpg",
+              "url": "/locacao-fotos/75e86baacd9f4e2ef79bb4821d40ea9a608d.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw3jpm3j3oa4",
+          "itemType": "eq",
+          "patrimonio": "0013",
+          "descricao": "SIUI CTS-9006",
+          "tipo": "Aparelho",
+          "dimensoes": "",
+          "peso": "",
+          "condicao": "",
+          "photos": [
+            {
+              "name": "b303deff1975bceb5d6e1e4a9e88ea0e84ee.jpg",
+              "url": "/locacao-fotos/b303deff1975bceb5d6e1e4a9e88ea0e84ee.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw4yysnbwxnw",
+          "itemType": "eq",
+          "patrimonio": "0307",
+          "descricao": "Splits P1-MALE-0.3-2P1-SPLIT 128",
+          "tipo": "Splits",
+          "dimensoes": "",
+          "peso": "",
+          "condicao": "",
+          "photos": [
+            {
+              "name": "f528f246c7d80c7b85624c615ea2ab2bcbef.jpg",
+              "url": "/locacao-fotos/f528f246c7d80c7b85624c615ea2ab2bcbef.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        }
+      ],
+      "criado": "2026-11-10T18:43:53.034Z",
+      "atualizado": "2026-11-10T18:43:53.034Z"
+    }
+  },
+  {
+    "date": "2026-11-10T19:30:10.234Z",
+    "action": "exclusão",
+    "collection": "loc",
+    "id": "loc_mwb26pu0dt43",
+    "admin": true,
+    "record": {
+      "id": "loc_mwb26pu0dt43",
+      "numero": "LOC-2026-0001",
+      "cliente": "OTTANI INDÚSTRIA E COMÉRCIO LTDA",
+      "responsavel": "MARCIEL AMORIM",
+      "rg": "",
+      "cpf": "",
+      "local": "HORTOLÂNDIA",
+      "dimensoes": "",
+      "peso": "",
+      "saida": "2026-11-10",
+      "previsao": "2026-12-10",
+      "devolucao": "",
+      "status": "Em locação",
+      "observacoes": "",
+      "items": [
+        {
+          "eqId": "emw3tuxa4vz5u",
+          "itemType": "eq",
+          "patrimonio": "0152",
+          "descricao": "OLYMPUS OMNISCAN MX1 16:128",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "4416932b0cf0a1dd99f76fbec2db92c9e069.jpg",
+              "url": "/locacao-fotos/4416932b0cf0a1dd99f76fbec2db92c9e069.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "965c3b4328102ccd3831d9819600afa495ee.jpg",
+              "url": "/locacao-fotos/965c3b4328102ccd3831d9819600afa495ee.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw51znomrblm",
+          "itemType": "eq",
+          "patrimonio": "0151",
+          "descricao": "5L16-A10",
+          "tipo": "Cabeçote",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "40796d212e8cca31848469cdb1d764479fae.jpg",
+              "url": "/locacao-fotos/40796d212e8cca31848469cdb1d764479fae.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "5aff6e98faa3d37c8b1e118c723fa404ef44.jpg",
+              "url": "/locacao-fotos/5aff6e98faa3d37c8b1e118c723fa404ef44.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw3tya5f6cmd",
+          "itemType": "eq",
+          "patrimonio": "0007",
+          "descricao": "OLYMPUS OMNISCAN MX2 32:128",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "a52445d7532e5aeb6bd0981307cd984fa59a.jpg",
+              "url": "/locacao-fotos/a52445d7532e5aeb6bd0981307cd984fa59a.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "ef94395d4a387a1df8b4dac31453de589434.jpg",
+              "url": "/locacao-fotos/ef94395d4a387a1df8b4dac31453de589434.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw4yysnbwxnw",
+          "itemType": "eq",
+          "patrimonio": "0307",
+          "descricao": "Splits P1-MALE-0.3-2P1-SPLIT 128",
+          "tipo": "Splits",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "02136efda892110fbd101fdcb17dd2836ecb.jpg",
+              "url": "/locacao-fotos/02136efda892110fbd101fdcb17dd2836ecb.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "443f22ebedcee21bd42f6b7f1a687dece1a1.jpg",
+              "url": "/locacao-fotos/443f22ebedcee21bd42f6b7f1a687dece1a1.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        }
+      ],
+      "criado": "2026-11-10T19:04:05.449Z",
+      "atualizado": "2026-11-10T19:04:05.449Z"
+    }
+  },
+  {
+    "date": "2026-11-10T19:37:49.900Z",
+    "action": "exclusão",
+    "collection": "loc",
+    "id": "loc_mwb36a21fqob",
+    "admin": true,
+    "record": {
+      "id": "loc_mwb36a21fqob",
+      "numero": "LOC-2026-0001",
+      "cliente": "OTTANI INDÚSTRIA E COMÉRCIO LTDA",
+      "responsavel": "",
+      "cpf": "",
+      "local": "HORTOLÂNDIA",
+      "dimensoes": "",
+      "peso": "",
+      "saida": "2026-11-10",
+      "previsao": "2026-12-12",
+      "devolucao": "",
+      "status": "Em locação",
+      "observacoes": "",
+      "items": [
+        {
+          "eqId": "emw3ttoxg8vjz",
+          "itemType": "eq",
+          "patrimonio": "0008",
+          "descricao": "OLYMPUS OMNISCAN MX1 16:128",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "3de299dfa6f41c583eab965a7f2750c4e737.jpg",
+              "url": "/locacao-fotos/3de299dfa6f41c583eab965a7f2750c4e737.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "49b03136a81f719b8bb0ec2202149fd6063f.jpg",
+              "url": "/locacao-fotos/49b03136a81f719b8bb0ec2202149fd6063f.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw3tvpu3qgdf",
+          "itemType": "eq",
+          "patrimonio": "0005",
+          "descricao": "OLYMPUS OMNISCAN MX2  32:128",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "5d5a706899d63483cf5876f4deb9a5966924.jpg",
+              "url": "/locacao-fotos/5d5a706899d63483cf5876f4deb9a5966924.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "47001b791d88d0949b368cbbb3ba947be7b3.jpg",
+              "url": "/locacao-fotos/47001b791d88d0949b368cbbb3ba947be7b3.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw3tya5f6cmd",
+          "itemType": "eq",
+          "patrimonio": "0007",
+          "descricao": "OLYMPUS OMNISCAN MX2 32:128",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "aaf1b9927fba0d3eb16f8d89450356b5990b.jpg",
+              "url": "/locacao-fotos/aaf1b9927fba0d3eb16f8d89450356b5990b.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "c1983ac41189f1e0e52c3b9d96961497cfbe.jpg",
+              "url": "/locacao-fotos/c1983ac41189f1e0e52c3b9d96961497cfbe.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw3tz3l2nu7k",
+          "itemType": "eq",
+          "patrimonio": "0009",
+          "descricao": "OLYMPUS OMNISCAN MX2 32:128 PR",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "0e5085bfd773e93cc1787868565d60262b99.jpg",
+              "url": "/locacao-fotos/0e5085bfd773e93cc1787868565d60262b99.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "dd26d5482b2326c5c08c75d9352d0bc4727d.jpg",
+              "url": "/locacao-fotos/dd26d5482b2326c5c08c75d9352d0bc4727d.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw4yysnbzcyh",
+          "itemType": "eq",
+          "patrimonio": "0309",
+          "descricao": "Splits  E128P0-0202-EZ",
+          "tipo": "Splits",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "e4ad2d75b96cfb2624c86daf7d16474b6c9a.jpg",
+              "url": "/locacao-fotos/e4ad2d75b96cfb2624c86daf7d16474b6c9a.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "06411dc807eec97643722d8735a7dc332c62.jpg",
+              "url": "/locacao-fotos/06411dc807eec97643722d8735a7dc332c62.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw4zuc5o1p4d",
+          "itemType": "eq",
+          "patrimonio": "004",
+          "descricao": "ENCODER LEMO 5MTS",
+          "tipo": "Encoder",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "d19ff93db239ac04997ecee20bdfe80c0ea8.jpg",
+              "url": "/locacao-fotos/d19ff93db239ac04997ecee20bdfe80c0ea8.jpg",
+              "mime": "image/jpeg"
+            },
+            {
+              "name": "d2550a2ed425f6e1ee9c8d7befe358eb9ee6.jpg",
+              "url": "/locacao-fotos/d2550a2ed425f6e1ee9c8d7befe358eb9ee6.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        }
+      ],
+      "criado": "2026-11-10T19:31:44.617Z",
+      "atualizado": "2026-11-10T19:31:44.617Z"
+    }
+  },
+  {
+    "date": "2026-11-11T14:36:30.078Z",
+    "action": "exclusão",
+    "collection": "loc",
+    "id": "loc_mwc81qy6hxaf",
+    "admin": true,
+    "record": {
+      "id": "loc_mwc81qy6hxaf",
+      "numero": "LOC-2026-0001",
+      "cliente": "OTTANI INDÚSTRIA E COMÉRCIO LTDA",
+      "responsavel": "MARCIEL AMORIM",
+      "cpf": "",
+      "local": "",
+      "dimensoes": "",
+      "peso": "",
+      "saida": "2026-11-11",
+      "previsao": "2026-11-25",
+      "devolucao": "",
+      "status": "Em locação",
+      "observacoes": "",
+      "items": [
+        {
+          "eqId": "emw3tuxa4vz5u",
+          "itemType": "eq",
+          "patrimonio": "0152",
+          "descricao": "OLYMPUS OMNISCAN MX1 16:128",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "1b74a4e4862ab4d78b79c58529e817634b5d.jpg",
+              "url": "/locacao-fotos/1b74a4e4862ab4d78b79c58529e817634b5d.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw3jo3fr2or5",
+          "itemType": "eq",
+          "patrimonio": "0142",
+          "descricao": "GE DM5E",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "532fc91ded7277594f7e396fcd8a13cbad4c.jpg",
+              "url": "/locacao-fotos/532fc91ded7277594f7e396fcd8a13cbad4c.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "eqId": "emw3j5t7r22j4",
+          "itemType": "eq",
+          "patrimonio": "0020",
+          "descricao": "EDDYFI ECTANE 3 - I IRIS",
+          "tipo": "Aparelho",
+          "quantidade": 1,
+          "condicao": "",
+          "photos": [
+            {
+              "name": "9ef17e2b452e76e25ce32907a2d370fe5d42.jpg",
+              "url": "/locacao-fotos/9ef17e2b452e76e25ce32907a2d370fe5d42.jpg",
+              "mime": "image/jpeg"
+            }
+          ]
+        }
+      ],
+      "criado": "2026-11-11T14:35:57.487Z",
+      "atualizado": "2026-11-11T14:35:57.487Z"
+    }
+  }
+]
